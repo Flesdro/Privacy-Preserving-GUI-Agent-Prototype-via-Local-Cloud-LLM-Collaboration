@@ -1,0 +1,385 @@
+{
+  "tasks": [
+    {
+      "id": "chrome_search",
+      "instruction": "Search 'NIPS' in Chrome",
+      "expected_action": {
+        "action": "input",
+        "element_id": "search_box"
+      },
+      "ui_state": {
+        "id": "chrome_home",
+        "app": "Chrome",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [0, 0, 1080, 2400],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "top_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "chrome.top",
+            "bounds": [0, 0, 1080, 260],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "home_button",
+            "parent": "top_bar",
+            "role": "button",
+            "text": "",
+            "description": "Home",
+            "resource_id": "chrome.home",
+            "bounds": [20, 60, 120, 160],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "search_container",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "chrome.search_area",
+            "bounds": [80, 310, 1000, 450],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "search_box",
+            "parent": "search_container",
+            "role": "input",
+            "text": "Search or type URL",
+            "description": "Search or type URL",
+            "resource_id": "chrome.search_box",
+            "bounds": [110, 330, 970, 430],
+            "clickable": true,
+            "editable": true,
+            "sensitive": false
+          },
+          {
+            "id": "account_panel",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "chrome.account",
+            "bounds": [70, 500, 1010, 680],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "account_email",
+            "parent": "account_panel",
+            "role": "text",
+            "text": "alice.student@example.com",
+            "description": "Google Account",
+            "resource_id": "chrome.account.email",
+            "bounds": [100, 530, 940, 610],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "history_panel",
+            "parent": "root",
+            "role": "RecyclerView",
+            "text": "",
+            "description": "",
+            "resource_id": "chrome.history",
+            "bounds": [70, 720, 1010, 1400],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "history_card_1",
+            "parent": "history_panel",
+            "role": "button",
+            "text": "GitHub Build Logs",
+            "description": "Recent browsing history",
+            "resource_id": "chrome.history.card",
+            "bounds": [90, 750, 980, 880],
+            "clickable": true,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "history_card_2",
+            "parent": "history_panel",
+            "role": "button",
+            "text": "University portal grades",
+            "description": "Recent browsing history",
+            "resource_id": "chrome.history.card",
+            "bounds": [90, 900, 980, 1030],
+            "clickable": true,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "discover_panel",
+            "parent": "root",
+            "role": "RecyclerView",
+            "text": "Discover",
+            "description": "",
+            "resource_id": "chrome.discover",
+            "bounds": [70, 1450, 1010, 2300],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "discover_card_1",
+            "parent": "discover_panel",
+            "role": "button",
+            "text": "How to raise chickens in Auckland",
+            "description": "Discover recommendation",
+            "resource_id": "chrome.discover.card",
+            "bounds": [90, 1500, 980, 1680],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "calendar_add_event",
+      "instruction": "Create a calendar event for project meeting",
+      "expected_action": {
+        "action": "click",
+        "element_id": "add_event"
+      },
+      "ui_state": {
+        "id": "calendar_month",
+        "app": "Calendar",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [0, 0, 1080, 2400],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "toolbar",
+            "parent": "root",
+            "role": "Toolbar",
+            "text": "May 2026",
+            "description": "",
+            "resource_id": "calendar.toolbar",
+            "bounds": [0, 0, 1080, 220],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "calendar_grid",
+            "parent": "root",
+            "role": "GridLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "calendar.grid",
+            "bounds": [0, 230, 1080, 1650],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "private_event_1",
+            "parent": "calendar_grid",
+            "role": "text",
+            "text": "Doctor appointment 3 PM",
+            "description": "Calendar event",
+            "resource_id": "calendar.event",
+            "bounds": [80, 500, 500, 580],
+            "clickable": true,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "private_event_2",
+            "parent": "calendar_grid",
+            "role": "text",
+            "text": "Visa document deadline",
+            "description": "Calendar event",
+            "resource_id": "calendar.event",
+            "bounds": [520, 780, 1000, 860],
+            "clickable": true,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "fab_area",
+            "parent": "root",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "calendar.fab_area",
+            "bounds": [820, 1750, 1060, 2320],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "add_event",
+            "parent": "fab_area",
+            "role": "button",
+            "text": "",
+            "description": "Add new event",
+            "resource_id": "calendar.add_event",
+            "bounds": [870, 2020, 1010, 2160],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact_update_phone",
+      "instruction": "Update contact phone number to 021 555 767",
+      "expected_action": {
+        "action": "input",
+        "element_id": "phone_field"
+      },
+      "ui_state": {
+        "id": "contact_edit",
+        "app": "Contacts",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [0, 0, 1080, 2400],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "toolbar",
+            "parent": "root",
+            "role": "Toolbar",
+            "text": "Edit contact",
+            "description": "",
+            "resource_id": "contacts.toolbar",
+            "bounds": [0, 0, 1080, 220],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "identity_section",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "contacts.identity",
+            "bounds": [60, 260, 1020, 780],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "name_field",
+            "parent": "identity_section",
+            "role": "input",
+            "text": "Alice Wang",
+            "description": "Name",
+            "resource_id": "contacts.name",
+            "bounds": [90, 300, 990, 420],
+            "clickable": true,
+            "editable": true,
+            "sensitive": true
+          },
+          {
+            "id": "email_field",
+            "parent": "identity_section",
+            "role": "input",
+            "text": "alice.private@example.com",
+            "description": "Email",
+            "resource_id": "contacts.email",
+            "bounds": [90, 470, 990, 590],
+            "clickable": true,
+            "editable": true,
+            "sensitive": true
+          },
+          {
+            "id": "phone_section",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "contacts.phone_section",
+            "bounds": [60, 820, 1020, 1100],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "phone_field",
+            "parent": "phone_section",
+            "role": "input",
+            "text": "021 111 222",
+            "description": "Phone number",
+            "resource_id": "contacts.phone",
+            "bounds": [90, 850, 990, 970],
+            "clickable": true,
+            "editable": true,
+            "sensitive": true
+          },
+          {
+            "id": "notes_section",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "contacts.notes_section",
+            "bounds": [60, 1140, 1020, 1500],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "notes_field",
+            "parent": "notes_section",
+            "role": "input",
+            "text": "Met at health clinic",
+            "description": "Notes",
+            "resource_id": "contacts.notes",
+            "bounds": [90, 1180, 990, 1380],
+            "clickable": true,
+            "editable": true,
+            "sensitive": true
+          }
+        ]
+      }
+    }
+  ]
+}

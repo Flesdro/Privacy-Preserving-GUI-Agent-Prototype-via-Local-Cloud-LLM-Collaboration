@@ -1,0 +1,2 @@
+"""LC-PrivateGUI prototype package."""
+
