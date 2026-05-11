@@ -28,6 +28,16 @@ The default audit log is written to:
 logs/last_run.json
 ```
 
+## Version Updates
+
+### v0.1.0 - Initial prototype
+
+- Added a runnable offline prototype for local-cloud GUI agent collaboration.
+- Added three execution modes: collaborative, cloud-only, and local-only.
+- Added sample GUI tasks with sensitive UI elements for privacy exposure analysis.
+- Added audit metrics for success rate, uploaded UI exposure, sensitive exposure, and collaboration rounds.
+- Added command-line execution through `python3 -m lc_private_gui`.
+
 ## Files
 
 - `lc_private_gui/models.py`: core dataclasses for UI elements, blocks, tasks, decisions, and results
