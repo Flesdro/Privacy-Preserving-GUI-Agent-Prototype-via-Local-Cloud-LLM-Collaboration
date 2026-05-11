@@ -23,6 +23,34 @@ class HeuristicLocalLLM:
             return "Create or configure an alarm."
         if "contact" in task_l and ("phone" in block_l or "contact" in block_l or "name" in block_l):
             return "Edit the contact details requested by the user."
+        if any(word in task_l for word in ["email", "mail"]) and any(
+            word in block_l for word in ["compose", "email", "mail", "recipient", "send"]
+        ):
+            return "Create or send the requested email."
+        if any(word in task_l for word in ["message", "text"]) and any(
+            word in block_l for word in ["message", "chat", "send", "compose"]
+        ):
+            return "Send or edit the requested message."
+        if any(word in task_l for word in ["map", "navigate", "route", "directions"]) and any(
+            word in block_l for word in ["map", "search", "destination", "directions"]
+        ):
+            return "Use the map search or directions control."
+        if any(word in task_l for word in ["buy", "order", "checkout", "cart"]) and any(
+            word in block_l for word in ["buy", "order", "checkout", "cart"]
+        ):
+            return "Continue the shopping checkout flow."
+        if any(word in task_l for word in ["pay", "transfer", "amount"]) and any(
+            word in block_l for word in ["pay", "transfer", "amount", "send money"]
+        ):
+            return "Enter or confirm the payment details."
+        if any(word in task_l for word in ["wifi", "bluetooth", "settings"]) and any(
+            word in block_l for word in ["wifi", "bluetooth", "settings", "toggle"]
+        ):
+            return "Open or change the requested setting."
+        if any(word in task_l for word in ["note", "todo", "task"]) and any(
+            word in block_l for word in ["note", "todo", "task", "add"]
+        ):
+            return "Create or update the requested note or task."
         if "calendar" in task_l or "event" in task_l:
             if "event" in block_l or "calendar" in block_l or "add" in block_l:
                 return "Create or edit a calendar event."
@@ -53,6 +81,34 @@ class HeuristicLocalLLM:
             return 3.0
         if "phone" in task and "phone" in block_text:
             return 3.0
+        if any(word in task for word in ["email", "mail"]) and any(
+            word in block_text for word in ["compose", "email", "recipient", "send"]
+        ):
+            return 3.0
+        if any(word in task for word in ["message", "text"]) and any(
+            word in block_text for word in ["message", "chat", "send"]
+        ):
+            return 3.0
+        if any(word in task for word in ["map", "navigate", "route", "directions"]) and any(
+            word in block_text for word in ["map", "search", "destination", "directions"]
+        ):
+            return 3.0
+        if any(word in task for word in ["buy", "order", "checkout", "cart"]) and any(
+            word in block_text for word in ["buy", "order", "checkout", "cart"]
+        ):
+            return 3.0
+        if any(word in task for word in ["pay", "transfer", "amount"]) and any(
+            word in block_text for word in ["pay", "transfer", "amount", "send money"]
+        ):
+            return 3.0
+        if any(word in task for word in ["wifi", "bluetooth", "settings"]) and any(
+            word in block_text for word in ["wifi", "bluetooth", "settings", "toggle"]
+        ):
+            return 3.0
+        if any(word in task for word in ["note", "todo", "task"]) and any(
+            word in block_text for word in ["note", "todo", "task", "add"]
+        ):
+            return 3.0
         return 0.0
 
 
@@ -74,7 +130,11 @@ class HeuristicCloudLLM:
                 query = _quoted_text(task) or task.split("search", 1)[-1].strip()
                 return Decision("input", target.id, text=query, reason="search field is visible")
         if "alarm" in task_l:
-            target = _first(elements, clickable=True, keywords=["add", "alarm", "time"])
+            keywords = ["add", "new", "create"] if any(word in task_l for word in ["add", "new", "create"]) else [
+                "alarm",
+                "time",
+            ]
+            target = _first(elements, clickable=True, keywords=keywords)
             if target:
                 return Decision("click", target.id, reason="alarm control is visible")
         if "contact" in task_l:
@@ -89,6 +149,50 @@ class HeuristicCloudLLM:
             target = _first(elements, clickable=True, keywords=["add", "new", "create"])
             if target:
                 return Decision("click", target.id, reason="calendar event control is visible")
+        if any(word in task_l for word in ["email", "mail"]):
+            if "compose" in task_l or "send" in task_l:
+                target = _first(elements, clickable=True, keywords=["compose", "new", "send"])
+                if target:
+                    return Decision("click", target.id, reason="email control is visible")
+            target = _first(elements, editable=True, keywords=["recipient", "email", "to"])
+            if target:
+                return Decision("input", target.id, text=_email_text(task), reason="email field is visible")
+        if any(word in task_l for word in ["message", "text"]):
+            target = _first(elements, editable=True, keywords=["message", "chat", "compose"])
+            if target:
+                return Decision("input", target.id, text=_quoted_text(task), reason="message field is visible")
+            target = _first(elements, clickable=True, keywords=["send", "compose", "new"])
+            if target:
+                return Decision("click", target.id, reason="message control is visible")
+        if any(word in task_l for word in ["map", "navigate", "route", "directions"]):
+            target = _first(elements, editable=True, keywords=["search", "destination", "directions"])
+            if target:
+                return Decision("input", target.id, text=_quoted_text(task), reason="map destination field is visible")
+            target = _first(elements, clickable=True, keywords=["directions", "navigate", "route"])
+            if target:
+                return Decision("click", target.id, reason="map navigation control is visible")
+        if any(word in task_l for word in ["buy", "order", "checkout", "cart"]):
+            target = _first(elements, clickable=True, keywords=["checkout", "buy", "order", "cart"])
+            if target:
+                return Decision("click", target.id, reason="shopping checkout control is visible")
+        if any(word in task_l for word in ["pay", "transfer", "amount"]):
+            target = _first(elements, editable=True, keywords=["amount", "pay", "transfer"])
+            if target:
+                return Decision("input", target.id, text=_money_text(task), reason="payment amount field is visible")
+            target = _first(elements, clickable=True, keywords=["pay", "transfer", "send money", "confirm"])
+            if target:
+                return Decision("click", target.id, reason="payment control is visible")
+        if any(word in task_l for word in ["wifi", "bluetooth", "settings"]):
+            target = _first(elements, clickable=True, keywords=["wifi", "bluetooth", "toggle", "settings"])
+            if target:
+                return Decision("click", target.id, reason="settings control is visible")
+        if any(word in task_l for word in ["note", "todo", "task"]):
+            target = _first(elements, editable=True, keywords=["note", "todo", "task", "title"])
+            if target:
+                return Decision("input", target.id, text=_quoted_text(task), reason="note field is visible")
+            target = _first(elements, clickable=True, keywords=["add", "new", "task", "note"])
+            if target:
+                return Decision("click", target.id, reason="note or task control is visible")
         target = next((element for element in elements if element.clickable or element.editable), None)
         if target:
             return Decision("click" if target.clickable else "input", target.id, reason="fallback visible control")
@@ -123,3 +227,15 @@ def _quoted_text(task: str) -> str | None:
 def _phone_text(task: str) -> str:
     digits = "".join(char for char in task if char.isdigit() or char in "+- ")
     return digits.strip() or "[UPDATED_VALUE]"
+
+
+def _email_text(task: str) -> str:
+    for token in task.split():
+        if "@" in token:
+            return token.strip(".,;:()[]'\"")
+    return "[EMAIL]"
+
+
+def _money_text(task: str) -> str:
+    amount = "".join(char for char in task if char.isdigit() or char in "$.,")
+    return amount.strip(".,") or "[AMOUNT]"

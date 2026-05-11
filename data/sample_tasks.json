@@ -380,6 +380,885 @@
           }
         ]
       }
+    },
+    {
+      "id": "email_compose",
+      "instruction": "Compose an email to bob@example.com",
+      "expected_action": {
+        "action": "click",
+        "element_id": "compose_button"
+      },
+      "ui_state": {
+        "id": "email_inbox",
+        "app": "Email",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [0, 0, 1080, 2400],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "toolbar",
+            "parent": "root",
+            "role": "Toolbar",
+            "text": "Inbox",
+            "description": "",
+            "resource_id": "email.toolbar",
+            "bounds": [0, 0, 1080, 220],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "inbox_list",
+            "parent": "root",
+            "role": "RecyclerView",
+            "text": "",
+            "description": "",
+            "resource_id": "email.inbox",
+            "bounds": [40, 260, 1040, 1800],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "private_email_1",
+            "parent": "inbox_list",
+            "role": "button",
+            "text": "Scholarship result notice",
+            "description": "Email from university",
+            "resource_id": "email.message",
+            "bounds": [70, 300, 1010, 430],
+            "clickable": true,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "private_email_2",
+            "parent": "inbox_list",
+            "role": "button",
+            "text": "Bank statement available",
+            "description": "Email from bank",
+            "resource_id": "email.message",
+            "bounds": [70, 460, 1010, 590],
+            "clickable": true,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "compose_area",
+            "parent": "root",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "email.compose_area",
+            "bounds": [800, 1850, 1060, 2320],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "compose_button",
+            "parent": "compose_area",
+            "role": "button",
+            "text": "Compose",
+            "description": "New email",
+            "resource_id": "email.compose",
+            "bounds": [850, 2050, 1020, 2220],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "message_reply",
+      "instruction": "Send message 'Running late' to Sam",
+      "expected_action": {
+        "action": "input",
+        "element_id": "message_box"
+      },
+      "ui_state": {
+        "id": "messages_chat",
+        "app": "Messages",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [0, 0, 1080, 2400],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "chat_header",
+            "parent": "root",
+            "role": "Toolbar",
+            "text": "Sam",
+            "description": "Chat header",
+            "resource_id": "messages.header",
+            "bounds": [0, 0, 1080, 220],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "chat_history",
+            "parent": "root",
+            "role": "RecyclerView",
+            "text": "",
+            "description": "",
+            "resource_id": "messages.history",
+            "bounds": [40, 250, 1040, 1880],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "private_message_1",
+            "parent": "chat_history",
+            "role": "text",
+            "text": "My passport number is ready",
+            "description": "Incoming message",
+            "resource_id": "messages.bubble",
+            "bounds": [80, 320, 900, 450],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "private_message_2",
+            "parent": "chat_history",
+            "role": "text",
+            "text": "Meet at the clinic entrance",
+            "description": "Outgoing message",
+            "resource_id": "messages.bubble",
+            "bounds": [180, 500, 1000, 630],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "composer",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "messages.composer",
+            "bounds": [40, 1940, 1040, 2260],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "message_box",
+            "parent": "composer",
+            "role": "input",
+            "text": "",
+            "description": "Message",
+            "resource_id": "messages.message_box",
+            "bounds": [80, 1990, 850, 2160],
+            "clickable": true,
+            "editable": true,
+            "sensitive": false
+          },
+          {
+            "id": "send_button",
+            "parent": "composer",
+            "role": "button",
+            "text": "Send",
+            "description": "",
+            "resource_id": "messages.send",
+            "bounds": [880, 1990, 1010, 2160],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "maps_navigation",
+      "instruction": "Navigate to 'Auckland Airport'",
+      "expected_action": {
+        "action": "input",
+        "element_id": "destination_field"
+      },
+      "ui_state": {
+        "id": "maps_home",
+        "app": "Maps",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [0, 0, 1080, 2400],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "search_panel",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "maps.search_panel",
+            "bounds": [50, 80, 1030, 420],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "destination_field",
+            "parent": "search_panel",
+            "role": "input",
+            "text": "Search here",
+            "description": "Destination",
+            "resource_id": "maps.destination",
+            "bounds": [90, 130, 990, 260],
+            "clickable": true,
+            "editable": true,
+            "sensitive": false
+          },
+          {
+            "id": "saved_places",
+            "parent": "root",
+            "role": "RecyclerView",
+            "text": "",
+            "description": "",
+            "resource_id": "maps.saved",
+            "bounds": [50, 480, 1030, 950],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "home_address",
+            "parent": "saved_places",
+            "role": "button",
+            "text": "Home - 12 Queen Street",
+            "description": "Saved place",
+            "resource_id": "maps.saved.home",
+            "bounds": [80, 520, 1000, 650],
+            "clickable": true,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "work_address",
+            "parent": "saved_places",
+            "role": "button",
+            "text": "Work - University lab",
+            "description": "Saved place",
+            "resource_id": "maps.saved.work",
+            "bounds": [80, 680, 1000, 810],
+            "clickable": true,
+            "editable": false,
+            "sensitive": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "shopping_checkout",
+      "instruction": "Checkout the cart order",
+      "expected_action": {
+        "action": "click",
+        "element_id": "checkout_button"
+      },
+      "ui_state": {
+        "id": "shopping_cart",
+        "app": "Shopping",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [0, 0, 1080, 2400],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "cart_list",
+            "parent": "root",
+            "role": "RecyclerView",
+            "text": "Cart",
+            "description": "",
+            "resource_id": "shop.cart",
+            "bounds": [40, 220, 1040, 1480],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "cart_item_1",
+            "parent": "cart_list",
+            "role": "text",
+            "text": "Noise cancelling headphones",
+            "description": "Cart item",
+            "resource_id": "shop.cart.item",
+            "bounds": [80, 280, 1000, 430],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "shipping_address",
+            "parent": "root",
+            "role": "text",
+            "text": "Ship to 12 Queen Street",
+            "description": "Shipping address",
+            "resource_id": "shop.shipping",
+            "bounds": [80, 1520, 1000, 1640],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "payment_card",
+            "parent": "root",
+            "role": "text",
+            "text": "Visa ending 4242",
+            "description": "Payment method",
+            "resource_id": "shop.payment",
+            "bounds": [80, 1660, 1000, 1780],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "checkout_area",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "shop.checkout_area",
+            "bounds": [40, 1860, 1040, 2280],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "checkout_button",
+            "parent": "checkout_area",
+            "role": "button",
+            "text": "Checkout",
+            "description": "Checkout cart",
+            "resource_id": "shop.checkout",
+            "bounds": [120, 1980, 960, 2160],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "bank_transfer_amount",
+      "instruction": "Transfer $25 to Alex",
+      "expected_action": {
+        "action": "input",
+        "element_id": "amount_field"
+      },
+      "ui_state": {
+        "id": "bank_transfer",
+        "app": "Bank",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [0, 0, 1080, 2400],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "account_summary",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "bank.summary",
+            "bounds": [50, 240, 1030, 650],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "account_balance",
+            "parent": "account_summary",
+            "role": "text",
+            "text": "Available balance $4,820.50",
+            "description": "Account balance",
+            "resource_id": "bank.balance",
+            "bounds": [90, 300, 990, 420],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "recipient_account",
+            "parent": "account_summary",
+            "role": "text",
+            "text": "Alex 12-3456-7890123-00",
+            "description": "Recipient account",
+            "resource_id": "bank.recipient",
+            "bounds": [90, 460, 990, 580],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "transfer_form",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "bank.transfer_form",
+            "bounds": [50, 740, 1030, 1300],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "amount_field",
+            "parent": "transfer_form",
+            "role": "input",
+            "text": "",
+            "description": "Amount",
+            "resource_id": "bank.amount",
+            "bounds": [90, 820, 990, 980],
+            "clickable": true,
+            "editable": true,
+            "sensitive": true
+          },
+          {
+            "id": "transfer_button",
+            "parent": "transfer_form",
+            "role": "button",
+            "text": "Transfer",
+            "description": "Send money",
+            "resource_id": "bank.transfer",
+            "bounds": [90, 1040, 990, 1200],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "settings_wifi",
+      "instruction": "Turn on WiFi in Settings",
+      "expected_action": {
+        "action": "click",
+        "element_id": "wifi_toggle"
+      },
+      "ui_state": {
+        "id": "settings_network",
+        "app": "Settings",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [0, 0, 1080, 2400],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "network_section",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "Network settings",
+            "description": "",
+            "resource_id": "settings.network",
+            "bounds": [40, 220, 1040, 760],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "wifi_toggle",
+            "parent": "network_section",
+            "role": "button",
+            "text": "WiFi Off",
+            "description": "WiFi toggle",
+            "resource_id": "settings.wifi.toggle",
+            "bounds": [80, 300, 1000, 440],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "bluetooth_toggle",
+            "parent": "network_section",
+            "role": "button",
+            "text": "Bluetooth On",
+            "description": "Bluetooth toggle",
+            "resource_id": "settings.bluetooth.toggle",
+            "bounds": [80, 470, 1000, 610],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "known_networks",
+            "parent": "root",
+            "role": "RecyclerView",
+            "text": "",
+            "description": "",
+            "resource_id": "settings.known_networks",
+            "bounds": [40, 820, 1040, 1420],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "home_wifi",
+            "parent": "known_networks",
+            "role": "text",
+            "text": "Home_12_Queen_Street",
+            "description": "Saved WiFi network",
+            "resource_id": "settings.wifi.saved",
+            "bounds": [80, 870, 1000, 1000],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "notes_add_task",
+      "instruction": "Add note 'Submit privacy report'",
+      "expected_action": {
+        "action": "input",
+        "element_id": "note_title"
+      },
+      "ui_state": {
+        "id": "notes_home",
+        "app": "Notes",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [0, 0, 1080, 2400],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "notes_list",
+            "parent": "root",
+            "role": "RecyclerView",
+            "text": "",
+            "description": "",
+            "resource_id": "notes.list",
+            "bounds": [40, 220, 1040, 1500],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "private_note_1",
+            "parent": "notes_list",
+            "role": "button",
+            "text": "Medical prescription renewal",
+            "description": "Note",
+            "resource_id": "notes.item",
+            "bounds": [80, 280, 1000, 420],
+            "clickable": true,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "private_note_2",
+            "parent": "notes_list",
+            "role": "button",
+            "text": "Tax login recovery code",
+            "description": "Note",
+            "resource_id": "notes.item",
+            "bounds": [80, 450, 1000, 590],
+            "clickable": true,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "folders_panel",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "Folders",
+            "description": "",
+            "resource_id": "notes.folders",
+            "bounds": [40, 1500, 1040, 1560],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "all_notes_filter",
+            "parent": "folders_panel",
+            "role": "button",
+            "text": "All notes",
+            "description": "Notes filter",
+            "resource_id": "notes.filter.all",
+            "bounds": [80, 1510, 300, 1550],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "editor",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "notes.editor",
+            "bounds": [40, 1580, 1040, 2240],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "note_title",
+            "parent": "editor",
+            "role": "input",
+            "text": "",
+            "description": "Note title",
+            "resource_id": "notes.title",
+            "bounds": [80, 1640, 1000, 1800],
+            "clickable": true,
+            "editable": true,
+            "sensitive": false
+          },
+          {
+            "id": "add_note",
+            "parent": "editor",
+            "role": "button",
+            "text": "Add",
+            "description": "Add note",
+            "resource_id": "notes.add",
+            "bounds": [80, 1870, 1000, 2020],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "alarm_create",
+      "instruction": "Add an alarm for 7:30 AM",
+      "expected_action": {
+        "action": "click",
+        "element_id": "add_alarm"
+      },
+      "ui_state": {
+        "id": "clock_alarms",
+        "app": "Clock",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [0, 0, 1080, 2400],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "alarm_list",
+            "parent": "root",
+            "role": "RecyclerView",
+            "text": "Alarms",
+            "description": "",
+            "resource_id": "clock.alarm_list",
+            "bounds": [40, 220, 1040, 1650],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "existing_alarm_1",
+            "parent": "alarm_list",
+            "role": "button",
+            "text": "6:15 AM Work commute",
+            "description": "Existing alarm",
+            "resource_id": "clock.alarm",
+            "bounds": [80, 300, 1000, 460],
+            "clickable": true,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "existing_alarm_2",
+            "parent": "alarm_list",
+            "role": "button",
+            "text": "Medication reminder",
+            "description": "Existing alarm",
+            "resource_id": "clock.alarm",
+            "bounds": [80, 500, 1000, 660],
+            "clickable": true,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "alarm_controls",
+            "parent": "root",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "clock.controls",
+            "bounds": [800, 1800, 1060, 2320],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "add_alarm",
+            "parent": "alarm_controls",
+            "role": "button",
+            "text": "Add alarm",
+            "description": "Add alarm",
+            "resource_id": "clock.add_alarm",
+            "bounds": [850, 2020, 1020, 2190],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "calendar_open_add",
+      "instruction": "Add a calendar event for team sync",
+      "expected_action": {
+        "action": "click",
+        "element_id": "new_event_button"
+      },
+      "ui_state": {
+        "id": "calendar_day",
+        "app": "Calendar",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [0, 0, 1080, 2400],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "day_schedule",
+            "parent": "root",
+            "role": "RecyclerView",
+            "text": "Today",
+            "description": "",
+            "resource_id": "calendar.schedule",
+            "bounds": [40, 220, 1040, 1740],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "therapy_event",
+            "parent": "day_schedule",
+            "role": "text",
+            "text": "Therapy appointment",
+            "description": "Calendar event",
+            "resource_id": "calendar.event",
+            "bounds": [80, 360, 1000, 480],
+            "clickable": true,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "rent_event",
+            "parent": "day_schedule",
+            "role": "text",
+            "text": "Rent payment call",
+            "description": "Calendar event",
+            "resource_id": "calendar.event",
+            "bounds": [80, 520, 1000, 640],
+            "clickable": true,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "new_event_area",
+            "parent": "root",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "calendar.new_event_area",
+            "bounds": [800, 1820, 1060, 2320],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "new_event_button",
+            "parent": "new_event_area",
+            "role": "button",
+            "text": "New event",
+            "description": "Add calendar event",
+            "resource_id": "calendar.new_event",
+            "bounds": [850, 2020, 1020, 2190],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
     }
   ]
 }

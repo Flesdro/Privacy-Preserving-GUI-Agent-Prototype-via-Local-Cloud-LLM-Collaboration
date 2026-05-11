@@ -38,6 +38,13 @@ logs/last_run.json
 - Added audit metrics for success rate, uploaded UI exposure, sensitive exposure, and collaboration rounds.
 - Added command-line execution through `python3 -m lc_private_gui`.
 
+### v0.2.0 - Expanded offline task set
+
+- Expanded `data/sample_tasks.json` from 3 tasks to 12 mobile GUI tasks.
+- Added Email, Messages, Maps, Shopping, Bank, Settings, Notes, and Clock task scenarios.
+- Added richer sensitive UI distractors such as inbox subjects, chat history, saved addresses, payment details, account balances, and saved networks.
+- Extended the heuristic local/cloud LLM adapters to cover the new task intents.
+
 ## Files
 
 - `lc_private_gui/models.py`: core dataclasses for UI elements, blocks, tasks, decisions, and results
