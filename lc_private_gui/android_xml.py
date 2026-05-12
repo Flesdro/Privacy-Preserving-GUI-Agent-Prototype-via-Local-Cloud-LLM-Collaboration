@@ -43,7 +43,12 @@ def convert_xml_to_task(
     elements = []
     expected_element_id: str | None = None
 
-    def visit(node: ElementTree.Element, parent_id: str | None, path: str) -> None:
+    def visit(
+        node: ElementTree.Element,
+        parent_id: str | None,
+        path: str,
+        actionable_ancestor_id: str | None,
+    ) -> None:
         nonlocal expected_element_id
 
         element_id = f"node_{path}"
@@ -69,15 +74,20 @@ def convert_xml_to_task(
         }
         elements.append(element)
 
+        current_actionable_id = element_id if clickable or editable else actionable_ancestor_id
         semantic = " ".join([text, description, resource_id]).lower()
         if expected_element_id is None and expected_text.lower() in semantic:
-            if expected_action in {"click", "input"} and (clickable or editable):
+            if expected_action == "input" and editable:
                 expected_element_id = element_id
+            elif expected_action == "click" and clickable:
+                expected_element_id = element_id
+            elif expected_action == "click" and current_actionable_id is not None:
+                expected_element_id = current_actionable_id
 
         for index, child in enumerate(node.findall("node")):
-            visit(child, element_id, f"{path}_{index}")
+            visit(child, element_id, f"{path}_{index}", current_actionable_id)
 
-    visit(root_node, None, "0")
+    visit(root_node, None, "0", None)
 
     if expected_element_id is None:
         raise ValueError(f"Could not find an actionable element matching: {expected_text!r}")

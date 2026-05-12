@@ -1,0 +1,665 @@
+{
+  "tasks": [
+    {
+      "id": "real_bluetooth_refresh",
+      "instruction": "Refresh available Bluetooth devices",
+      "expected_action": {
+        "action": "click",
+        "element_id": "node_0_0_0_0_0_0_0_0_0_3_1_0"
+      },
+      "ui_state": {
+        "id": "real_bluetooth_refresh",
+        "app": "com.oplus.wirelesssettings",
+        "root_id": "node_0",
+        "elements": [
+          {
+            "id": "node_0",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0",
+            "parent": "node_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0",
+            "parent": "node_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0",
+            "parent": "node_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/action_bar_root",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0",
+            "parent": "node_0_0_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "android:id/content",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/fragment_container",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/coordinator",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "android:id/list_container",
+            "bounds": [
+              0,
+              120,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0",
+            "role": "RecyclerView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/recycler_view",
+            "bounds": [
+              0,
+              120,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              312,
+              1080,
+              462
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0",
+            "role": "RelativeLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              96,
+              327,
+              822,
+              452
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0",
+            "role": "TextView",
+            "text": "蓝牙",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              96,
+              357,
+              822,
+              422
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "android:id/widget_frame",
+            "bounds": [
+              822,
+              354,
+              984,
+              426
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_1",
+            "role": "Switch",
+            "text": "开启",
+            "description": "",
+            "resource_id": "android:id/switch_widget",
+            "bounds": [
+              870,
+              354,
+              984,
+              426
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              462,
+              1080,
+              612
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_1",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              96,
+              462,
+              984,
+              606
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_1_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/linear_context",
+            "bounds": [
+              96,
+              501,
+              288,
+              566
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_1_0_0",
+            "role": "TextView",
+            "text": "手机名称",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              96,
+              501,
+              288,
+              566
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_1_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              336,
+              505,
+              948,
+              562
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_1_0_1",
+            "role": "TextView",
+            "text": "一加 Ace 5 竞速版",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/assignment",
+            "bounds": [
+              336,
+              505,
+              948,
+              562
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1_0_2",
+            "parent": "node_0_0_0_0_0_0_0_0_0_1_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              948,
+              498,
+              984,
+              570
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_2",
+            "parent": "node_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              612,
+              1080,
+              754
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_2_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_2",
+            "role": "RelativeLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              96,
+              636,
+              984,
+              754
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_2_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_2_0",
+            "role": "TextView",
+            "text": "蓝牙开启时，本设备可被发现为“一加 Ace 5 竞速版”",
+            "description": "",
+            "resource_id": "android:id/summary",
+            "bounds": [
+              96,
+              636,
+              984,
+              754
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_3",
+            "parent": "node_0_0_0_0_0_0_0_0_0",
+            "role": "RelativeLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              802,
+              1080,
+              905
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_3_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_3",
+            "role": "TextView",
+            "text": "可用设备",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              96,
+              826,
+              828,
+              881
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_3_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_3",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/preference_category_layout_loading",
+            "bounds": [
+              828,
+              817,
+              984,
+              890
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_3_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_3_1",
+            "role": "CheckBox",
+            "text": "刷新",
+            "description": "刷新按钮",
+            "resource_id": "com.oplus.wirelesssettings:id/checkbox",
+            "bounds": [
+              870,
+              817,
+              984,
+              890
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_4",
+            "parent": "node_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              905,
+              1080,
+              1061
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_4_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_4",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/customLinearLayoutForList",
+            "bounds": [
+              96,
+              920,
+              984,
+              1045
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_4_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_4_0",
+            "role": "RelativeLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/messageLayout",
+            "bounds": [
+              96,
+              950,
+              432,
+              1015
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_4_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_4_0_0",
+            "role": "TextView",
+            "text": "未发现可用设备",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              96,
+              950,
+              432,
+              1015
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/appBarLayout",
+            "bounds": [
+              0,
+              120,
+              1080,
+              277
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_1",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/toolbar",
+            "bounds": [
+              0,
+              120,
+              1080,
+              276
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0",
+            "role": "ImageButton",
+            "text": "",
+            "description": "转到上一层级",
+            "resource_id": "com.oplus.wirelesssettings:id/coui_toolbar_back_view",
+            "bounds": [
+              12,
+              120,
+              156,
+              276
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1",
+            "parent": "node_0_0_0_0_0_0_0_1_0",
+            "role": "TextView",
+            "text": "蓝牙",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              168,
+              160,
+              924,
+              233
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_2",
+            "parent": "node_0_0_0_0_0_0_0_1_0",
+            "role": "LinearLayoutCompat",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/coui_toolbar_more_view",
+            "bounds": [
+              924,
+              120,
+              1068,
+              276
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_2_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_2",
+            "role": "ImageView",
+            "text": "",
+            "description": "更多选项",
+            "resource_id": "",
+            "bounds": [
+              924,
+              120,
+              1068,
+              276
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    }
+  ]
+}

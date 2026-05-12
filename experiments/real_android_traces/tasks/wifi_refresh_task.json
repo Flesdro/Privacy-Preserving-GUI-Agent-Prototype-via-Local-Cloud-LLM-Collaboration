@@ -1,0 +1,1294 @@
+{
+  "tasks": [
+    {
+      "id": "real_wifi_refresh",
+      "instruction": "Refresh available WiFi networks",
+      "expected_action": {
+        "action": "click",
+        "element_id": "node_0_0_0_0_0_0_0_0_0_2_1_0"
+      },
+      "ui_state": {
+        "id": "real_wifi_refresh",
+        "app": "com.oplus.wirelesssettings",
+        "root_id": "node_0",
+        "elements": [
+          {
+            "id": "node_0",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0",
+            "parent": "node_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0",
+            "parent": "node_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0",
+            "parent": "node_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/action_bar_root",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0",
+            "parent": "node_0_0_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "android:id/content",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/fragment_container",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/coordinator",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "android:id/list_container",
+            "bounds": [
+              0,
+              120,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0",
+            "role": "RecyclerView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/recycler_view",
+            "bounds": [
+              0,
+              120,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              312,
+              1080,
+              462
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0",
+            "role": "RelativeLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              96,
+              327,
+              822,
+              452
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0",
+            "role": "TextView",
+            "text": "WLAN",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              96,
+              357,
+              822,
+              422
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "android:id/widget_frame",
+            "bounds": [
+              822,
+              354,
+              984,
+              426
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_1",
+            "role": "Switch",
+            "text": "开启",
+            "description": "",
+            "resource_id": "android:id/switch_widget",
+            "bounds": [
+              870,
+              354,
+              984,
+              426
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              462,
+              1080,
+              612
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_1",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/customLinearLayoutForList",
+            "bounds": [
+              96,
+              471,
+              936,
+              596
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_1_0",
+            "role": "RelativeLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/messageLayout",
+            "bounds": [
+              96,
+              501,
+              346,
+              566
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_1_0_0",
+            "role": "TextView",
+            "text": "WLAN 助理",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              96,
+              501,
+              346,
+              566
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_1",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "android:id/widget_frame",
+            "bounds": [
+              936,
+              462,
+              984,
+              606
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_1_1",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              936,
+              462,
+              984,
+              606
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1_1_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_1_1_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/coui_preference_widget_jump",
+            "bounds": [
+              948,
+              498,
+              984,
+              570
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_2",
+            "parent": "node_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              660,
+              1080,
+              757
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_2_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_2",
+            "role": "TextView",
+            "text": "可用网络",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              96,
+              684,
+              240,
+              733
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_2_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_2",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "android:id/widget_frame",
+            "bounds": [
+              876,
+              660,
+              1080,
+              757
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_2_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_2_1",
+            "role": "Button",
+            "text": "刷新",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/text_button",
+            "bounds": [
+              876,
+              672,
+              1020,
+              745
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_3",
+            "parent": "node_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              757,
+              1080,
+              937
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_3_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_3",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              48,
+              763,
+              1032,
+              937
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_3_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_3_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/signal",
+            "bounds": [
+              84,
+              814,
+              156,
+              886
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_3_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_3_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              192,
+              817,
+              888,
+              882
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_3_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_3_0_1",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/ll_title",
+            "bounds": [
+              192,
+              817,
+              617,
+              882
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_3_0_1_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_3_0_1_0",
+            "role": "TextView",
+            "text": "UoA-Cast",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              192,
+              817,
+              407,
+              882
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_3_0_1_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_3_0_1_0",
+            "role": "TextView",
+            "text": "2.4/5GHz",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/tv_frequency",
+            "bounds": [
+              425,
+              826,
+              581,
+              879
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_3_0_2",
+            "parent": "node_0_0_0_0_0_0_0_0_0_3_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "Wi-Fi 详情",
+            "resource_id": "com.oplus.wirelesssettings:id/pref_item_arrow",
+            "bounds": [
+              924,
+              814,
+              996,
+              886
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_4",
+            "parent": "node_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              937,
+              1080,
+              1111
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_4_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_4",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              48,
+              937,
+              1032,
+              1111
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_4_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_4_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/signal",
+            "bounds": [
+              84,
+              988,
+              156,
+              1060
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_4_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_4_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              192,
+              991,
+              888,
+              1056
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_4_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_4_0_1",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/ll_title",
+            "bounds": [
+              192,
+              991,
+              762,
+              1056
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_4_0_1_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_4_0_1_0",
+            "role": "TextView",
+            "text": "UoA-Guest-WiFi",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              192,
+              991,
+              552,
+              1056
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_4_0_1_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_4_0_1_0",
+            "role": "TextView",
+            "text": "2.4/5GHz",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/tv_frequency",
+            "bounds": [
+              570,
+              1000,
+              726,
+              1053
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_4_0_2",
+            "parent": "node_0_0_0_0_0_0_0_0_0_4_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "Wi-Fi 详情",
+            "resource_id": "com.oplus.wirelesssettings:id/pref_item_arrow",
+            "bounds": [
+              924,
+              988,
+              996,
+              1060
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_5",
+            "parent": "node_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              1111,
+              1080,
+              1285
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_5_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_5",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              48,
+              1111,
+              1032,
+              1285
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_5_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_5_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/signal",
+            "bounds": [
+              84,
+              1162,
+              156,
+              1234
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_5_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_5_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              192,
+              1165,
+              888,
+              1230
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_5_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_5_0_1",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/ll_title",
+            "bounds": [
+              192,
+              1165,
+              615,
+              1230
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_5_0_1_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_5_0_1_0",
+            "role": "TextView",
+            "text": "UoA-WiFi",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              192,
+              1165,
+              405,
+              1230
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_5_0_1_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_5_0_1_0",
+            "role": "TextView",
+            "text": "2.4/5GHz",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/tv_frequency",
+            "bounds": [
+              423,
+              1174,
+              579,
+              1227
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_5_0_2",
+            "parent": "node_0_0_0_0_0_0_0_0_0_5_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "Wi-Fi 详情",
+            "resource_id": "com.oplus.wirelesssettings:id/pref_item_arrow",
+            "bounds": [
+              924,
+              1162,
+              996,
+              1234
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_6",
+            "parent": "node_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              1285,
+              1080,
+              1459
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_6_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_6",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              48,
+              1285,
+              1032,
+              1459
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_6_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_6_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/signal",
+            "bounds": [
+              84,
+              1336,
+              156,
+              1408
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_6_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_6_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              192,
+              1339,
+              888,
+              1404
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_6_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_6_0_1",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/ll_title",
+            "bounds": [
+              192,
+              1339,
+              596,
+              1404
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_6_0_1_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_6_0_1_0",
+            "role": "TextView",
+            "text": "eduroam",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              192,
+              1339,
+              386,
+              1404
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_6_0_1_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_6_0_1_0",
+            "role": "TextView",
+            "text": "2.4/5GHz",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/tv_frequency",
+            "bounds": [
+              404,
+              1348,
+              560,
+              1401
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_6_0_2",
+            "parent": "node_0_0_0_0_0_0_0_0_0_6_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "Wi-Fi 详情",
+            "resource_id": "com.oplus.wirelesssettings:id/pref_item_arrow",
+            "bounds": [
+              924,
+              1336,
+              996,
+              1408
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_7",
+            "parent": "node_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              1459,
+              1080,
+              1633
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_7_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_7",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              48,
+              1459,
+              1032,
+              1633
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_7_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_7_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/signal",
+            "bounds": [
+              84,
+              1510,
+              156,
+              1582
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_7_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_7_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              192,
+              1513,
+              888,
+              1578
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_7_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_7_0_1",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/ll_title",
+            "bounds": [
+              192,
+              1513,
+              341,
+              1578
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_7_0_1_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_7_0_1_0",
+            "role": "TextView",
+            "text": "iPhone",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              192,
+              1513,
+              341,
+              1578
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_7_0_2",
+            "parent": "node_0_0_0_0_0_0_0_0_0_7_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "Wi-Fi 详情",
+            "resource_id": "com.oplus.wirelesssettings:id/pref_item_arrow",
+            "bounds": [
+              924,
+              1510,
+              996,
+              1582
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_8",
+            "parent": "node_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              1633,
+              1080,
+              1783
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_8_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_8",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/customLinearLayoutForList",
+            "bounds": [
+              96,
+              1642,
+              984,
+              1767
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_8_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_8_0",
+            "role": "RelativeLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/messageLayout",
+            "bounds": [
+              96,
+              1672,
+              288,
+              1737
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_8_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_8_0_0",
+            "role": "TextView",
+            "text": "添加网络",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              96,
+              1672,
+              288,
+              1737
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/appBarLayout",
+            "bounds": [
+              0,
+              120,
+              1080,
+              277
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_1",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/toolbar",
+            "bounds": [
+              0,
+              120,
+              1080,
+              276
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0",
+            "role": "ImageButton",
+            "text": "",
+            "description": "转到上一层级",
+            "resource_id": "com.oplus.wirelesssettings:id/coui_toolbar_back_view",
+            "bounds": [
+              12,
+              120,
+              156,
+              276
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1",
+            "parent": "node_0_0_0_0_0_0_0_1_0",
+            "role": "TextView",
+            "text": "WLAN",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              168,
+              160,
+              780,
+              233
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_2",
+            "parent": "node_0_0_0_0_0_0_0_1_0",
+            "role": "LinearLayoutCompat",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/coui_toolbar_more_view",
+            "bounds": [
+              780,
+              120,
+              1068,
+              276
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_2_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_2",
+            "role": "Button",
+            "text": "",
+            "description": "扫一扫",
+            "resource_id": "com.oplus.wirelesssettings:id/scan_entry",
+            "bounds": [
+              780,
+              120,
+              924,
+              276
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_2_1",
+            "parent": "node_0_0_0_0_0_0_0_1_0_2",
+            "role": "ImageView",
+            "text": "",
+            "description": "更多选项",
+            "resource_id": "",
+            "bounds": [
+              924,
+              120,
+              1068,
+              276
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    }
+  ]
+}

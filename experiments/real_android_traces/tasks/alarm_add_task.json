@@ -1,0 +1,1821 @@
+{
+  "tasks": [
+    {
+      "id": "real_alarm_add",
+      "instruction": "Add an alarm",
+      "expected_action": {
+        "action": "click",
+        "element_id": "node_0_0_0_0_0_0_0_0_0_0_0_0_3_0_0_0"
+      },
+      "ui_state": {
+        "id": "real_alarm_add",
+        "app": "com.coloros.alarmclock",
+        "root_id": "node_0",
+        "elements": [
+          {
+            "id": "node_0",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0",
+            "parent": "node_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0",
+            "parent": "node_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0",
+            "parent": "node_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/action_bar_root",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0",
+            "parent": "node_0_0_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "android:id/content",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/coordinator",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0",
+            "role": "RelativeLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/root_view",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0",
+            "role": "ViewPager",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/view_pager",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2176
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0",
+            "role": "RecyclerView",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2176
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2176
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2176
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/coordinator",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2176
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/appBarLayout",
+            "bounds": [
+              0,
+              0,
+              1080,
+              277
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "闹钟",
+            "resource_id": "com.coloros.alarmclock:id/collapsingToolbarLayout",
+            "bounds": [
+              0,
+              0,
+              1080,
+              276
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_0_0",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/toolbar",
+            "bounds": [
+              0,
+              120,
+              1080,
+              276
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0",
+            "role": "View",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              48,
+              126,
+              924,
+              270
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayoutCompat",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/coui_toolbar_more_view",
+            "bounds": [
+              924,
+              123,
+              1068,
+              273
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1",
+            "role": "ImageView",
+            "text": "",
+            "description": "更多选项,有新通知",
+            "resource_id": "",
+            "bounds": [
+              924,
+              123,
+              1068,
+              273
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_0",
+            "role": "View",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/divider_line",
+            "bounds": [
+              0,
+              276,
+              1080,
+              277
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0",
+            "role": "RelativeLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              120,
+              1080,
+              2176
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_1",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/layout_empty_container",
+            "bounds": [
+              0,
+              120,
+              1080,
+              2176
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_1_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_1_0",
+            "role": "View",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              120,
+              1080,
+              1263
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_1_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_1_0",
+            "role": "View",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              1263,
+              1080,
+              2176
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0",
+            "role": "RecyclerView",
+            "text": "",
+            "description": "",
+            "resource_id": "android:id/list",
+            "bounds": [
+              0,
+              277,
+              1080,
+              2176
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/content_layout",
+            "bounds": [
+              48,
+              281,
+              1032,
+              563
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/alarm_item_card_bg",
+            "bounds": [
+              48,
+              281,
+              1032,
+              563
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              84,
+              312,
+              822,
+              514
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/digital_clock",
+            "bounds": [
+              84,
+              312,
+              381,
+              457
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0_0_0_0",
+            "role": "TextView",
+            "text": "07:20",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/timeDisplay",
+            "bounds": [
+              90,
+              312,
+              381,
+              457
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0_0_0",
+            "role": "TextView",
+            "text": "响一次",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/daysOfWeek_label",
+            "bounds": [
+              84,
+              457,
+              822,
+              514
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/layout_switch",
+            "bounds": [
+              870,
+              326,
+              1032,
+              518
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0_0_1",
+            "role": "Switch",
+            "text": "关闭",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/alarm_switch",
+            "bounds": [
+              870,
+              386,
+              984,
+              458
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/content_layout",
+            "bounds": [
+              48,
+              599,
+              1032,
+              881
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/alarm_item_card_bg",
+            "bounds": [
+              48,
+              599,
+              1032,
+              881
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              84,
+              630,
+              822,
+              832
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/digital_clock",
+            "bounds": [
+              84,
+              630,
+              387,
+              775
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1_0_0_0",
+            "role": "TextView",
+            "text": "07:40",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/timeDisplay",
+            "bounds": [
+              90,
+              630,
+              387,
+              775
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1_0_0",
+            "role": "TextView",
+            "text": "响一次",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/daysOfWeek_label",
+            "bounds": [
+              84,
+              775,
+              822,
+              832
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/layout_switch",
+            "bounds": [
+              870,
+              644,
+              1032,
+              836
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1_0_1",
+            "role": "Switch",
+            "text": "关闭",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/alarm_switch",
+            "bounds": [
+              870,
+              704,
+              984,
+              776
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/content_layout",
+            "bounds": [
+              48,
+              917,
+              1032,
+              1199
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/alarm_item_card_bg",
+            "bounds": [
+              48,
+              917,
+              1032,
+              1199
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              84,
+              948,
+              822,
+              1150
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/digital_clock",
+            "bounds": [
+              84,
+              948,
+              395,
+              1093
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2_0_0_0",
+            "role": "TextView",
+            "text": "08:00",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/timeDisplay",
+            "bounds": [
+              90,
+              948,
+              395,
+              1093
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2_0_0",
+            "role": "TextView",
+            "text": "法定工作日 | 起床闹铃",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/daysOfWeek_label",
+            "bounds": [
+              84,
+              1093,
+              822,
+              1150
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/layout_switch",
+            "bounds": [
+              870,
+              962,
+              1032,
+              1154
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2_0_1",
+            "role": "Switch",
+            "text": "关闭",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/alarm_switch",
+            "bounds": [
+              870,
+              1022,
+              984,
+              1094
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/content_layout",
+            "bounds": [
+              48,
+              1235,
+              1032,
+              1517
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/alarm_item_card_bg",
+            "bounds": [
+              48,
+              1235,
+              1032,
+              1517
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              84,
+              1266,
+              822,
+              1468
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/digital_clock",
+            "bounds": [
+              84,
+              1266,
+              389,
+              1411
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3_0_0_0",
+            "role": "TextView",
+            "text": "08:30",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/timeDisplay",
+            "bounds": [
+              90,
+              1266,
+              389,
+              1411
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3_0_0",
+            "role": "TextView",
+            "text": "响一次",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/daysOfWeek_label",
+            "bounds": [
+              84,
+              1411,
+              822,
+              1468
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/layout_switch",
+            "bounds": [
+              870,
+              1280,
+              1032,
+              1472
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3_0_1",
+            "role": "Switch",
+            "text": "关闭",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/alarm_switch",
+            "bounds": [
+              870,
+              1340,
+              984,
+              1412
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/content_layout",
+            "bounds": [
+              48,
+              1553,
+              1032,
+              1835
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/alarm_item_card_bg",
+            "bounds": [
+              48,
+              1553,
+              1032,
+              1835
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              84,
+              1584,
+              822,
+              1786
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/digital_clock",
+            "bounds": [
+              84,
+              1584,
+              390,
+              1729
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4_0_0_0",
+            "role": "TextView",
+            "text": "08:45",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/timeDisplay",
+            "bounds": [
+              90,
+              1584,
+              390,
+              1729
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4_0_0",
+            "role": "TextView",
+            "text": "每天",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/daysOfWeek_label",
+            "bounds": [
+              84,
+              1729,
+              822,
+              1786
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/layout_switch",
+            "bounds": [
+              870,
+              1598,
+              1032,
+              1790
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4_0_1",
+            "role": "Switch",
+            "text": "关闭",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/alarm_switch",
+            "bounds": [
+              870,
+              1658,
+              984,
+              1730
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/content_layout",
+            "bounds": [
+              48,
+              1871,
+              1032,
+              2153
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/alarm_item_card_bg",
+            "bounds": [
+              48,
+              1871,
+              1032,
+              2153
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              84,
+              1902,
+              822,
+              2104
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/digital_clock",
+            "bounds": [
+              84,
+              1902,
+              394,
+              2047
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5_0_0_0",
+            "role": "TextView",
+            "text": "09:09",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/timeDisplay",
+            "bounds": [
+              90,
+              1902,
+              394,
+              2047
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5_0_0",
+            "role": "TextView",
+            "text": "响一次",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/daysOfWeek_label",
+            "bounds": [
+              84,
+              2047,
+              822,
+              2104
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/layout_switch",
+            "bounds": [
+              870,
+              1916,
+              1032,
+              2108
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5_0_1",
+            "role": "Switch",
+            "text": "关闭",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/alarm_switch",
+            "bounds": [
+              870,
+              1976,
+              984,
+              2048
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_3",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0",
+            "role": "RelativeLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/component_linearLayout",
+            "bounds": [
+              0,
+              1714,
+              1080,
+              2176
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_3_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_3",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/color_floating_button_activity_main_fab",
+            "bounds": [
+              456,
+              1936,
+              624,
+              2104
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_3_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_3_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              456,
+              1936,
+              624,
+              2104
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_3_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_3_0_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "添加闹钟",
+            "resource_id": "com.coloros.alarmclock:id/coui_floating_button_main_fab",
+            "bounds": [
+              456,
+              1936,
+              624,
+              2104
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_3_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_3_0_0",
+            "role": "View",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              456,
+              1936,
+              624,
+              2104
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              2176,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_1",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/navigation_label",
+            "bounds": [
+              0,
+              2176,
+              1080,
+              2344
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0",
+            "role": "View",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              2176,
+              1080,
+              2177
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1",
+            "parent": "node_0_0_0_0_0_0_0_1_0",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              36,
+              2176,
+              1044,
+              2344
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "闹钟",
+            "resource_id": "com.coloros.alarmclock:id/alarm",
+            "bounds": [
+              36,
+              2176,
+              288,
+              2344
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_0_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/fl_root",
+            "bounds": [
+              42,
+              2176,
+              282,
+              2344
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/navigation_bar_item_icon_container",
+            "bounds": [
+              126,
+              2203,
+              198,
+              2275
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_0_0_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/navigation_bar_item_icon_view",
+            "bounds": [
+              126,
+              2203,
+              198,
+              2275
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_0_0",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/navigation_bar_item_labels_group",
+            "bounds": [
+              132,
+              2282,
+              192,
+              2323
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_0_0_1",
+            "role": "TextView",
+            "text": "闹钟",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/navigation_bar_item_small_label_view",
+            "bounds": [
+              132,
+              2282,
+              192,
+              2323
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_1",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "世界时钟",
+            "resource_id": "com.coloros.alarmclock:id/clock",
+            "bounds": [
+              288,
+              2176,
+              540,
+              2344
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_1_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_1",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/fl_root",
+            "bounds": [
+              294,
+              2176,
+              534,
+              2344
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_1_0_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/navigation_bar_item_icon_container",
+            "bounds": [
+              378,
+              2203,
+              450,
+              2275
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_1_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_1_0_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/navigation_bar_item_icon_view",
+            "bounds": [
+              378,
+              2203,
+              450,
+              2275
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_1_0_1",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_1_0",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/navigation_bar_item_labels_group",
+            "bounds": [
+              354,
+              2282,
+              474,
+              2323
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_1_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_1_0_1",
+            "role": "TextView",
+            "text": "世界时钟",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/navigation_bar_item_small_label_view",
+            "bounds": [
+              354,
+              2282,
+              474,
+              2323
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_2",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "秒表",
+            "resource_id": "com.coloros.alarmclock:id/global",
+            "bounds": [
+              540,
+              2176,
+              792,
+              2344
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_2_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_2",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/fl_root",
+            "bounds": [
+              546,
+              2176,
+              786,
+              2344
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_2_0_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_2_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/navigation_bar_item_icon_container",
+            "bounds": [
+              630,
+              2203,
+              702,
+              2275
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_2_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_2_0_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/navigation_bar_item_icon_view",
+            "bounds": [
+              630,
+              2203,
+              702,
+              2275
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_2_0_1",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_2_0",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/navigation_bar_item_labels_group",
+            "bounds": [
+              636,
+              2282,
+              696,
+              2323
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_2_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_2_0_1",
+            "role": "TextView",
+            "text": "秒表",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/navigation_bar_item_small_label_view",
+            "bounds": [
+              636,
+              2282,
+              696,
+              2323
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_3",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "计时器",
+            "resource_id": "com.coloros.alarmclock:id/timer",
+            "bounds": [
+              792,
+              2176,
+              1044,
+              2344
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_3_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_3",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/fl_root",
+            "bounds": [
+              798,
+              2176,
+              1038,
+              2344
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_3_0_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_3_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/navigation_bar_item_icon_container",
+            "bounds": [
+              882,
+              2203,
+              954,
+              2275
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_3_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_3_0_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/navigation_bar_item_icon_view",
+            "bounds": [
+              882,
+              2203,
+              954,
+              2275
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_3_0_1",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_3_0",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/navigation_bar_item_labels_group",
+            "bounds": [
+              873,
+              2282,
+              963,
+              2323
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_3_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_3_0_1",
+            "role": "TextView",
+            "text": "计时器",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/navigation_bar_item_small_label_view",
+            "bounds": [
+              873,
+              2282,
+              963,
+              2323
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_1",
+            "parent": "node_0_0_0_0_0_0_0_1",
+            "role": "View",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/menu_bottom_view",
+            "bounds": [
+              0,
+              2344,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    }
+  ]
+}

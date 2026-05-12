@@ -1,0 +1,954 @@
+{
+  "tasks": [
+    {
+      "id": "real_display_dark_mode",
+      "instruction": "Open dark mode settings",
+      "expected_action": {
+        "action": "click",
+        "element_id": "node_0_0_0_0_0_0_1_0_0_0_0_0_1_2"
+      },
+      "ui_state": {
+        "id": "real_display_dark_mode",
+        "app": "com.android.settings",
+        "root_id": "node_0",
+        "elements": [
+          {
+            "id": "node_0",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0",
+            "parent": "node_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0",
+            "parent": "node_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0",
+            "parent": "node_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/action_bar_root",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0",
+            "parent": "node_0_0_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "android:id/content",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0",
+            "role": "ScrollView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/content_parent",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/abl",
+            "bounds": [
+              0,
+              120,
+              1080,
+              277
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/toolbar",
+            "bounds": [
+              0,
+              120,
+              1080,
+              276
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0",
+            "role": "ImageButton",
+            "text": "",
+            "description": "返回",
+            "resource_id": "com.android.settings:id/coui_toolbar_back_view",
+            "bounds": [
+              12,
+              120,
+              156,
+              276
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0",
+            "role": "TextView",
+            "text": "显示与亮度",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              168,
+              160,
+              1032,
+              233
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/content_frame",
+            "bounds": [
+              0,
+              276,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_1",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/sub_container",
+            "bounds": [
+              0,
+              276,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "android:id/list_container",
+            "bounds": [
+              0,
+              276,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0",
+            "role": "RecyclerView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/recycler_view",
+            "bounds": [
+              0,
+              276,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              312,
+              1080,
+              1308
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/ll_dark_mode_preference_container",
+            "bounds": [
+              141,
+              420,
+              939,
+              1233
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/layout_light_theme",
+            "bounds": [
+              141,
+              420,
+              540,
+              1233
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_0_0_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/iv_light_image",
+            "bounds": [
+              183,
+              420,
+              453,
+              1002
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_0_0_0",
+            "role": "TextView",
+            "text": "亮色模式",
+            "description": "",
+            "resource_id": "com.android.settings:id/tv_light_text",
+            "bounds": [
+              141,
+              1074,
+              495,
+              1131
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_0_0_0_2",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_0_0_0",
+            "role": "RadioButton",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/rb_light_button",
+            "bounds": [
+              282,
+              1161,
+              354,
+              1233
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/layout_dark_theme",
+            "bounds": [
+              540,
+              420,
+              939,
+              1233
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_0_0_1",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/iv_dark_image",
+            "bounds": [
+              627,
+              420,
+              897,
+              1002
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_0_0_1_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_0_0_1",
+            "role": "TextView",
+            "text": "暗色模式",
+            "description": "",
+            "resource_id": "com.android.settings:id/tv_dark_text",
+            "bounds": [
+              585,
+              1074,
+              939,
+              1131
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_0_0_1_2",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_0_0_1",
+            "role": "RadioButton",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/rb_dark_button",
+            "bounds": [
+              726,
+              1161,
+              798,
+              1233
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              1308,
+              1080,
+              1452
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_1",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/customLinearLayoutForList",
+            "bounds": [
+              96,
+              1317,
+              936,
+              1442
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_1_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_1_0",
+            "role": "RelativeLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/messageLayout",
+            "bounds": [
+              96,
+              1347,
+              288,
+              1412
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_1_0_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_1_0_0",
+            "role": "TextView",
+            "text": "定时切换",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              96,
+              1347,
+              288,
+              1412
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_1_0_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_1_0",
+            "role": "TextView",
+            "text": "已关闭",
+            "description": "",
+            "resource_id": "com.android.settings:id/assignment",
+            "bounds": [
+              810,
+              1351,
+              936,
+              1408
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_1_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_1",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/coui_jump",
+            "bounds": [
+              948,
+              1344,
+              984,
+              1416
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_2",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              1452,
+              1080,
+              1602
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_2_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_2",
+            "role": "TextView",
+            "text": "暗色模式设置",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              96,
+              1461,
+              900,
+              1586
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_2_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_2",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/coui_jump",
+            "bounds": [
+              948,
+              1488,
+              984,
+              1560
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_3",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              1650,
+              1080,
+              1747
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_3_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_3",
+            "role": "TextView",
+            "text": "亮度",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              96,
+              1674,
+              168,
+              1723
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_4",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              1747,
+              1080,
+              1957
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_4_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_4",
+            "role": "RelativeLayout",
+            "text": "",
+            "description": "1027,亮度",
+            "resource_id": "com.android.settings:id/brightness_slider",
+            "bounds": [
+              96,
+              1753,
+              984,
+              1957
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_4_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_4_0",
+            "role": "RelativeLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              96,
+              1801,
+              984,
+              1957
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_4_0_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_4_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/slider_container",
+            "bounds": [
+              96,
+              1801,
+              984,
+              1957
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_4_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_4_0_0_0",
+            "role": "SeekBar",
+            "text": "",
+            "description": "1027,亮度",
+            "resource_id": "com.android.settings:id/slider",
+            "bounds": [
+              96,
+              1813,
+              984,
+              1921
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_4_0_0_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_4_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              114,
+              1831,
+              186,
+              1903
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_4_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_4_0_0_1",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/brightness_icon",
+            "bounds": [
+              114,
+              1831,
+              186,
+              1903
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_5",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              1957,
+              1080,
+              2107
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_5_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_5",
+            "role": "RelativeLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              96,
+              1966,
+              822,
+              2091
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_5_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_5_0",
+            "role": "TextView",
+            "text": "自动亮度调节",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              96,
+              1996,
+              822,
+              2061
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_5_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_5",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "android:id/widget_frame",
+            "bounds": [
+              822,
+              1993,
+              984,
+              2065
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_5_1_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_5_1",
+            "role": "Switch",
+            "text": "关闭",
+            "description": "",
+            "resource_id": "android:id/switch_widget",
+            "bounds": [
+              870,
+              1993,
+              984,
+              2065
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_6",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              2155,
+              1080,
+              2305
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_6_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_6",
+            "role": "TextView",
+            "text": "屏幕色彩模式",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              96,
+              2170,
+              900,
+              2295
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_6_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_6",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/coui_jump",
+            "bounds": [
+              948,
+              2197,
+              984,
+              2269
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_7",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              2305,
+              1080,
+              2392
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_7_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_7",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/customLinearLayoutForList",
+            "bounds": [
+              96,
+              2314,
+              936,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_7_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_7_0",
+            "role": "RelativeLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/messageLayout",
+            "bounds": [
+              96,
+              2344,
+              288,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_7_0_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_7_0_0",
+            "role": "TextView",
+            "text": "明眸护眼",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              96,
+              2344,
+              288,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_7_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_7",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/coui_jump",
+            "bounds": [
+              948,
+              2341,
+              984,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    }
+  ]
+}

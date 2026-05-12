@@ -1,0 +1,5978 @@
+{
+  "tasks": [
+    {
+      "id": "real_alarm_add",
+      "instruction": "Add an alarm",
+      "expected_action": {
+        "action": "click",
+        "element_id": "node_0_0_0_0_0_0_0_0_0_0_0_0_3_0_0_0"
+      },
+      "ui_state": {
+        "id": "real_alarm_add",
+        "app": "com.coloros.alarmclock",
+        "root_id": "node_0",
+        "elements": [
+          {
+            "id": "node_0",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0",
+            "parent": "node_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0",
+            "parent": "node_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0",
+            "parent": "node_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/action_bar_root",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0",
+            "parent": "node_0_0_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "android:id/content",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/coordinator",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0",
+            "role": "RelativeLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/root_view",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0",
+            "role": "ViewPager",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/view_pager",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2176
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0",
+            "role": "RecyclerView",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2176
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2176
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2176
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/coordinator",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2176
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/appBarLayout",
+            "bounds": [
+              0,
+              0,
+              1080,
+              277
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "闹钟",
+            "resource_id": "com.coloros.alarmclock:id/collapsingToolbarLayout",
+            "bounds": [
+              0,
+              0,
+              1080,
+              276
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_0_0",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/toolbar",
+            "bounds": [
+              0,
+              120,
+              1080,
+              276
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0",
+            "role": "View",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              48,
+              126,
+              924,
+              270
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayoutCompat",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/coui_toolbar_more_view",
+            "bounds": [
+              924,
+              123,
+              1068,
+              273
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1",
+            "role": "ImageView",
+            "text": "",
+            "description": "更多选项,有新通知",
+            "resource_id": "",
+            "bounds": [
+              924,
+              123,
+              1068,
+              273
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_0",
+            "role": "View",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/divider_line",
+            "bounds": [
+              0,
+              276,
+              1080,
+              277
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0",
+            "role": "RelativeLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              120,
+              1080,
+              2176
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_1",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/layout_empty_container",
+            "bounds": [
+              0,
+              120,
+              1080,
+              2176
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_1_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_1_0",
+            "role": "View",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              120,
+              1080,
+              1263
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_1_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_1_0",
+            "role": "View",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              1263,
+              1080,
+              2176
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0",
+            "role": "RecyclerView",
+            "text": "",
+            "description": "",
+            "resource_id": "android:id/list",
+            "bounds": [
+              0,
+              277,
+              1080,
+              2176
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/content_layout",
+            "bounds": [
+              48,
+              281,
+              1032,
+              563
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/alarm_item_card_bg",
+            "bounds": [
+              48,
+              281,
+              1032,
+              563
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              84,
+              312,
+              822,
+              514
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/digital_clock",
+            "bounds": [
+              84,
+              312,
+              381,
+              457
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0_0_0_0",
+            "role": "TextView",
+            "text": "07:20",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/timeDisplay",
+            "bounds": [
+              90,
+              312,
+              381,
+              457
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0_0_0",
+            "role": "TextView",
+            "text": "响一次",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/daysOfWeek_label",
+            "bounds": [
+              84,
+              457,
+              822,
+              514
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/layout_switch",
+            "bounds": [
+              870,
+              326,
+              1032,
+              518
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0_0_1",
+            "role": "Switch",
+            "text": "关闭",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/alarm_switch",
+            "bounds": [
+              870,
+              386,
+              984,
+              458
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/content_layout",
+            "bounds": [
+              48,
+              599,
+              1032,
+              881
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/alarm_item_card_bg",
+            "bounds": [
+              48,
+              599,
+              1032,
+              881
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              84,
+              630,
+              822,
+              832
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/digital_clock",
+            "bounds": [
+              84,
+              630,
+              387,
+              775
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1_0_0_0",
+            "role": "TextView",
+            "text": "07:40",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/timeDisplay",
+            "bounds": [
+              90,
+              630,
+              387,
+              775
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1_0_0",
+            "role": "TextView",
+            "text": "响一次",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/daysOfWeek_label",
+            "bounds": [
+              84,
+              775,
+              822,
+              832
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/layout_switch",
+            "bounds": [
+              870,
+              644,
+              1032,
+              836
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1_0_1",
+            "role": "Switch",
+            "text": "关闭",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/alarm_switch",
+            "bounds": [
+              870,
+              704,
+              984,
+              776
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/content_layout",
+            "bounds": [
+              48,
+              917,
+              1032,
+              1199
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/alarm_item_card_bg",
+            "bounds": [
+              48,
+              917,
+              1032,
+              1199
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              84,
+              948,
+              822,
+              1150
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/digital_clock",
+            "bounds": [
+              84,
+              948,
+              395,
+              1093
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2_0_0_0",
+            "role": "TextView",
+            "text": "08:00",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/timeDisplay",
+            "bounds": [
+              90,
+              948,
+              395,
+              1093
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2_0_0",
+            "role": "TextView",
+            "text": "法定工作日 | 起床闹铃",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/daysOfWeek_label",
+            "bounds": [
+              84,
+              1093,
+              822,
+              1150
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/layout_switch",
+            "bounds": [
+              870,
+              962,
+              1032,
+              1154
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2_0_1",
+            "role": "Switch",
+            "text": "关闭",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/alarm_switch",
+            "bounds": [
+              870,
+              1022,
+              984,
+              1094
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/content_layout",
+            "bounds": [
+              48,
+              1235,
+              1032,
+              1517
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/alarm_item_card_bg",
+            "bounds": [
+              48,
+              1235,
+              1032,
+              1517
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              84,
+              1266,
+              822,
+              1468
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/digital_clock",
+            "bounds": [
+              84,
+              1266,
+              389,
+              1411
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3_0_0_0",
+            "role": "TextView",
+            "text": "08:30",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/timeDisplay",
+            "bounds": [
+              90,
+              1266,
+              389,
+              1411
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3_0_0",
+            "role": "TextView",
+            "text": "响一次",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/daysOfWeek_label",
+            "bounds": [
+              84,
+              1411,
+              822,
+              1468
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/layout_switch",
+            "bounds": [
+              870,
+              1280,
+              1032,
+              1472
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3_0_1",
+            "role": "Switch",
+            "text": "关闭",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/alarm_switch",
+            "bounds": [
+              870,
+              1340,
+              984,
+              1412
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/content_layout",
+            "bounds": [
+              48,
+              1553,
+              1032,
+              1835
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/alarm_item_card_bg",
+            "bounds": [
+              48,
+              1553,
+              1032,
+              1835
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              84,
+              1584,
+              822,
+              1786
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/digital_clock",
+            "bounds": [
+              84,
+              1584,
+              390,
+              1729
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4_0_0_0",
+            "role": "TextView",
+            "text": "08:45",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/timeDisplay",
+            "bounds": [
+              90,
+              1584,
+              390,
+              1729
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4_0_0",
+            "role": "TextView",
+            "text": "每天",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/daysOfWeek_label",
+            "bounds": [
+              84,
+              1729,
+              822,
+              1786
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/layout_switch",
+            "bounds": [
+              870,
+              1598,
+              1032,
+              1790
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4_0_1",
+            "role": "Switch",
+            "text": "关闭",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/alarm_switch",
+            "bounds": [
+              870,
+              1658,
+              984,
+              1730
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/content_layout",
+            "bounds": [
+              48,
+              1871,
+              1032,
+              2153
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/alarm_item_card_bg",
+            "bounds": [
+              48,
+              1871,
+              1032,
+              2153
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              84,
+              1902,
+              822,
+              2104
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/digital_clock",
+            "bounds": [
+              84,
+              1902,
+              394,
+              2047
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5_0_0_0",
+            "role": "TextView",
+            "text": "09:09",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/timeDisplay",
+            "bounds": [
+              90,
+              1902,
+              394,
+              2047
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5_0_0",
+            "role": "TextView",
+            "text": "响一次",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/daysOfWeek_label",
+            "bounds": [
+              84,
+              2047,
+              822,
+              2104
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/layout_switch",
+            "bounds": [
+              870,
+              1916,
+              1032,
+              2108
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5_0_1",
+            "role": "Switch",
+            "text": "关闭",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/alarm_switch",
+            "bounds": [
+              870,
+              1976,
+              984,
+              2048
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_3",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0",
+            "role": "RelativeLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/component_linearLayout",
+            "bounds": [
+              0,
+              1714,
+              1080,
+              2176
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_3_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_3",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/color_floating_button_activity_main_fab",
+            "bounds": [
+              456,
+              1936,
+              624,
+              2104
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_3_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_3_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              456,
+              1936,
+              624,
+              2104
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_3_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_3_0_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "添加闹钟",
+            "resource_id": "com.coloros.alarmclock:id/coui_floating_button_main_fab",
+            "bounds": [
+              456,
+              1936,
+              624,
+              2104
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0_3_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0_0_3_0_0",
+            "role": "View",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              456,
+              1936,
+              624,
+              2104
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              2176,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_1",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/navigation_label",
+            "bounds": [
+              0,
+              2176,
+              1080,
+              2344
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0",
+            "role": "View",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              2176,
+              1080,
+              2177
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1",
+            "parent": "node_0_0_0_0_0_0_0_1_0",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              36,
+              2176,
+              1044,
+              2344
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "闹钟",
+            "resource_id": "com.coloros.alarmclock:id/alarm",
+            "bounds": [
+              36,
+              2176,
+              288,
+              2344
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_0_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/fl_root",
+            "bounds": [
+              42,
+              2176,
+              282,
+              2344
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/navigation_bar_item_icon_container",
+            "bounds": [
+              126,
+              2203,
+              198,
+              2275
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_0_0_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/navigation_bar_item_icon_view",
+            "bounds": [
+              126,
+              2203,
+              198,
+              2275
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_0_0",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/navigation_bar_item_labels_group",
+            "bounds": [
+              132,
+              2282,
+              192,
+              2323
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_0_0_1",
+            "role": "TextView",
+            "text": "闹钟",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/navigation_bar_item_small_label_view",
+            "bounds": [
+              132,
+              2282,
+              192,
+              2323
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_1",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "世界时钟",
+            "resource_id": "com.coloros.alarmclock:id/clock",
+            "bounds": [
+              288,
+              2176,
+              540,
+              2344
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_1_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_1",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/fl_root",
+            "bounds": [
+              294,
+              2176,
+              534,
+              2344
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_1_0_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/navigation_bar_item_icon_container",
+            "bounds": [
+              378,
+              2203,
+              450,
+              2275
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_1_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_1_0_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/navigation_bar_item_icon_view",
+            "bounds": [
+              378,
+              2203,
+              450,
+              2275
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_1_0_1",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_1_0",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/navigation_bar_item_labels_group",
+            "bounds": [
+              354,
+              2282,
+              474,
+              2323
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_1_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_1_0_1",
+            "role": "TextView",
+            "text": "世界时钟",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/navigation_bar_item_small_label_view",
+            "bounds": [
+              354,
+              2282,
+              474,
+              2323
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_2",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "秒表",
+            "resource_id": "com.coloros.alarmclock:id/global",
+            "bounds": [
+              540,
+              2176,
+              792,
+              2344
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_2_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_2",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/fl_root",
+            "bounds": [
+              546,
+              2176,
+              786,
+              2344
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_2_0_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_2_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/navigation_bar_item_icon_container",
+            "bounds": [
+              630,
+              2203,
+              702,
+              2275
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_2_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_2_0_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/navigation_bar_item_icon_view",
+            "bounds": [
+              630,
+              2203,
+              702,
+              2275
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_2_0_1",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_2_0",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/navigation_bar_item_labels_group",
+            "bounds": [
+              636,
+              2282,
+              696,
+              2323
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_2_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_2_0_1",
+            "role": "TextView",
+            "text": "秒表",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/navigation_bar_item_small_label_view",
+            "bounds": [
+              636,
+              2282,
+              696,
+              2323
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_3",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "计时器",
+            "resource_id": "com.coloros.alarmclock:id/timer",
+            "bounds": [
+              792,
+              2176,
+              1044,
+              2344
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_3_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_3",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/fl_root",
+            "bounds": [
+              798,
+              2176,
+              1038,
+              2344
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_3_0_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_3_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/navigation_bar_item_icon_container",
+            "bounds": [
+              882,
+              2203,
+              954,
+              2275
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_3_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_3_0_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/navigation_bar_item_icon_view",
+            "bounds": [
+              882,
+              2203,
+              954,
+              2275
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_3_0_1",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_3_0",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/navigation_bar_item_labels_group",
+            "bounds": [
+              873,
+              2282,
+              963,
+              2323
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1_3_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_1_3_0_1",
+            "role": "TextView",
+            "text": "计时器",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/navigation_bar_item_small_label_view",
+            "bounds": [
+              873,
+              2282,
+              963,
+              2323
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_1",
+            "parent": "node_0_0_0_0_0_0_0_1",
+            "role": "View",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.alarmclock:id/menu_bottom_view",
+            "bounds": [
+              0,
+              2344,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "real_bluetooth_refresh",
+      "instruction": "Refresh available Bluetooth devices",
+      "expected_action": {
+        "action": "click",
+        "element_id": "node_0_0_0_0_0_0_0_0_0_3_1_0"
+      },
+      "ui_state": {
+        "id": "real_bluetooth_refresh",
+        "app": "com.oplus.wirelesssettings",
+        "root_id": "node_0",
+        "elements": [
+          {
+            "id": "node_0",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0",
+            "parent": "node_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0",
+            "parent": "node_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0",
+            "parent": "node_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/action_bar_root",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0",
+            "parent": "node_0_0_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "android:id/content",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/fragment_container",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/coordinator",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "android:id/list_container",
+            "bounds": [
+              0,
+              120,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0",
+            "role": "RecyclerView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/recycler_view",
+            "bounds": [
+              0,
+              120,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              312,
+              1080,
+              462
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0",
+            "role": "RelativeLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              96,
+              327,
+              822,
+              452
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0",
+            "role": "TextView",
+            "text": "蓝牙",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              96,
+              357,
+              822,
+              422
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "android:id/widget_frame",
+            "bounds": [
+              822,
+              354,
+              984,
+              426
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_1",
+            "role": "Switch",
+            "text": "开启",
+            "description": "",
+            "resource_id": "android:id/switch_widget",
+            "bounds": [
+              870,
+              354,
+              984,
+              426
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              462,
+              1080,
+              612
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_1",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              96,
+              462,
+              984,
+              606
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_1_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/linear_context",
+            "bounds": [
+              96,
+              501,
+              288,
+              566
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_1_0_0",
+            "role": "TextView",
+            "text": "手机名称",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              96,
+              501,
+              288,
+              566
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_1_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              336,
+              505,
+              948,
+              562
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_1_0_1",
+            "role": "TextView",
+            "text": "一加 Ace 5 竞速版",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/assignment",
+            "bounds": [
+              336,
+              505,
+              948,
+              562
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1_0_2",
+            "parent": "node_0_0_0_0_0_0_0_0_0_1_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              948,
+              498,
+              984,
+              570
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_2",
+            "parent": "node_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              612,
+              1080,
+              754
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_2_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_2",
+            "role": "RelativeLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              96,
+              636,
+              984,
+              754
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_2_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_2_0",
+            "role": "TextView",
+            "text": "蓝牙开启时，本设备可被发现为“一加 Ace 5 竞速版”",
+            "description": "",
+            "resource_id": "android:id/summary",
+            "bounds": [
+              96,
+              636,
+              984,
+              754
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_3",
+            "parent": "node_0_0_0_0_0_0_0_0_0",
+            "role": "RelativeLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              802,
+              1080,
+              905
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_3_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_3",
+            "role": "TextView",
+            "text": "可用设备",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              96,
+              826,
+              828,
+              881
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_3_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_3",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/preference_category_layout_loading",
+            "bounds": [
+              828,
+              817,
+              984,
+              890
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_3_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_3_1",
+            "role": "CheckBox",
+            "text": "刷新",
+            "description": "刷新按钮",
+            "resource_id": "com.oplus.wirelesssettings:id/checkbox",
+            "bounds": [
+              870,
+              817,
+              984,
+              890
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_4",
+            "parent": "node_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              905,
+              1080,
+              1061
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_4_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_4",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/customLinearLayoutForList",
+            "bounds": [
+              96,
+              920,
+              984,
+              1045
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_4_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_4_0",
+            "role": "RelativeLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/messageLayout",
+            "bounds": [
+              96,
+              950,
+              432,
+              1015
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_4_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_4_0_0",
+            "role": "TextView",
+            "text": "未发现可用设备",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              96,
+              950,
+              432,
+              1015
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/appBarLayout",
+            "bounds": [
+              0,
+              120,
+              1080,
+              277
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_1",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/toolbar",
+            "bounds": [
+              0,
+              120,
+              1080,
+              276
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0",
+            "role": "ImageButton",
+            "text": "",
+            "description": "转到上一层级",
+            "resource_id": "com.oplus.wirelesssettings:id/coui_toolbar_back_view",
+            "bounds": [
+              12,
+              120,
+              156,
+              276
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1",
+            "parent": "node_0_0_0_0_0_0_0_1_0",
+            "role": "TextView",
+            "text": "蓝牙",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              168,
+              160,
+              924,
+              233
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_2",
+            "parent": "node_0_0_0_0_0_0_0_1_0",
+            "role": "LinearLayoutCompat",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/coui_toolbar_more_view",
+            "bounds": [
+              924,
+              120,
+              1068,
+              276
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_2_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_2",
+            "role": "ImageView",
+            "text": "",
+            "description": "更多选项",
+            "resource_id": "",
+            "bounds": [
+              924,
+              120,
+              1068,
+              276
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "real_calculator_tap_7",
+      "instruction": "Tap number 7",
+      "expected_action": {
+        "action": "click",
+        "element_id": "node_0_0_0_0_0_0_1_0_0_1_0_4_0"
+      },
+      "ui_state": {
+        "id": "real_calculator_tap_7",
+        "app": "com.coloros.calculator",
+        "root_id": "node_0",
+        "elements": [
+          {
+            "id": "node_0",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0",
+            "parent": "node_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0",
+            "parent": "node_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0",
+            "parent": "node_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/action_bar_root",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0",
+            "parent": "node_0_0_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "android:id/content",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0",
+            "role": "RelativeLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/frame",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/tab_view",
+            "bounds": [
+              0,
+              0,
+              1080,
+              276
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/abl",
+            "bounds": [
+              0,
+              120,
+              1080,
+              276
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/toolbar",
+            "bounds": [
+              0,
+              120,
+              1080,
+              276
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0",
+            "role": "ImageButton",
+            "text": "",
+            "description": "以浮窗显示计算器",
+            "resource_id": "com.coloros.calculator:id/coui_toolbar_back_view",
+            "bounds": [
+              12,
+              120,
+              156,
+              276
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayoutCompat",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/coui_toolbar_more_view",
+            "bounds": [
+              636,
+              120,
+              1068,
+              276
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_1",
+            "role": "Button",
+            "text": "",
+            "description": "科学计算器",
+            "resource_id": "com.coloros.calculator:id/item_science_calculator",
+            "bounds": [
+              636,
+              120,
+              780,
+              276
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_1",
+            "role": "Button",
+            "text": "",
+            "description": "换算",
+            "resource_id": "com.coloros.calculator:id/item_open_conversion",
+            "bounds": [
+              780,
+              120,
+              924,
+              276
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1_2",
+            "parent": "node_0_0_0_0_0_0_0_0_0_1",
+            "role": "ImageView",
+            "text": "",
+            "description": "更多选项",
+            "resource_id": "",
+            "bounds": [
+              924,
+              120,
+              1068,
+              276
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/fragment_container_view",
+            "bounds": [
+              0,
+              276,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_1",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              276,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              276,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/calculator_frame",
+            "bounds": [
+              0,
+              501,
+              1080,
+              901
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/original_display",
+            "bounds": [
+              0,
+              501,
+              1080,
+              901
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_0",
+            "role": "HorizontalScrollView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/formula_container",
+            "bounds": [
+              48,
+              501,
+              1008,
+              805
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_0_0",
+            "role": "TextView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/formula",
+            "bounds": [
+              48,
+              501,
+              1008,
+              769
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_0",
+            "role": "TextView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/result",
+            "bounds": [
+              48,
+              805,
+              1080,
+              901
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0",
+            "role": "a",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/drawer_layout",
+            "bounds": [
+              0,
+              937,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/science_GridLayout",
+            "bounds": [
+              0,
+              937,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              42,
+              1048,
+              264,
+              1270
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_0",
+            "role": "Button",
+            "text": "",
+            "description": "清除",
+            "resource_id": "com.coloros.calculator:id/clr",
+            "bounds": [
+              42,
+              1048,
+              264,
+              1270
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_0_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_0",
+            "role": "Button",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/img_clr",
+            "bounds": [
+              107,
+              1113,
+              198,
+              1204
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              300,
+              1048,
+              522,
+              1270
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_1_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_1",
+            "role": "Button",
+            "text": "",
+            "description": "百分号",
+            "resource_id": "com.coloros.calculator:id/op_pct",
+            "bounds": [
+              300,
+              1048,
+              522,
+              1270
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_1_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_1",
+            "role": "Button",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/img_op_pct",
+            "bounds": [
+              371,
+              1119,
+              451,
+              1199
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_2",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              558,
+              1048,
+              780,
+              1270
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_2_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_2",
+            "role": "Button",
+            "text": "",
+            "description": "退格",
+            "resource_id": "com.coloros.calculator:id/del",
+            "bounds": [
+              558,
+              1048,
+              780,
+              1270
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_2_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_2",
+            "role": "Button",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/img_del",
+            "bounds": [
+              625,
+              1117,
+              711,
+              1200
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_3",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              816,
+              1048,
+              1038,
+              1270
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_3_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_3",
+            "role": "Button",
+            "text": "",
+            "description": "除",
+            "resource_id": "com.coloros.calculator:id/op_div",
+            "bounds": [
+              816,
+              1048,
+              1038,
+              1270
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_3_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_3",
+            "role": "Button",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/img_op_div",
+            "bounds": [
+              887,
+              1119,
+              967,
+              1199
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_4",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/digit_7_frame",
+            "bounds": [
+              42,
+              1306,
+              264,
+              1528
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_4_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_4",
+            "role": "Button",
+            "text": "7",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/digit_7",
+            "bounds": [
+              42,
+              1306,
+              264,
+              1528
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_5",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              300,
+              1306,
+              522,
+              1528
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_5_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_5",
+            "role": "Button",
+            "text": "8",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/digit_8",
+            "bounds": [
+              300,
+              1306,
+              522,
+              1528
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_6",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              558,
+              1306,
+              780,
+              1528
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_6_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_6",
+            "role": "Button",
+            "text": "9",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/digit_9",
+            "bounds": [
+              558,
+              1306,
+              780,
+              1528
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_7",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              816,
+              1306,
+              1038,
+              1528
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_7_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_7",
+            "role": "Button",
+            "text": "",
+            "description": "乘",
+            "resource_id": "com.coloros.calculator:id/op_mul",
+            "bounds": [
+              816,
+              1306,
+              1038,
+              1528
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_7_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_7",
+            "role": "Button",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/img_op_mul",
+            "bounds": [
+              887,
+              1377,
+              967,
+              1457
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_8",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              42,
+              1564,
+              264,
+              1786
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_8_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_8",
+            "role": "Button",
+            "text": "4",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/digit_4",
+            "bounds": [
+              42,
+              1564,
+              264,
+              1786
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_9",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              300,
+              1564,
+              522,
+              1786
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_9_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_9",
+            "role": "Button",
+            "text": "5",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/digit_5",
+            "bounds": [
+              300,
+              1564,
+              522,
+              1786
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_10",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              558,
+              1564,
+              780,
+              1786
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_10_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_10",
+            "role": "Button",
+            "text": "6",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/digit_6",
+            "bounds": [
+              558,
+              1564,
+              780,
+              1786
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_11",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              816,
+              1564,
+              1038,
+              1786
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_11_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_11",
+            "role": "Button",
+            "text": "",
+            "description": "减",
+            "resource_id": "com.coloros.calculator:id/op_sub",
+            "bounds": [
+              816,
+              1564,
+              1038,
+              1786
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_11_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_11",
+            "role": "Button",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/img_op_sub",
+            "bounds": [
+              887,
+              1635,
+              967,
+              1715
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_12",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              42,
+              1822,
+              264,
+              2044
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_12_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_12",
+            "role": "Button",
+            "text": "1",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/digit_1",
+            "bounds": [
+              42,
+              1822,
+              264,
+              2044
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_13",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              300,
+              1822,
+              522,
+              2044
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_13_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_13",
+            "role": "Button",
+            "text": "2",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/digit_2",
+            "bounds": [
+              300,
+              1822,
+              522,
+              2044
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_14",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              558,
+              1822,
+              780,
+              2044
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_14_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_14",
+            "role": "Button",
+            "text": "3",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/digit_3",
+            "bounds": [
+              558,
+              1822,
+              780,
+              2044
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_15",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              816,
+              1822,
+              1038,
+              2044
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_15_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_15",
+            "role": "Button",
+            "text": "",
+            "description": "加",
+            "resource_id": "com.coloros.calculator:id/op_add",
+            "bounds": [
+              816,
+              1822,
+              1038,
+              2044
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_15_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_15",
+            "role": "Button",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/img_op_add",
+            "bounds": [
+              887,
+              1893,
+              967,
+              1973
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_16",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              42,
+              2080,
+              264,
+              2302
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_16_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_16",
+            "role": "Button",
+            "text": "00",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/digit_00",
+            "bounds": [
+              42,
+              2080,
+              264,
+              2302
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_17",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              300,
+              2080,
+              522,
+              2302
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_17_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_17",
+            "role": "Button",
+            "text": "0",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/digit_0",
+            "bounds": [
+              300,
+              2080,
+              522,
+              2302
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_18",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              558,
+              2080,
+              780,
+              2302
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_18_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_18",
+            "role": "Button",
+            "text": ".",
+            "description": "点",
+            "resource_id": "com.coloros.calculator:id/dec_point",
+            "bounds": [
+              558,
+              2080,
+              780,
+              2302
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_19",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/eq_frame",
+            "bounds": [
+              816,
+              2080,
+              1038,
+              2302
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_19_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_19",
+            "role": "Button",
+            "text": "",
+            "description": "等于",
+            "resource_id": "com.coloros.calculator:id/eq",
+            "bounds": [
+              816,
+              2080,
+              1038,
+              2302
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_19_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_19",
+            "role": "Button",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/img_eq",
+            "bounds": [
+              887,
+              2151,
+              967,
+              2231
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_2",
+            "parent": "node_0_0_0_0_0_0_1_0_0",
+            "role": "View",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/transformation_view",
+            "bounds": [
+              0,
+              937,
+              1080,
+              982
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "real_display_dark_mode",
+      "instruction": "Open dark mode settings",
+      "expected_action": {
+        "action": "click",
+        "element_id": "node_0_0_0_0_0_0_1_0_0_0_0_0_1_2"
+      },
+      "ui_state": {
+        "id": "real_display_dark_mode",
+        "app": "com.android.settings",
+        "root_id": "node_0",
+        "elements": [
+          {
+            "id": "node_0",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0",
+            "parent": "node_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0",
+            "parent": "node_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0",
+            "parent": "node_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/action_bar_root",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0",
+            "parent": "node_0_0_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "android:id/content",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0",
+            "role": "ScrollView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/content_parent",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/abl",
+            "bounds": [
+              0,
+              120,
+              1080,
+              277
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/toolbar",
+            "bounds": [
+              0,
+              120,
+              1080,
+              276
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0",
+            "role": "ImageButton",
+            "text": "",
+            "description": "返回",
+            "resource_id": "com.android.settings:id/coui_toolbar_back_view",
+            "bounds": [
+              12,
+              120,
+              156,
+              276
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0",
+            "role": "TextView",
+            "text": "显示与亮度",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              168,
+              160,
+              1032,
+              233
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/content_frame",
+            "bounds": [
+              0,
+              276,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_1",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/sub_container",
+            "bounds": [
+              0,
+              276,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "android:id/list_container",
+            "bounds": [
+              0,
+              276,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0",
+            "role": "RecyclerView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/recycler_view",
+            "bounds": [
+              0,
+              276,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              312,
+              1080,
+              1308
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/ll_dark_mode_preference_container",
+            "bounds": [
+              141,
+              420,
+              939,
+              1233
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/layout_light_theme",
+            "bounds": [
+              141,
+              420,
+              540,
+              1233
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_0_0_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/iv_light_image",
+            "bounds": [
+              183,
+              420,
+              453,
+              1002
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_0_0_0",
+            "role": "TextView",
+            "text": "亮色模式",
+            "description": "",
+            "resource_id": "com.android.settings:id/tv_light_text",
+            "bounds": [
+              141,
+              1074,
+              495,
+              1131
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_0_0_0_2",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_0_0_0",
+            "role": "RadioButton",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/rb_light_button",
+            "bounds": [
+              282,
+              1161,
+              354,
+              1233
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/layout_dark_theme",
+            "bounds": [
+              540,
+              420,
+              939,
+              1233
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_0_0_1",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/iv_dark_image",
+            "bounds": [
+              627,
+              420,
+              897,
+              1002
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_0_0_1_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_0_0_1",
+            "role": "TextView",
+            "text": "暗色模式",
+            "description": "",
+            "resource_id": "com.android.settings:id/tv_dark_text",
+            "bounds": [
+              585,
+              1074,
+              939,
+              1131
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_0_0_1_2",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_0_0_1",
+            "role": "RadioButton",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/rb_dark_button",
+            "bounds": [
+              726,
+              1161,
+              798,
+              1233
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              1308,
+              1080,
+              1452
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_1",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/customLinearLayoutForList",
+            "bounds": [
+              96,
+              1317,
+              936,
+              1442
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_1_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_1_0",
+            "role": "RelativeLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/messageLayout",
+            "bounds": [
+              96,
+              1347,
+              288,
+              1412
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_1_0_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_1_0_0",
+            "role": "TextView",
+            "text": "定时切换",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              96,
+              1347,
+              288,
+              1412
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_1_0_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_1_0",
+            "role": "TextView",
+            "text": "已关闭",
+            "description": "",
+            "resource_id": "com.android.settings:id/assignment",
+            "bounds": [
+              810,
+              1351,
+              936,
+              1408
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_1_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_1",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/coui_jump",
+            "bounds": [
+              948,
+              1344,
+              984,
+              1416
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_2",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              1452,
+              1080,
+              1602
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_2_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_2",
+            "role": "TextView",
+            "text": "暗色模式设置",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              96,
+              1461,
+              900,
+              1586
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_2_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_2",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/coui_jump",
+            "bounds": [
+              948,
+              1488,
+              984,
+              1560
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_3",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              1650,
+              1080,
+              1747
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_3_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_3",
+            "role": "TextView",
+            "text": "亮度",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              96,
+              1674,
+              168,
+              1723
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_4",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              1747,
+              1080,
+              1957
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_4_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_4",
+            "role": "RelativeLayout",
+            "text": "",
+            "description": "1027,亮度",
+            "resource_id": "com.android.settings:id/brightness_slider",
+            "bounds": [
+              96,
+              1753,
+              984,
+              1957
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_4_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_4_0",
+            "role": "RelativeLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              96,
+              1801,
+              984,
+              1957
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_4_0_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_4_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/slider_container",
+            "bounds": [
+              96,
+              1801,
+              984,
+              1957
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_4_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_4_0_0_0",
+            "role": "SeekBar",
+            "text": "",
+            "description": "1027,亮度",
+            "resource_id": "com.android.settings:id/slider",
+            "bounds": [
+              96,
+              1813,
+              984,
+              1921
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_4_0_0_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_4_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              114,
+              1831,
+              186,
+              1903
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_4_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_4_0_0_1",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/brightness_icon",
+            "bounds": [
+              114,
+              1831,
+              186,
+              1903
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_5",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              1957,
+              1080,
+              2107
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_5_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_5",
+            "role": "RelativeLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              96,
+              1966,
+              822,
+              2091
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_5_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_5_0",
+            "role": "TextView",
+            "text": "自动亮度调节",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              96,
+              1996,
+              822,
+              2061
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_5_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_5",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "android:id/widget_frame",
+            "bounds": [
+              822,
+              1993,
+              984,
+              2065
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_5_1_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_5_1",
+            "role": "Switch",
+            "text": "关闭",
+            "description": "",
+            "resource_id": "android:id/switch_widget",
+            "bounds": [
+              870,
+              1993,
+              984,
+              2065
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_6",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              2155,
+              1080,
+              2305
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_6_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_6",
+            "role": "TextView",
+            "text": "屏幕色彩模式",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              96,
+              2170,
+              900,
+              2295
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_6_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_6",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/coui_jump",
+            "bounds": [
+              948,
+              2197,
+              984,
+              2269
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_7",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              2305,
+              1080,
+              2392
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_7_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_7",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/customLinearLayoutForList",
+            "bounds": [
+              96,
+              2314,
+              936,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_7_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_7_0",
+            "role": "RelativeLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/messageLayout",
+            "bounds": [
+              96,
+              2344,
+              288,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_7_0_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_7_0_0",
+            "role": "TextView",
+            "text": "明眸护眼",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              96,
+              2344,
+              288,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_7_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_7",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.android.settings:id/coui_jump",
+            "bounds": [
+              948,
+              2341,
+              984,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "real_wifi_refresh",
+      "instruction": "Refresh available WiFi networks",
+      "expected_action": {
+        "action": "click",
+        "element_id": "node_0_0_0_0_0_0_0_0_0_2_1_0"
+      },
+      "ui_state": {
+        "id": "real_wifi_refresh",
+        "app": "com.oplus.wirelesssettings",
+        "root_id": "node_0",
+        "elements": [
+          {
+            "id": "node_0",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0",
+            "parent": "node_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0",
+            "parent": "node_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0",
+            "parent": "node_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/action_bar_root",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0",
+            "parent": "node_0_0_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "android:id/content",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/fragment_container",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/coordinator",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "android:id/list_container",
+            "bounds": [
+              0,
+              120,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0",
+            "role": "RecyclerView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/recycler_view",
+            "bounds": [
+              0,
+              120,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              312,
+              1080,
+              462
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0",
+            "role": "RelativeLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              96,
+              327,
+              822,
+              452
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_0",
+            "role": "TextView",
+            "text": "WLAN",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              96,
+              357,
+              822,
+              422
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "android:id/widget_frame",
+            "bounds": [
+              822,
+              354,
+              984,
+              426
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_0_1",
+            "role": "Switch",
+            "text": "开启",
+            "description": "",
+            "resource_id": "android:id/switch_widget",
+            "bounds": [
+              870,
+              354,
+              984,
+              426
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              462,
+              1080,
+              612
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_1",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/customLinearLayoutForList",
+            "bounds": [
+              96,
+              471,
+              936,
+              596
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_1_0",
+            "role": "RelativeLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/messageLayout",
+            "bounds": [
+              96,
+              501,
+              346,
+              566
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_1_0_0",
+            "role": "TextView",
+            "text": "WLAN 助理",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              96,
+              501,
+              346,
+              566
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_1",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "android:id/widget_frame",
+            "bounds": [
+              936,
+              462,
+              984,
+              606
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_1_1",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              936,
+              462,
+              984,
+              606
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1_1_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_1_1_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/coui_preference_widget_jump",
+            "bounds": [
+              948,
+              498,
+              984,
+              570
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_2",
+            "parent": "node_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              660,
+              1080,
+              757
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_2_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_2",
+            "role": "TextView",
+            "text": "可用网络",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              96,
+              684,
+              240,
+              733
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_2_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_2",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "android:id/widget_frame",
+            "bounds": [
+              876,
+              660,
+              1080,
+              757
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_2_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_2_1",
+            "role": "Button",
+            "text": "刷新",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/text_button",
+            "bounds": [
+              876,
+              672,
+              1020,
+              745
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_3",
+            "parent": "node_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              757,
+              1080,
+              937
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_3_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_3",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              48,
+              763,
+              1032,
+              937
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_3_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_3_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/signal",
+            "bounds": [
+              84,
+              814,
+              156,
+              886
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_3_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_3_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              192,
+              817,
+              888,
+              882
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_3_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_3_0_1",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/ll_title",
+            "bounds": [
+              192,
+              817,
+              617,
+              882
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_3_0_1_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_3_0_1_0",
+            "role": "TextView",
+            "text": "UoA-Cast",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              192,
+              817,
+              407,
+              882
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_3_0_1_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_3_0_1_0",
+            "role": "TextView",
+            "text": "2.4/5GHz",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/tv_frequency",
+            "bounds": [
+              425,
+              826,
+              581,
+              879
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_3_0_2",
+            "parent": "node_0_0_0_0_0_0_0_0_0_3_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "Wi-Fi 详情",
+            "resource_id": "com.oplus.wirelesssettings:id/pref_item_arrow",
+            "bounds": [
+              924,
+              814,
+              996,
+              886
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_4",
+            "parent": "node_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              937,
+              1080,
+              1111
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_4_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_4",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              48,
+              937,
+              1032,
+              1111
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_4_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_4_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/signal",
+            "bounds": [
+              84,
+              988,
+              156,
+              1060
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_4_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_4_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              192,
+              991,
+              888,
+              1056
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_4_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_4_0_1",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/ll_title",
+            "bounds": [
+              192,
+              991,
+              762,
+              1056
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_4_0_1_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_4_0_1_0",
+            "role": "TextView",
+            "text": "UoA-Guest-WiFi",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              192,
+              991,
+              552,
+              1056
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_4_0_1_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_4_0_1_0",
+            "role": "TextView",
+            "text": "2.4/5GHz",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/tv_frequency",
+            "bounds": [
+              570,
+              1000,
+              726,
+              1053
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_4_0_2",
+            "parent": "node_0_0_0_0_0_0_0_0_0_4_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "Wi-Fi 详情",
+            "resource_id": "com.oplus.wirelesssettings:id/pref_item_arrow",
+            "bounds": [
+              924,
+              988,
+              996,
+              1060
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_5",
+            "parent": "node_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              1111,
+              1080,
+              1285
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_5_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_5",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              48,
+              1111,
+              1032,
+              1285
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_5_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_5_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/signal",
+            "bounds": [
+              84,
+              1162,
+              156,
+              1234
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_5_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_5_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              192,
+              1165,
+              888,
+              1230
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_5_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_5_0_1",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/ll_title",
+            "bounds": [
+              192,
+              1165,
+              615,
+              1230
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_5_0_1_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_5_0_1_0",
+            "role": "TextView",
+            "text": "UoA-WiFi",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              192,
+              1165,
+              405,
+              1230
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_5_0_1_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_5_0_1_0",
+            "role": "TextView",
+            "text": "2.4/5GHz",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/tv_frequency",
+            "bounds": [
+              423,
+              1174,
+              579,
+              1227
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_5_0_2",
+            "parent": "node_0_0_0_0_0_0_0_0_0_5_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "Wi-Fi 详情",
+            "resource_id": "com.oplus.wirelesssettings:id/pref_item_arrow",
+            "bounds": [
+              924,
+              1162,
+              996,
+              1234
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_6",
+            "parent": "node_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              1285,
+              1080,
+              1459
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_6_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_6",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              48,
+              1285,
+              1032,
+              1459
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_6_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_6_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/signal",
+            "bounds": [
+              84,
+              1336,
+              156,
+              1408
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_6_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_6_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              192,
+              1339,
+              888,
+              1404
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_6_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_6_0_1",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/ll_title",
+            "bounds": [
+              192,
+              1339,
+              596,
+              1404
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_6_0_1_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_6_0_1_0",
+            "role": "TextView",
+            "text": "eduroam",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              192,
+              1339,
+              386,
+              1404
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_6_0_1_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_6_0_1_0",
+            "role": "TextView",
+            "text": "2.4/5GHz",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/tv_frequency",
+            "bounds": [
+              404,
+              1348,
+              560,
+              1401
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_6_0_2",
+            "parent": "node_0_0_0_0_0_0_0_0_0_6_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "Wi-Fi 详情",
+            "resource_id": "com.oplus.wirelesssettings:id/pref_item_arrow",
+            "bounds": [
+              924,
+              1336,
+              996,
+              1408
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_7",
+            "parent": "node_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              1459,
+              1080,
+              1633
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_7_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_7",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              48,
+              1459,
+              1032,
+              1633
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_7_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_7_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/signal",
+            "bounds": [
+              84,
+              1510,
+              156,
+              1582
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_7_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_7_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              192,
+              1513,
+              888,
+              1578
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_7_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_7_0_1",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/ll_title",
+            "bounds": [
+              192,
+              1513,
+              341,
+              1578
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_7_0_1_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_7_0_1_0",
+            "role": "TextView",
+            "text": "iPhone",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              192,
+              1513,
+              341,
+              1578
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_7_0_2",
+            "parent": "node_0_0_0_0_0_0_0_0_0_7_0",
+            "role": "ImageView",
+            "text": "",
+            "description": "Wi-Fi 详情",
+            "resource_id": "com.oplus.wirelesssettings:id/pref_item_arrow",
+            "bounds": [
+              924,
+              1510,
+              996,
+              1582
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_8",
+            "parent": "node_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              1633,
+              1080,
+              1783
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_8_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_8",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/customLinearLayoutForList",
+            "bounds": [
+              96,
+              1642,
+              984,
+              1767
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_8_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_8_0",
+            "role": "RelativeLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/messageLayout",
+            "bounds": [
+              96,
+              1672,
+              288,
+              1737
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_8_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_8_0_0",
+            "role": "TextView",
+            "text": "添加网络",
+            "description": "",
+            "resource_id": "android:id/title",
+            "bounds": [
+              96,
+              1672,
+              288,
+              1737
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/appBarLayout",
+            "bounds": [
+              0,
+              120,
+              1080,
+              277
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_1",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/toolbar",
+            "bounds": [
+              0,
+              120,
+              1080,
+              276
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0",
+            "role": "ImageButton",
+            "text": "",
+            "description": "转到上一层级",
+            "resource_id": "com.oplus.wirelesssettings:id/coui_toolbar_back_view",
+            "bounds": [
+              12,
+              120,
+              156,
+              276
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_1",
+            "parent": "node_0_0_0_0_0_0_0_1_0",
+            "role": "TextView",
+            "text": "WLAN",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              168,
+              160,
+              780,
+              233
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_2",
+            "parent": "node_0_0_0_0_0_0_0_1_0",
+            "role": "LinearLayoutCompat",
+            "text": "",
+            "description": "",
+            "resource_id": "com.oplus.wirelesssettings:id/coui_toolbar_more_view",
+            "bounds": [
+              780,
+              120,
+              1068,
+              276
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_2_0",
+            "parent": "node_0_0_0_0_0_0_0_1_0_2",
+            "role": "Button",
+            "text": "",
+            "description": "扫一扫",
+            "resource_id": "com.oplus.wirelesssettings:id/scan_entry",
+            "bounds": [
+              780,
+              120,
+              924,
+              276
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_1_0_2_1",
+            "parent": "node_0_0_0_0_0_0_0_1_0_2",
+            "role": "ImageView",
+            "text": "",
+            "description": "更多选项",
+            "resource_id": "",
+            "bounds": [
+              924,
+              120,
+              1068,
+              276
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    }
+  ]
+}

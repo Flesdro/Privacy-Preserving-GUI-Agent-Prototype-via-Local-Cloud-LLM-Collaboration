@@ -1,0 +1,1260 @@
+{
+  "tasks": [
+    {
+      "id": "real_calculator_tap_7",
+      "instruction": "Tap number 7",
+      "expected_action": {
+        "action": "click",
+        "element_id": "node_0_0_0_0_0_0_1_0_0_1_0_4_0"
+      },
+      "ui_state": {
+        "id": "real_calculator_tap_7",
+        "app": "com.coloros.calculator",
+        "root_id": "node_0",
+        "elements": [
+          {
+            "id": "node_0",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0",
+            "parent": "node_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0",
+            "parent": "node_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0",
+            "parent": "node_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/action_bar_root",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0",
+            "parent": "node_0_0_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "android:id/content",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0",
+            "role": "RelativeLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/frame",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/tab_view",
+            "bounds": [
+              0,
+              0,
+              1080,
+              276
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/abl",
+            "bounds": [
+              0,
+              120,
+              1080,
+              276
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/toolbar",
+            "bounds": [
+              0,
+              120,
+              1080,
+              276
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0",
+            "role": "ImageButton",
+            "text": "",
+            "description": "以浮窗显示计算器",
+            "resource_id": "com.coloros.calculator:id/coui_toolbar_back_view",
+            "bounds": [
+              12,
+              120,
+              156,
+              276
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0",
+            "role": "LinearLayoutCompat",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/coui_toolbar_more_view",
+            "bounds": [
+              636,
+              120,
+              1068,
+              276
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_0_0_0_1",
+            "role": "Button",
+            "text": "",
+            "description": "科学计算器",
+            "resource_id": "com.coloros.calculator:id/item_science_calculator",
+            "bounds": [
+              636,
+              120,
+              780,
+              276
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1_1",
+            "parent": "node_0_0_0_0_0_0_0_0_0_1",
+            "role": "Button",
+            "text": "",
+            "description": "换算",
+            "resource_id": "com.coloros.calculator:id/item_open_conversion",
+            "bounds": [
+              780,
+              120,
+              924,
+              276
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_0_0_0_1_2",
+            "parent": "node_0_0_0_0_0_0_0_0_0_1",
+            "role": "ImageView",
+            "text": "",
+            "description": "更多选项",
+            "resource_id": "",
+            "bounds": [
+              924,
+              120,
+              1068,
+              276
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/fragment_container_view",
+            "bounds": [
+              0,
+              276,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_1",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              276,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0",
+            "role": "ViewGroup",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              0,
+              276,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/calculator_frame",
+            "bounds": [
+              0,
+              501,
+              1080,
+              901
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/original_display",
+            "bounds": [
+              0,
+              501,
+              1080,
+              901
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_0",
+            "role": "HorizontalScrollView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/formula_container",
+            "bounds": [
+              48,
+              501,
+              1008,
+              805
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_0_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_0_0",
+            "role": "TextView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/formula",
+            "bounds": [
+              48,
+              501,
+              1008,
+              769
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_0_0_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_0_0",
+            "role": "TextView",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/result",
+            "bounds": [
+              48,
+              805,
+              1080,
+              901
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0",
+            "role": "a",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/drawer_layout",
+            "bounds": [
+              0,
+              937,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/science_GridLayout",
+            "bounds": [
+              0,
+              937,
+              1080,
+              2392
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              42,
+              1048,
+              264,
+              1270
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_0_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_0",
+            "role": "Button",
+            "text": "",
+            "description": "清除",
+            "resource_id": "com.coloros.calculator:id/clr",
+            "bounds": [
+              42,
+              1048,
+              264,
+              1270
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_0_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_0",
+            "role": "Button",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/img_clr",
+            "bounds": [
+              107,
+              1113,
+              198,
+              1204
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              300,
+              1048,
+              522,
+              1270
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_1_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_1",
+            "role": "Button",
+            "text": "",
+            "description": "百分号",
+            "resource_id": "com.coloros.calculator:id/op_pct",
+            "bounds": [
+              300,
+              1048,
+              522,
+              1270
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_1_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_1",
+            "role": "Button",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/img_op_pct",
+            "bounds": [
+              371,
+              1119,
+              451,
+              1199
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_2",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              558,
+              1048,
+              780,
+              1270
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_2_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_2",
+            "role": "Button",
+            "text": "",
+            "description": "退格",
+            "resource_id": "com.coloros.calculator:id/del",
+            "bounds": [
+              558,
+              1048,
+              780,
+              1270
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_2_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_2",
+            "role": "Button",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/img_del",
+            "bounds": [
+              625,
+              1117,
+              711,
+              1200
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_3",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              816,
+              1048,
+              1038,
+              1270
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_3_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_3",
+            "role": "Button",
+            "text": "",
+            "description": "除",
+            "resource_id": "com.coloros.calculator:id/op_div",
+            "bounds": [
+              816,
+              1048,
+              1038,
+              1270
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_3_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_3",
+            "role": "Button",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/img_op_div",
+            "bounds": [
+              887,
+              1119,
+              967,
+              1199
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_4",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/digit_7_frame",
+            "bounds": [
+              42,
+              1306,
+              264,
+              1528
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_4_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_4",
+            "role": "Button",
+            "text": "7",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/digit_7",
+            "bounds": [
+              42,
+              1306,
+              264,
+              1528
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_5",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              300,
+              1306,
+              522,
+              1528
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_5_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_5",
+            "role": "Button",
+            "text": "8",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/digit_8",
+            "bounds": [
+              300,
+              1306,
+              522,
+              1528
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_6",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              558,
+              1306,
+              780,
+              1528
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_6_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_6",
+            "role": "Button",
+            "text": "9",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/digit_9",
+            "bounds": [
+              558,
+              1306,
+              780,
+              1528
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_7",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              816,
+              1306,
+              1038,
+              1528
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_7_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_7",
+            "role": "Button",
+            "text": "",
+            "description": "乘",
+            "resource_id": "com.coloros.calculator:id/op_mul",
+            "bounds": [
+              816,
+              1306,
+              1038,
+              1528
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_7_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_7",
+            "role": "Button",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/img_op_mul",
+            "bounds": [
+              887,
+              1377,
+              967,
+              1457
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_8",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              42,
+              1564,
+              264,
+              1786
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_8_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_8",
+            "role": "Button",
+            "text": "4",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/digit_4",
+            "bounds": [
+              42,
+              1564,
+              264,
+              1786
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_9",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              300,
+              1564,
+              522,
+              1786
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_9_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_9",
+            "role": "Button",
+            "text": "5",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/digit_5",
+            "bounds": [
+              300,
+              1564,
+              522,
+              1786
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_10",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              558,
+              1564,
+              780,
+              1786
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_10_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_10",
+            "role": "Button",
+            "text": "6",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/digit_6",
+            "bounds": [
+              558,
+              1564,
+              780,
+              1786
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_11",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              816,
+              1564,
+              1038,
+              1786
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_11_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_11",
+            "role": "Button",
+            "text": "",
+            "description": "减",
+            "resource_id": "com.coloros.calculator:id/op_sub",
+            "bounds": [
+              816,
+              1564,
+              1038,
+              1786
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_11_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_11",
+            "role": "Button",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/img_op_sub",
+            "bounds": [
+              887,
+              1635,
+              967,
+              1715
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_12",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              42,
+              1822,
+              264,
+              2044
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_12_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_12",
+            "role": "Button",
+            "text": "1",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/digit_1",
+            "bounds": [
+              42,
+              1822,
+              264,
+              2044
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_13",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              300,
+              1822,
+              522,
+              2044
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_13_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_13",
+            "role": "Button",
+            "text": "2",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/digit_2",
+            "bounds": [
+              300,
+              1822,
+              522,
+              2044
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_14",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              558,
+              1822,
+              780,
+              2044
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_14_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_14",
+            "role": "Button",
+            "text": "3",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/digit_3",
+            "bounds": [
+              558,
+              1822,
+              780,
+              2044
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_15",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              816,
+              1822,
+              1038,
+              2044
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_15_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_15",
+            "role": "Button",
+            "text": "",
+            "description": "加",
+            "resource_id": "com.coloros.calculator:id/op_add",
+            "bounds": [
+              816,
+              1822,
+              1038,
+              2044
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_15_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_15",
+            "role": "Button",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/img_op_add",
+            "bounds": [
+              887,
+              1893,
+              967,
+              1973
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_16",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              42,
+              2080,
+              264,
+              2302
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_16_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_16",
+            "role": "Button",
+            "text": "00",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/digit_00",
+            "bounds": [
+              42,
+              2080,
+              264,
+              2302
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_17",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              300,
+              2080,
+              522,
+              2302
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_17_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_17",
+            "role": "Button",
+            "text": "0",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/digit_0",
+            "bounds": [
+              300,
+              2080,
+              522,
+              2302
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_18",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "",
+            "bounds": [
+              558,
+              2080,
+              780,
+              2302
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_18_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_18",
+            "role": "Button",
+            "text": ".",
+            "description": "点",
+            "resource_id": "com.coloros.calculator:id/dec_point",
+            "bounds": [
+              558,
+              2080,
+              780,
+              2302
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_19",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0",
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/eq_frame",
+            "bounds": [
+              816,
+              2080,
+              1038,
+              2302
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_19_0",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_19",
+            "role": "Button",
+            "text": "",
+            "description": "等于",
+            "resource_id": "com.coloros.calculator:id/eq",
+            "bounds": [
+              816,
+              2080,
+              1038,
+              2302
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_1_0_19_1",
+            "parent": "node_0_0_0_0_0_0_1_0_0_1_0_19",
+            "role": "Button",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/img_eq",
+            "bounds": [
+              887,
+              2151,
+              967,
+              2231
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "node_0_0_0_0_0_0_1_0_0_2",
+            "parent": "node_0_0_0_0_0_0_1_0_0",
+            "role": "View",
+            "text": "",
+            "description": "",
+            "resource_id": "com.coloros.calculator:id/transformation_view",
+            "bounds": [
+              0,
+              937,
+              1080,
+              982
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    }
+  ]
+}

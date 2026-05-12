@@ -19,6 +19,9 @@ class HeuristicLocalLLM:
         block_l = block.text.lower()
         if "search" in task_l and ("search" in block_l or "url" in block_l):
             return "Use the search field to enter the requested query."
+        tap_target = _tap_target(task_l)
+        if tap_target and tap_target in block_l:
+            return "Tap the visible target control."
         if any(word in task_l for word in ["refresh", "reload"]) and any(
             word in block_l for word in ["refresh", "reload", "刷新"]
         ):
@@ -87,6 +90,9 @@ class HeuristicLocalLLM:
             return 3.0
         if "search" in task and any(word in block_text for word in ["search", "url"]):
             return 3.0
+        tap_target = _tap_target(task)
+        if tap_target and tap_target in block_text:
+            return 4.0
         if any(word in task for word in ["refresh", "reload"]) and any(
             word in block_text for word in ["refresh", "reload", "刷新"]
         ):
@@ -145,16 +151,24 @@ class HeuristicCloudLLM:
             if target:
                 query = _quoted_text(task) or task.split("search", 1)[-1].strip()
                 return Decision("input", target.id, text=query, reason="search field is visible")
+        tap_target = _tap_target(task_l)
+        if tap_target:
+            keywords = [tap_target]
+            if tap_target == "dark mode":
+                keywords.extend(["暗色模式", "rb_dark"])
+            target = _first_with_context(elements, clickable=True, keywords=keywords)
+            if target:
+                return Decision("click", target.id, reason="requested target control is visible")
         if any(word in task_l for word in ["refresh", "reload"]):
-            target = _first(elements, clickable=True, keywords=["refresh", "reload", "刷新"])
+            target = _first_with_context(elements, clickable=True, keywords=["refresh", "reload", "刷新"])
             if target:
                 return Decision("click", target.id, reason="refresh control is visible")
         if "alarm" in task_l:
-            keywords = ["add", "new", "create"] if any(word in task_l for word in ["add", "new", "create"]) else [
+            keywords = ["add", "new", "create", "添加"] if any(word in task_l for word in ["add", "new", "create"]) else [
                 "alarm",
                 "time",
             ]
-            target = _first(elements, clickable=True, keywords=keywords)
+            target = _first_with_context(elements, clickable=True, keywords=keywords)
             if target:
                 return Decision("click", target.id, reason="alarm control is visible")
         if "contact" in task_l:
@@ -203,7 +217,11 @@ class HeuristicCloudLLM:
             if target:
                 return Decision("click", target.id, reason="payment control is visible")
         if any(word in task_l for word in ["wifi", "bluetooth", "settings"]):
-            target = _first(elements, clickable=True, keywords=["wifi", "bluetooth", "toggle", "settings"])
+            target = _first_with_context(
+                elements,
+                clickable=True,
+                keywords=["wifi", "wlan", "bluetooth", "toggle", "dark mode", "暗色模式", "rb_dark"],
+            )
             if target:
                 return Decision("click", target.id, reason="settings control is visible")
         if any(word in task_l for word in ["note", "todo", "task"]):
@@ -232,6 +250,57 @@ def _first(elements, *, editable=False, clickable=False, keywords: list[str]):
         haystack = element.semantic_text.lower()
         if any(keyword in haystack for keyword in keywords):
             return element
+    return None
+
+
+def _first_with_context(elements, *, editable=False, clickable=False, keywords: list[str]):
+    children_by_parent = {}
+    for element in elements:
+        children_by_parent.setdefault(element.parent, []).append(element)
+
+    candidates = []
+    for element in elements:
+        if editable and not element.editable:
+            continue
+        if clickable and not element.clickable:
+            continue
+        haystack = _context_text(element, children_by_parent).lower()
+        if any(keyword in haystack for keyword in keywords):
+            candidates.append(element)
+    if not candidates:
+        return None
+    return min(candidates, key=_area)
+
+
+def _context_text(element, children_by_parent) -> str:
+    parts = [element.semantic_text]
+    stack = list(children_by_parent.get(element.id, []))
+    while stack:
+        child = stack.pop()
+        parts.append(child.semantic_text)
+        stack.extend(children_by_parent.get(child.id, []))
+    return " ".join(parts)
+
+
+def _area(element) -> int:
+    if len(element.bounds) != 4:
+        return 10**18
+    x1, y1, x2, y2 = element.bounds
+    return max(x2 - x1, 0) * max(y2 - y1, 0)
+
+
+def _tap_target(task: str) -> str | None:
+    quoted = _quoted_text(task)
+    if quoted:
+        return quoted.lower()
+    if "dark mode" in task:
+        return "dark mode"
+    words = task.replace("number", " ").replace("button", " ").split()
+    if any(word in words for word in ["tap", "click", "press", "open"]):
+        for word in reversed(words):
+            cleaned = word.strip(".,:;!?()[]'\"").lower()
+            if cleaned and cleaned not in {"tap", "click", "press", "open", "the", "a", "an"}:
+                return cleaned
     return None
 
 
