@@ -55,6 +55,30 @@ logs/last_run.json
 - Kept real XML dumps ignored by Git because they may contain private device text such as network names, alarm times, or device names.
 - Clarified that local/cloud LLMs are still deterministic heuristic adapters, not real model API calls.
 
+### v0.4.0 - OpenAI-compatible cloud interface
+
+- Added an optional OpenAI-compatible cloud LLM adapter.
+- Kept the default backend as deterministic heuristic simulation for offline reproducibility.
+- Added `--cloud-backend openai-compatible` for real cloud-side subtask confirmation and action selection.
+- Required cloud configuration through environment variables: `CLOUD_LLM_API_KEY`, `CLOUD_LLM_BASE_URL`, and `CLOUD_LLM_MODEL`.
+- The real cloud backend only receives uploaded UI blocks, with sensitive element text masked in the prompt payload.
+- Estimated one full 5-task real Android trace experiment at about 4.8k collaborative prompt tokens plus about 0.8k output tokens; cloud-only is about 16.4k prompt tokens plus about 0.4k output tokens.
+
+Example:
+
+```bash
+export CLOUD_LLM_API_KEY="..."
+export CLOUD_LLM_BASE_URL="https://api.example.com/v1"
+export CLOUD_LLM_MODEL="your-model-name"
+
+python3 -m lc_private_gui \
+  --tasks experiments/real_android_traces/all_real_android_tasks.json \
+  --mode collaborative \
+  --cloud-backend openai-compatible
+```
+
+You can also copy `.env.example` to `.env` for local credential storage. The `.env` file is ignored by Git.
+
 ## Files
 
 - `lc_private_gui/models.py`: core dataclasses for UI elements, blocks, tasks, decisions, and results

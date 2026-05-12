@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 
 from .agent import CloudOnlyAgent, CollaborativeAgent, LocalOnlyAgent
+from .llm import OpenAICompatibleCloudLLM
 from .metrics import summarize, to_jsonable
 from .parser import load_tasks
 
@@ -36,14 +37,21 @@ def main() -> None:
         default=Path(__file__).resolve().parents[1] / "logs" / "last_run.json",
         help="Output JSON audit log path.",
     )
+    parser.add_argument(
+        "--cloud-backend",
+        choices=["heuristic", "openai-compatible"],
+        default="heuristic",
+        help="Cloud decision backend. The openai-compatible backend uses CLOUD_LLM_* env vars.",
+    )
     args = parser.parse_args()
 
     tasks = load_tasks(args.tasks)
     modes = list(AGENTS) if args.mode == "all" else [args.mode]
     audit: dict[str, list[dict]] = {}
+    cloud_llm = OpenAICompatibleCloudLLM() if args.cloud_backend == "openai-compatible" else None
 
     for mode in modes:
-        agent = AGENTS[mode]()
+        agent = AGENTS[mode](cloud_llm=cloud_llm) if mode in {"collaborative", "cloud_only"} else AGENTS[mode]()
         results = [agent.run(task) for task in tasks]
         audit[mode] = [to_jsonable(result) for result in results]
         summary = summarize(results)
@@ -68,4 +76,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

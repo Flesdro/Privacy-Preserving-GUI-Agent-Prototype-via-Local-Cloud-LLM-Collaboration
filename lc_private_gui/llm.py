@@ -1,6 +1,10 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+import json
+import os
+from typing import Any
+from urllib import request
 
 from .models import Decision, UIBlock
 
@@ -235,6 +239,127 @@ class HeuristicCloudLLM:
         if target:
             return Decision("click" if target.clickable else "input", target.id, reason="fallback visible control")
         return None
+
+
+class OpenAICompatibleCloudLLM:
+    """Cloud LLM adapter for OpenAI-compatible chat-completions APIs."""
+
+    def __init__(
+        self,
+        *,
+        api_key: str | None = None,
+        base_url: str | None = None,
+        model: str | None = None,
+        timeout: int = 60,
+    ) -> None:
+        self.api_key = api_key or os.environ.get("CLOUD_LLM_API_KEY")
+        self.base_url = (base_url or os.environ.get("CLOUD_LLM_BASE_URL") or "").rstrip("/")
+        self.model = model or os.environ.get("CLOUD_LLM_MODEL")
+        self.timeout = timeout
+        if not self.api_key:
+            raise ValueError("CLOUD_LLM_API_KEY is required for openai-compatible cloud backend.")
+        if not self.base_url:
+            raise ValueError("CLOUD_LLM_BASE_URL is required for openai-compatible cloud backend.")
+        if not self.model:
+            raise ValueError("CLOUD_LLM_MODEL is required for openai-compatible cloud backend.")
+
+    def confirm_subtask(self, task: str, history: list[Decision], candidates: list[str]) -> str:
+        prompt = {
+            "task": task,
+            "history": [_decision_payload(item) for item in history],
+            "candidate_subtasks": candidates,
+            "instruction": "Choose the single most useful candidate subtask. Return only JSON: {\"subtask\":\"...\"}.",
+        }
+        data = self._chat_json(_system_prompt(), json.dumps(prompt, ensure_ascii=False))
+        subtask = data.get("subtask")
+        if isinstance(subtask, str) and subtask.strip():
+            return subtask.strip()
+        useful = [candidate for candidate in candidates if "unrelated" not in candidate.lower()]
+        return useful[0] if useful else f"Make progress on: {task}"
+
+    def decide(self, task: str, history: list[Decision], uploaded_blocks: list[UIBlock]) -> Decision | None:
+        prompt = decision_prompt_payload(task, history, uploaded_blocks)
+        data = self._chat_json(_system_prompt(), json.dumps(prompt, ensure_ascii=False))
+        action = data.get("action")
+        element_id = data.get("element_id")
+        text = data.get("text")
+        reason = data.get("reason", "cloud model decision")
+        if not isinstance(action, str):
+            return None
+        if element_id is not None and not isinstance(element_id, str):
+            element_id = None
+        if text is not None and not isinstance(text, str):
+            text = None
+        if not isinstance(reason, str):
+            reason = "cloud model decision"
+        decision = Decision(action=action, element_id=element_id, text=text, reason=reason)
+        return decision if decision.is_valid else None
+
+    def _chat_json(self, system_prompt: str, user_prompt: str) -> dict[str, Any]:
+        body = {
+            "model": self.model,
+            "messages": [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt},
+            ],
+            "temperature": 0,
+            "response_format": {"type": "json_object"},
+        }
+        req = request.Request(
+            f"{self.base_url}/chat/completions",
+            data=json.dumps(body).encode("utf-8"),
+            headers={
+                "Authorization": f"Bearer {self.api_key}",
+                "Content-Type": "application/json",
+            },
+            method="POST",
+        )
+        with request.urlopen(req, timeout=self.timeout) as response:
+            payload = json.loads(response.read().decode("utf-8"))
+        content = payload["choices"][0]["message"]["content"]
+        return json.loads(content)
+
+
+def decision_prompt_payload(
+    task: str,
+    history: list[Decision],
+    uploaded_blocks: list[UIBlock],
+) -> dict[str, Any]:
+    return {
+        "task": task,
+        "history": [_decision_payload(item) for item in history],
+        "uploaded_blocks": [block.to_prompt_payload(mask_sensitive=True) for block in uploaded_blocks],
+        "allowed_actions": ["click", "input", "scroll", "back", "finish"],
+        "instruction": (
+            "Choose the next GUI action using only the uploaded blocks. "
+            "Return only JSON with keys: action, element_id, text, reason. "
+            "Use element_id from the uploaded UI. Use null for element_id only for scroll, back, or finish."
+        ),
+    }
+
+
+def estimate_tokens_from_text(text: str) -> int:
+    # A conservative dependency-free estimate for mixed English/JSON/CJK prompts.
+    ascii_chars = sum(1 for char in text if ord(char) < 128)
+    non_ascii_chars = len(text) - ascii_chars
+    return max(1, round(ascii_chars / 4 + non_ascii_chars / 1.5))
+
+
+def _system_prompt() -> str:
+    return (
+        "You are the cloud-side GUI decision module in a privacy-preserving mobile agent. "
+        "You only see uploaded UI blocks, not the full screen. "
+        "Never invent element ids. Return strict JSON only."
+    )
+
+
+def _decision_payload(decision: Decision) -> dict[str, Any]:
+    return {
+        "action": decision.action,
+        "element_id": decision.element_id,
+        "text": decision.text,
+        "reason": decision.reason,
+    }
 
 
 def _terms(text: str) -> list[str]:

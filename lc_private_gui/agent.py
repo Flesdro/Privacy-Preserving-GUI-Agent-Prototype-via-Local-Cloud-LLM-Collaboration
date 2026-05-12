@@ -1,8 +1,18 @@
 from __future__ import annotations
 
+from typing import Protocol
+
 from .llm import HeuristicCloudLLM, HeuristicLocalLLM
 from .models import Decision, StepResult, Task, UIBlock
 from .partitioner import LayoutAwarePartitioner
+
+
+class CloudLLM(Protocol):
+    def confirm_subtask(self, task: str, history: list[Decision], candidates: list[str]) -> str:
+        ...
+
+    def decide(self, task: str, history: list[Decision], uploaded_blocks: list[UIBlock]) -> Decision | None:
+        ...
 
 
 class CollaborativeAgent:
@@ -10,7 +20,7 @@ class CollaborativeAgent:
         self,
         partitioner: LayoutAwarePartitioner | None = None,
         local_llm: HeuristicLocalLLM | None = None,
-        cloud_llm: HeuristicCloudLLM | None = None,
+        cloud_llm: CloudLLM | None = None,
         max_rounds: int = 3,
     ) -> None:
         self.partitioner = partitioner or LayoutAwarePartitioner()
@@ -44,7 +54,7 @@ class CollaborativeAgent:
 
 
 class CloudOnlyAgent:
-    def __init__(self, cloud_llm: HeuristicCloudLLM | None = None) -> None:
+    def __init__(self, cloud_llm: CloudLLM | None = None) -> None:
         self.cloud_llm = cloud_llm or HeuristicCloudLLM()
 
     def run(self, task: Task) -> StepResult:
@@ -107,4 +117,3 @@ def _result(
         rounds=rounds,
         confirmed_subtask=subtask,
     )
-

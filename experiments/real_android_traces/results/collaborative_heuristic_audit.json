@@ -1,0 +1,169 @@
+{
+  "collaborative": [
+    {
+      "task_id": "real_alarm_add",
+      "mode": "collaborative",
+      "success": true,
+      "decision": {
+        "action": "click",
+        "element_id": "node_0_0_0_0_0_0_0_0_0_0_0_0_3_0_0_0",
+        "text": null,
+        "reason": "alarm control is visible"
+      },
+      "uploaded_element_ids": [
+        "node_0_0_0_0_0_0_0_0_0_0_0_0_0_0",
+        "node_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_0",
+        "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0",
+        "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0_0_0_0_0",
+        "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0_0_0_1",
+        "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0_0_1",
+        "node_0_0_0_0_0_0_0_0_0_0_0_0_2_0_0_1_0",
+        "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1",
+        "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1_0_0_0_0",
+        "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1_0_0_1",
+        "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1_0_1",
+        "node_0_0_0_0_0_0_0_0_0_0_0_0_2_1_0_1_0",
+        "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2",
+        "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2_0_0_0_0",
+        "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2_0_0_1",
+        "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2_0_1",
+        "node_0_0_0_0_0_0_0_0_0_0_0_0_2_2_0_1_0",
+        "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3",
+        "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3_0_0_0_0",
+        "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3_0_0_1",
+        "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3_0_1",
+        "node_0_0_0_0_0_0_0_0_0_0_0_0_2_3_0_1_0",
+        "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4",
+        "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4_0_0_0_0",
+        "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4_0_0_1",
+        "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4_0_1",
+        "node_0_0_0_0_0_0_0_0_0_0_0_0_2_4_0_1_0",
+        "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5",
+        "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5_0_0_0_0",
+        "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5_0_0_1",
+        "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5_0_1",
+        "node_0_0_0_0_0_0_0_0_0_0_0_0_2_5_0_1_0",
+        "node_0_0_0_0_0_0_0_0_0_0_0_0_3_0_0_0"
+      ],
+      "uploaded_sensitive_ids": [],
+      "total_elements": 106,
+      "total_sensitive": 0,
+      "rounds": 1,
+      "confirmed_subtask": "Create or configure an alarm.",
+      "exposure_rate": 0.3113207547169811,
+      "sensitive_exposure_rate": 0.0
+    },
+    {
+      "task_id": "real_bluetooth_refresh",
+      "mode": "collaborative",
+      "success": true,
+      "decision": {
+        "action": "click",
+        "element_id": "node_0_0_0_0_0_0_0_0_0_3_1_0",
+        "text": null,
+        "reason": "refresh control is visible"
+      },
+      "uploaded_element_ids": [
+        "node_0_0_0_0_0_0_0_0_0_3_0",
+        "node_0_0_0_0_0_0_0_0_0_3_1_0"
+      ],
+      "uploaded_sensitive_ids": [],
+      "total_elements": 38,
+      "total_sensitive": 1,
+      "rounds": 1,
+      "confirmed_subtask": "Open or change the requested setting.",
+      "exposure_rate": 0.05263157894736842,
+      "sensitive_exposure_rate": 0.0
+    },
+    {
+      "task_id": "real_calculator_tap_7",
+      "mode": "collaborative",
+      "success": true,
+      "decision": {
+        "action": "click",
+        "element_id": "node_0_0_0_0_0_0_1_0_0_1_0_4_0",
+        "text": null,
+        "reason": "requested target control is visible"
+      },
+      "uploaded_element_ids": [
+        "node_0_0_0_0_0_0_1_0_0_1_0_0_0",
+        "node_0_0_0_0_0_0_1_0_0_1_0_1_0",
+        "node_0_0_0_0_0_0_1_0_0_1_0_2_0",
+        "node_0_0_0_0_0_0_1_0_0_1_0_3_0",
+        "node_0_0_0_0_0_0_1_0_0_1_0_4_0",
+        "node_0_0_0_0_0_0_1_0_0_1_0_5_0",
+        "node_0_0_0_0_0_0_1_0_0_1_0_6_0",
+        "node_0_0_0_0_0_0_1_0_0_1_0_7_0",
+        "node_0_0_0_0_0_0_1_0_0_1_0_8_0",
+        "node_0_0_0_0_0_0_1_0_0_1_0_9_0",
+        "node_0_0_0_0_0_0_1_0_0_1_0_10_0",
+        "node_0_0_0_0_0_0_1_0_0_1_0_11_0",
+        "node_0_0_0_0_0_0_1_0_0_1_0_12_0",
+        "node_0_0_0_0_0_0_1_0_0_1_0_13_0",
+        "node_0_0_0_0_0_0_1_0_0_1_0_14_0",
+        "node_0_0_0_0_0_0_1_0_0_1_0_15_0",
+        "node_0_0_0_0_0_0_1_0_0_1_0_16_0",
+        "node_0_0_0_0_0_0_1_0_0_1_0_17_0",
+        "node_0_0_0_0_0_0_1_0_0_1_0_18_0",
+        "node_0_0_0_0_0_0_1_0_0_1_0_19_0"
+      ],
+      "uploaded_sensitive_ids": [],
+      "total_elements": 73,
+      "total_sensitive": 0,
+      "rounds": 1,
+      "confirmed_subtask": "Tap the visible target control.",
+      "exposure_rate": 0.273972602739726,
+      "sensitive_exposure_rate": 0.0
+    },
+    {
+      "task_id": "real_display_dark_mode",
+      "mode": "collaborative",
+      "success": true,
+      "decision": {
+        "action": "click",
+        "element_id": "node_0_0_0_0_0_0_1_0_0_0_0_0_1_2",
+        "text": null,
+        "reason": "requested target control is visible"
+      },
+      "uploaded_element_ids": [
+        "node_0_0_0_0_0_0_1_0_0_0_0_0_0",
+        "node_0_0_0_0_0_0_1_0_0_0_0_0_0_1",
+        "node_0_0_0_0_0_0_1_0_0_0_0_0_0_2",
+        "node_0_0_0_0_0_0_1_0_0_0_0_0_1",
+        "node_0_0_0_0_0_0_1_0_0_0_0_0_1_1",
+        "node_0_0_0_0_0_0_1_0_0_0_0_0_1_2"
+      ],
+      "uploaded_sensitive_ids": [],
+      "total_elements": 55,
+      "total_sensitive": 2,
+      "rounds": 1,
+      "confirmed_subtask": "Open or change the requested setting.",
+      "exposure_rate": 0.10909090909090909,
+      "sensitive_exposure_rate": 0.0
+    },
+    {
+      "task_id": "real_wifi_refresh",
+      "mode": "collaborative",
+      "success": true,
+      "decision": {
+        "action": "click",
+        "element_id": "node_0_0_0_0_0_0_0_0_0_2_1_0",
+        "text": null,
+        "reason": "refresh control is visible"
+      },
+      "uploaded_element_ids": [
+        "node_0_0_0_0_0_0_0_0_0_2_0",
+        "node_0_0_0_0_0_0_0_0_0_2_1_0"
+      ],
+      "uploaded_sensitive_ids": [
+        "node_0_0_0_0_0_0_0_0_0_2_0"
+      ],
+      "total_elements": 75,
+      "total_sensitive": 10,
+      "rounds": 1,
+      "confirmed_subtask": "Refresh the visible list.",
+      "exposure_rate": 0.02666666666666667,
+      "sensitive_exposure_rate": 0.1
+    }
+  ]
+}
