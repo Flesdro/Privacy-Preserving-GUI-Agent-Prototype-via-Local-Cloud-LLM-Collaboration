@@ -45,6 +45,16 @@ logs/last_run.json
 - Added richer sensitive UI distractors such as inbox subjects, chat history, saved addresses, payment details, account balances, and saved networks.
 - Extended the heuristic local/cloud LLM adapters to cover the new task intents.
 
+### v0.3.0 - Real Android UI trace experiment
+
+- Added Android UIAutomator XML conversion support through `lc_private_gui/android_xml.py`.
+- Added `experiments/real_android_traces/` for real-device experiment records.
+- Converted five UI dumps from a physical OnePlus phone into task traces: WLAN, Bluetooth, Clock Alarm, Calculator, and Display settings.
+- Recorded real-trace audit results in `experiments/real_android_traces/results/all_modes_audit.json`.
+- Latest real-trace result: collaborative mode completed 5/5 tasks with 15.47% average UI exposure and 2.00% average sensitive exposure, compared with 100.00% UI exposure for cloud-only.
+- Kept real XML dumps ignored by Git because they may contain private device text such as network names, alarm times, or device names.
+- Clarified that local/cloud LLMs are still deterministic heuristic adapters, not real model API calls.
+
 ## Files
 
 - `lc_private_gui/models.py`: core dataclasses for UI elements, blocks, tasks, decisions, and results
@@ -52,7 +62,9 @@ logs/last_run.json
 - `lc_private_gui/llm.py`: offline heuristic local/cloud LLM adapters
 - `lc_private_gui/agent.py`: collaborative, cloud-only, and local-only agents
 - `lc_private_gui/cli.py`: command-line runner and summary output
-- `data/sample_tasks.json`: three sample GUI traces with sensitive elements
+- `lc_private_gui/android_xml.py`: Android UIAutomator XML to task JSON converter
+- `data/sample_tasks.json`: 12 synthetic GUI traces with sensitive elements
+- `experiments/real_android_traces/`: converted real Android UI traces and audit results
 
 ## What This Demonstrates
 
