@@ -19,6 +19,14 @@ class HeuristicLocalLLM:
         block_l = block.text.lower()
         if "search" in task_l and ("search" in block_l or "url" in block_l):
             return "Use the search field to enter the requested query."
+        if any(word in task_l for word in ["refresh", "reload"]) and any(
+            word in block_l for word in ["refresh", "reload", "刷新"]
+        ):
+            return "Refresh the visible list."
+        if "scan" in task_l and any(
+            word in block_l for word in ["scan", "扫描", "扫一扫"]
+        ):
+            return "Scan using the visible scan control."
         if "alarm" in task_l and ("alarm" in block_l or "time" in block_l or "add" in block_l):
             return "Create or configure an alarm."
         if "contact" in task_l and ("phone" in block_l or "contact" in block_l or "name" in block_l):
@@ -79,6 +87,14 @@ class HeuristicLocalLLM:
             return 3.0
         if "search" in task and any(word in block_text for word in ["search", "url"]):
             return 3.0
+        if any(word in task for word in ["refresh", "reload"]) and any(
+            word in block_text for word in ["refresh", "reload", "刷新"]
+        ):
+            return 4.0
+        if "scan" in task and any(
+            word in block_text for word in ["scan", "扫描", "扫一扫"]
+        ):
+            return 4.0
         if "phone" in task and "phone" in block_text:
             return 3.0
         if any(word in task for word in ["email", "mail"]) and any(
@@ -129,6 +145,10 @@ class HeuristicCloudLLM:
             if target:
                 query = _quoted_text(task) or task.split("search", 1)[-1].strip()
                 return Decision("input", target.id, text=query, reason="search field is visible")
+        if any(word in task_l for word in ["refresh", "reload"]):
+            target = _first(elements, clickable=True, keywords=["refresh", "reload", "刷新"])
+            if target:
+                return Decision("click", target.id, reason="refresh control is visible")
         if "alarm" in task_l:
             keywords = ["add", "new", "create"] if any(word in task_l for word in ["add", "new", "create"]) else [
                 "alarm",

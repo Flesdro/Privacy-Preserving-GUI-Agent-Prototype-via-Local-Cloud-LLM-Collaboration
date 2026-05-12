@@ -27,6 +27,10 @@ dist/
 # Local runtime outputs
 logs/
 
+# Real device UI dumps and converted local traces
+data/*window.xml
+data/android_*_task.json
+
 # OS/editor files
 .DS_Store
 .idea/
