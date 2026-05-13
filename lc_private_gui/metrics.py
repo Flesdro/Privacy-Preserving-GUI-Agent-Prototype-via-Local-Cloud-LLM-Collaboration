@@ -11,6 +11,8 @@ def summarize(results: list[StepResult]) -> dict[str, float]:
     return {
         "tasks": len(results),
         "success_rate": sum(result.success for result in results) / len(results),
+        "strict_success_rate": sum(result.strict_success for result in results) / len(results),
+        "relaxed_success_rate": sum(result.relaxed_success for result in results) / len(results),
         "avg_exposure_rate": sum(result.exposure_rate for result in results) / len(results),
         "avg_sensitive_exposure_rate": sum(result.sensitive_exposure_rate for result in results)
         / len(results),
@@ -23,4 +25,3 @@ def to_jsonable(result: StepResult) -> dict:
     data["exposure_rate"] = result.exposure_rate
     data["sensitive_exposure_rate"] = result.sensitive_exposure_rate
     return data
-

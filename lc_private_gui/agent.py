@@ -104,11 +104,15 @@ def _result(
     ]
     all_sensitive = [element for element in task.ui_state.elements if element.sensitive]
     expected = task.expected_action
-    success = decision.action == expected["action"] and decision.element_id == expected.get("element_id")
+    strict_success = decision.action == expected["action"] and decision.element_id == expected.get("element_id")
+    relaxed_success, match_type = _relaxed_success(task, decision, expected)
     return StepResult(
         task_id=task.id,
         mode=mode,
-        success=success,
+        success=relaxed_success,
+        strict_success=strict_success,
+        relaxed_success=relaxed_success,
+        success_match_type=match_type,
         decision=decision,
         uploaded_element_ids=uploaded_ids,
         uploaded_sensitive_ids=uploaded_sensitive,
@@ -117,3 +121,33 @@ def _result(
         rounds=rounds,
         confirmed_subtask=subtask,
     )
+
+
+def _relaxed_success(task: Task, decision: Decision, expected: dict[str, str]) -> tuple[bool, str]:
+    if decision.action != expected["action"]:
+        return False, "action_mismatch"
+
+    expected_id = expected.get("element_id")
+    decided_id = decision.element_id
+    if expected_id is None:
+        return decided_id is None, "no_element" if decided_id is None else "unexpected_element"
+    if decided_id is None:
+        return False, "missing_element"
+    if decided_id == expected_id:
+        return True, "strict"
+
+    elements = task.ui_state.by_id()
+    if _is_ancestor(decided_id, expected_id, elements):
+        return True, "ancestor"
+    if _is_ancestor(expected_id, decided_id, elements):
+        return True, "descendant"
+    return False, "element_mismatch"
+
+
+def _is_ancestor(candidate_ancestor_id: str, element_id: str, elements) -> bool:
+    current = elements.get(element_id)
+    while current and current.parent:
+        if current.parent == candidate_ancestor_id:
+            return True
+        current = elements.get(current.parent)
+    return False

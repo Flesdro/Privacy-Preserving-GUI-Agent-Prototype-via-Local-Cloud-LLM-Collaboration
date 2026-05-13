@@ -114,6 +114,9 @@ class StepResult:
     task_id: str
     mode: str
     success: bool
+    strict_success: bool
+    relaxed_success: bool
+    success_match_type: str
     decision: Decision
     uploaded_element_ids: list[str]
     uploaded_sensitive_ids: list[str]
@@ -133,4 +136,3 @@ class StepResult:
         if self.total_sensitive == 0:
             return 0.0
         return len(set(self.uploaded_sensitive_ids)) / self.total_sensitive
-

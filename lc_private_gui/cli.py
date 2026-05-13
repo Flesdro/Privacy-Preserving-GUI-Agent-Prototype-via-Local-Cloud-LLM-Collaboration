@@ -75,12 +75,14 @@ def main() -> None:
         print(f"\n[{mode}]")
         print(f"tasks: {summary['tasks']}")
         print(f"success_rate: {summary['success_rate']:.2%}")
+        print(f"strict_success_rate: {summary['strict_success_rate']:.2%}")
         print(f"avg_ui_exposure: {summary['avg_exposure_rate']:.2%}")
         print(f"avg_sensitive_exposure: {summary['avg_sensitive_exposure_rate']:.2%}")
         print(f"avg_rounds: {summary['avg_rounds']:.2f}")
         for result in results:
             print(
                 f"- {result.task_id}: success={result.success} "
+                f"strict={result.strict_success} match={result.success_match_type} "
                 f"decision={result.decision.action}:{result.decision.element_id} "
                 f"uploaded={len(set(result.uploaded_element_ids))}/{result.total_elements} "
                 f"sensitive={len(set(result.uploaded_sensitive_ids))}/{result.total_sensitive}"
