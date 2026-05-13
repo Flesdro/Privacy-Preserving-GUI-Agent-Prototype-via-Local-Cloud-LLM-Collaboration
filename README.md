@@ -79,6 +79,16 @@ python3 -m lc_private_gui \
 
 You can also copy `.env.example` to `.env` for local credential storage. The `.env` file is ignored by Git.
 
+### v0.5.0 - OpenAI real-trace comparison
+
+- Added hierarchy-aware relaxed success matching for real Android UI trees.
+- Audit logs now report both relaxed `success` and exact `strict_success`.
+- Ran OpenAI-backed collaborative mode on the 5-task real Android trace benchmark.
+- Ran OpenAI-backed cloud-only mode on the same benchmark for privacy comparison.
+- OpenAI collaborative result: 100.00% relaxed success, 80.00% strict success, 15.47% average UI exposure, and 2.00% average sensitive exposure.
+- OpenAI cloud-only result: 100.00% relaxed success, 80.00% strict success, 100.00% average UI exposure, and 60.00% average sensitive exposure.
+- The only strict mismatch was `real_display_dark_mode`, where the model selected a clickable ancestor container of the expected dark-mode control.
+
 ## Files
 
 - `lc_private_gui/models.py`: core dataclasses for UI elements, blocks, tasks, decisions, and results

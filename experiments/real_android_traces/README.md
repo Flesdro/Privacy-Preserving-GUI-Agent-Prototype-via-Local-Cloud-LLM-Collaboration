@@ -20,7 +20,9 @@ The original XML dumps are stored locally under `data/*window.xml` and are inten
 | --- | --- |
 | `tasks/` | One converted task JSON file per real UI dump |
 | `all_real_android_tasks.json` | Combined 5-task benchmark generated from the task files |
-| `results/all_modes_audit.json` | Full audit output from running all three agent modes |
+| `results/all_modes_audit.json` | Full audit output from running all three heuristic agent modes |
+| `results/collaborative_openai_relaxed_audit.json` | OpenAI-backed collaborative result with strict and relaxed success fields |
+| `results/cloud_only_openai_audit.json` | OpenAI-backed cloud-only result with strict and relaxed success fields |
 
 ## Conversion Commands
 
@@ -38,16 +40,25 @@ python3 -m lc_private_gui.android_xml data/display_window.xml experiments/real_a
 python3 -m lc_private_gui --tasks experiments/real_android_traces/all_real_android_tasks.json --mode all --log experiments/real_android_traces/results/all_modes_audit.json
 ```
 
-## Latest Result
+## Latest Heuristic Result
 
-| Mode | Tasks | Success rate | Avg UI exposure | Avg sensitive exposure |
-| --- | ---: | ---: | ---: | ---: |
-| collaborative | 5 | 100.00% | 15.47% | 2.00% |
-| cloud_only | 5 | 100.00% | 100.00% | 60.00% |
-| local_only | 5 | 40.00% | 0.00% | 0.00% |
+| Mode | Tasks | Relaxed success | Strict success | Avg UI exposure | Avg sensitive exposure |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| collaborative | 5 | 100.00% | 100.00% | 15.47% | 2.00% |
+| cloud_only | 5 | 100.00% | 100.00% | 100.00% | 60.00% |
+| local_only | 5 | 40.00% | 40.00% | 0.00% | 0.00% |
+
+## Latest OpenAI Result
+
+| Mode | Tasks | Relaxed success | Strict success | Avg UI exposure | Avg sensitive exposure |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| collaborative | 5 | 100.00% | 80.00% | 15.47% | 2.00% |
+| cloud_only | 5 | 100.00% | 80.00% | 100.00% | 60.00% |
 
 ## Notes
 
 - The collaborative mode completed all real UI trace tasks while uploading far fewer UI elements than the cloud-only baseline.
+- Strict matching requires exact element-id equality. Relaxed matching accepts a selected ancestor or descendant of the expected control, which better reflects Android layouts where an outer row and inner switch/radio button can both be valid tap targets.
+- The OpenAI runs selected a clickable ancestor container for `real_display_dark_mode`, so relaxed success is 100.00% while strict success is 80.00%.
 - The local-only baseline exposes no UI to the cloud, but it fails on several real UI traces because the current local policy is intentionally coarse.
 - These experiments still operate on static UI dumps. They do not click or modify the physical phone.
