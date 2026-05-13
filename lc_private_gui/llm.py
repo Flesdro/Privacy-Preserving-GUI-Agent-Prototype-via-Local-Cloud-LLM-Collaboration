@@ -320,15 +320,72 @@ class OpenAICompatibleCloudLLM:
         return json.loads(content)
 
 
+class OllamaLocalLLM(HeuristicLocalLLM):
+    """Local-only decision adapter backed by Ollama's local HTTP API."""
+
+    def __init__(
+        self,
+        *,
+        model: str | None = None,
+        base_url: str | None = None,
+        timeout: int = 120,
+    ) -> None:
+        self.model = model or os.environ.get("OLLAMA_MODEL") or "qwen2.5:latest"
+        self.base_url = (base_url or os.environ.get("OLLAMA_BASE_URL") or "http://localhost:11434").rstrip("/")
+        self.timeout = timeout
+
+    def decide_local(self, task: str, history: list[Decision], blocks: list[UIBlock]) -> Decision | None:
+        payload = decision_prompt_payload(task, history, blocks, mask_sensitive=False)
+        data = self._chat_json(_local_system_prompt(), json.dumps(payload, ensure_ascii=False))
+        action = data.get("action")
+        element_id = data.get("element_id")
+        text = data.get("text")
+        reason = data.get("reason", "ollama local decision")
+        if not isinstance(action, str):
+            return None
+        if element_id is not None and not isinstance(element_id, str):
+            element_id = None
+        if text is not None and not isinstance(text, str):
+            text = None
+        if not isinstance(reason, str):
+            reason = "ollama local decision"
+        decision = Decision(action=action, element_id=element_id, text=text, reason=reason)
+        return decision if decision.is_valid else None
+
+    def _chat_json(self, system_prompt: str, user_prompt: str) -> dict[str, Any]:
+        body = {
+            "model": self.model,
+            "messages": [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt},
+            ],
+            "stream": False,
+            "format": "json",
+            "options": {"temperature": 0},
+        }
+        req = request.Request(
+            f"{self.base_url}/api/chat",
+            data=json.dumps(body).encode("utf-8"),
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
+        with request.urlopen(req, timeout=self.timeout) as response:
+            payload = json.loads(response.read().decode("utf-8"))
+        content = payload["message"]["content"]
+        return json.loads(content)
+
+
 def decision_prompt_payload(
     task: str,
     history: list[Decision],
     uploaded_blocks: list[UIBlock],
+    *,
+    mask_sensitive: bool = True,
 ) -> dict[str, Any]:
     return {
         "task": task,
         "history": [_decision_payload(item) for item in history],
-        "uploaded_blocks": [block.to_prompt_payload(mask_sensitive=True) for block in uploaded_blocks],
+        "uploaded_blocks": [block.to_prompt_payload(mask_sensitive=mask_sensitive) for block in uploaded_blocks],
         "allowed_actions": ["click", "input", "scroll", "back", "finish"],
         "instruction": (
             "Choose the next GUI action using only the uploaded blocks. "
@@ -349,6 +406,14 @@ def _system_prompt() -> str:
     return (
         "You are the cloud-side GUI decision module in a privacy-preserving mobile agent. "
         "You only see uploaded UI blocks, not the full screen. "
+        "Never invent element ids. Return strict JSON only."
+    )
+
+
+def _local_system_prompt() -> str:
+    return (
+        "You are the local-only GUI decision module running on the user's device. "
+        "You can inspect the provided UI blocks and choose the next action. "
         "Never invent element ids. Return strict JSON only."
     )
 

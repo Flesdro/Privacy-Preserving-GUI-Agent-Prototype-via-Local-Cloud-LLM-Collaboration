@@ -15,11 +15,24 @@ class CloudLLM(Protocol):
         ...
 
 
+class LocalLLM(Protocol):
+    def generate_subtask(self, task: str, history: list[Decision], block: UIBlock) -> str:
+        ...
+
+    def rank_blocks(self, task: str, subtask: str, blocks: list[UIBlock]):
+        ...
+
+
+class LocalDecisionLLM(LocalLLM, Protocol):
+    def decide_local(self, task: str, history: list[Decision], blocks: list[UIBlock]) -> Decision | None:
+        ...
+
+
 class CollaborativeAgent:
     def __init__(
         self,
         partitioner: LayoutAwarePartitioner | None = None,
-        local_llm: HeuristicLocalLLM | None = None,
+        local_llm: LocalLLM | None = None,
         cloud_llm: CloudLLM | None = None,
         max_rounds: int = 3,
     ) -> None:
@@ -68,7 +81,7 @@ class LocalOnlyAgent:
     def __init__(
         self,
         partitioner: LayoutAwarePartitioner | None = None,
-        local_llm: HeuristicLocalLLM | None = None,
+        local_llm: LocalDecisionLLM | None = None,
     ) -> None:
         self.partitioner = partitioner or LayoutAwarePartitioner()
         self.local_llm = local_llm or HeuristicLocalLLM()
@@ -80,13 +93,20 @@ class LocalOnlyAgent:
         ]
         subtask = next((candidate for candidate in candidates if "unrelated" not in candidate), candidates[0])
         ranked = self.local_llm.rank_blocks(task.instruction, subtask, blocks)
-        top = ranked[0].block
-        element = next((e for e in top.elements if e.clickable or e.editable), None)
-        decision = Decision(
-            "input" if element and element.editable else "click",
-            element.id if element else None,
-            reason="local-only coarse action",
-        )
+        if hasattr(self.local_llm, "decide_local"):
+            ordered_blocks = [item.block for item in ranked]
+            decision = self.local_llm.decide_local(task.instruction, [], ordered_blocks) or Decision(
+                "finish",
+                reason="local-only model did not return a valid action",
+            )
+        else:
+            top = ranked[0].block
+            element = next((e for e in top.elements if e.clickable or e.editable), None)
+            decision = Decision(
+                "input" if element and element.editable else "click",
+                element.id if element else None,
+                reason="local-only coarse action",
+            )
         return _result(task, "local_only", decision, [], 1, subtask)
 
 

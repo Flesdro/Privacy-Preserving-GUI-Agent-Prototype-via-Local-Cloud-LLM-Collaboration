@@ -6,7 +6,7 @@ import os
 from pathlib import Path
 
 from .agent import CloudOnlyAgent, CollaborativeAgent, LocalOnlyAgent
-from .llm import OpenAICompatibleCloudLLM
+from .llm import OllamaLocalLLM, OpenAICompatibleCloudLLM
 from .metrics import summarize, to_jsonable
 from .parser import load_tasks
 
@@ -60,15 +60,27 @@ def main() -> None:
         default="heuristic",
         help="Cloud decision backend. The openai-compatible backend uses CLOUD_LLM_* env vars.",
     )
+    parser.add_argument(
+        "--local-backend",
+        choices=["heuristic", "ollama"],
+        default="heuristic",
+        help="Local-only decision backend. The ollama backend uses OLLAMA_* env vars.",
+    )
     args = parser.parse_args()
 
     tasks = load_tasks(args.tasks)
     modes = list(AGENTS) if args.mode == "all" else [args.mode]
     audit: dict[str, list[dict]] = {}
     cloud_llm = OpenAICompatibleCloudLLM() if args.cloud_backend == "openai-compatible" else None
+    local_llm = OllamaLocalLLM() if args.local_backend == "ollama" else None
 
     for mode in modes:
-        agent = AGENTS[mode](cloud_llm=cloud_llm) if mode in {"collaborative", "cloud_only"} else AGENTS[mode]()
+        if mode in {"collaborative", "cloud_only"}:
+            agent = AGENTS[mode](cloud_llm=cloud_llm)
+        elif mode == "local_only":
+            agent = AGENTS[mode](local_llm=local_llm)
+        else:
+            agent = AGENTS[mode]()
         results = [agent.run(task) for task in tasks]
         audit[mode] = [to_jsonable(result) for result in results]
         summary = summarize(results)

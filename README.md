@@ -89,6 +89,25 @@ You can also copy `.env.example` to `.env` for local credential storage. The `.e
 - OpenAI cloud-only result: 100.00% relaxed success, 80.00% strict success, 100.00% average UI exposure, and 60.00% average sensitive exposure.
 - The only strict mismatch was `real_display_dark_mode`, where the model selected a clickable ancestor container of the expected dark-mode control.
 
+### v0.6.0 - Ollama local-only backend
+
+- Added an optional Ollama-backed local LLM adapter for `local_only` experiments.
+- Added `--local-backend ollama` to run local-only decisions through a model served at `OLLAMA_BASE_URL`.
+- Added local model configuration through `OLLAMA_BASE_URL` and `OLLAMA_MODEL`.
+- Default local model configuration targets `qwen2.5:latest` on `http://localhost:11434`.
+- Ollama local-only result on the 5-task real Android trace benchmark: 60.00% relaxed success, 60.00% strict success, 0.00% average UI exposure, and 0.00% average sensitive exposure.
+- This result is higher than the heuristic local-only baseline, but still below the OpenAI-backed modes, showing the privacy-utility tradeoff.
+
+Example:
+
+```bash
+python3 -m lc_private_gui \
+  --tasks experiments/real_android_traces/all_real_android_tasks.json \
+  --mode local_only \
+  --local-backend ollama \
+  --log experiments/real_android_traces/results/local_only_ollama_audit.json
+```
+
 ## Files
 
 - `lc_private_gui/models.py`: core dataclasses for UI elements, blocks, tasks, decisions, and results

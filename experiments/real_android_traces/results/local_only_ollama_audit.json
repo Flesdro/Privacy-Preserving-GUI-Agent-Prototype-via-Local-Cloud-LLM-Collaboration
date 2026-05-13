@@ -1,0 +1,114 @@
+{
+  "local_only": [
+    {
+      "task_id": "real_alarm_add",
+      "mode": "local_only",
+      "success": false,
+      "strict_success": false,
+      "relaxed_success": false,
+      "success_match_type": "element_mismatch",
+      "decision": {
+        "action": "click",
+        "element_id": "node_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_0",
+        "text": "更多选项,有新通知",
+        "reason": "用户界面中存在添加闹钟的功能按钮，点击该按钮可以进入添加闹钟的页面。"
+      },
+      "uploaded_element_ids": [],
+      "uploaded_sensitive_ids": [],
+      "total_elements": 106,
+      "total_sensitive": 0,
+      "rounds": 1,
+      "confirmed_subtask": "Create or configure an alarm.",
+      "exposure_rate": 0.0,
+      "sensitive_exposure_rate": 0.0
+    },
+    {
+      "task_id": "real_bluetooth_refresh",
+      "mode": "local_only",
+      "success": true,
+      "strict_success": true,
+      "relaxed_success": true,
+      "success_match_type": "strict",
+      "decision": {
+        "action": "click",
+        "element_id": "node_0_0_0_0_0_0_0_0_0_3_1_0",
+        "text": "刷新",
+        "reason": "用户需要刷新可用的蓝牙设备列表"
+      },
+      "uploaded_element_ids": [],
+      "uploaded_sensitive_ids": [],
+      "total_elements": 38,
+      "total_sensitive": 1,
+      "rounds": 1,
+      "confirmed_subtask": "Open or change the requested setting.",
+      "exposure_rate": 0.0,
+      "sensitive_exposure_rate": 0.0
+    },
+    {
+      "task_id": "real_calculator_tap_7",
+      "mode": "local_only",
+      "success": true,
+      "strict_success": true,
+      "relaxed_success": true,
+      "success_match_type": "strict",
+      "decision": {
+        "action": "click",
+        "element_id": "node_0_0_0_0_0_0_1_0_0_1_0_4_0",
+        "text": "7",
+        "reason": "The task is to tap number 7, and the element with id 'node_0_0_0_0_0_0_1_0_0_1_0_4_0' corresponds to the number 7 on the calculator."
+      },
+      "uploaded_element_ids": [],
+      "uploaded_sensitive_ids": [],
+      "total_elements": 73,
+      "total_sensitive": 0,
+      "rounds": 1,
+      "confirmed_subtask": "Tap the visible target control.",
+      "exposure_rate": 0.0,
+      "sensitive_exposure_rate": 0.0
+    },
+    {
+      "task_id": "real_display_dark_mode",
+      "mode": "local_only",
+      "success": false,
+      "strict_success": false,
+      "relaxed_success": false,
+      "success_match_type": "element_mismatch",
+      "decision": {
+        "action": "click",
+        "element_id": "node_0_0_0_0_0_0_1_0_0_0_0_0_0",
+        "text": "暗色模式",
+        "reason": "用户需要打开暗色模式设置，该元素对应暗色模式的选项"
+      },
+      "uploaded_element_ids": [],
+      "uploaded_sensitive_ids": [],
+      "total_elements": 55,
+      "total_sensitive": 2,
+      "rounds": 1,
+      "confirmed_subtask": "Open or change the requested setting.",
+      "exposure_rate": 0.0,
+      "sensitive_exposure_rate": 0.0
+    },
+    {
+      "task_id": "real_wifi_refresh",
+      "mode": "local_only",
+      "success": true,
+      "strict_success": true,
+      "relaxed_success": true,
+      "success_match_type": "strict",
+      "decision": {
+        "action": "click",
+        "element_id": "node_0_0_0_0_0_0_0_0_0_2_1_0",
+        "text": "刷新",
+        "reason": "用户需要刷新可用的WiFi网络列表"
+      },
+      "uploaded_element_ids": [],
+      "uploaded_sensitive_ids": [],
+      "total_elements": 75,
+      "total_sensitive": 10,
+      "rounds": 1,
+      "confirmed_subtask": "Refresh the visible list.",
+      "exposure_rate": 0.0,
+      "sensitive_exposure_rate": 0.0
+    }
+  ]
+}

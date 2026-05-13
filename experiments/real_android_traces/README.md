@@ -23,6 +23,8 @@ The original XML dumps are stored locally under `data/*window.xml` and are inten
 | `results/all_modes_audit.json` | Full audit output from running all three heuristic agent modes |
 | `results/collaborative_openai_relaxed_audit.json` | OpenAI-backed collaborative result with strict and relaxed success fields |
 | `results/cloud_only_openai_audit.json` | OpenAI-backed cloud-only result with strict and relaxed success fields |
+| `results/local_only_ollama_audit.json` | Ollama-backed local-only result |
+| `results/summary.md` | Consolidated result table and interpretation |
 
 ## Conversion Commands
 
@@ -55,10 +57,16 @@ python3 -m lc_private_gui --tasks experiments/real_android_traces/all_real_andro
 | collaborative | 5 | 100.00% | 80.00% | 15.47% | 2.00% |
 | cloud_only | 5 | 100.00% | 80.00% | 100.00% | 60.00% |
 
+## Latest Ollama Result
+
+| Mode | Backend | Tasks | Relaxed success | Strict success | Avg UI exposure | Avg sensitive exposure |
+| --- | --- | ---: | ---: | ---: | ---: | ---: |
+| local_only | qwen2.5:latest via Ollama | 5 | 60.00% | 60.00% | 0.00% | 0.00% |
+
 ## Notes
 
 - The collaborative mode completed all real UI trace tasks while uploading far fewer UI elements than the cloud-only baseline.
 - Strict matching requires exact element-id equality. Relaxed matching accepts a selected ancestor or descendant of the expected control, which better reflects Android layouts where an outer row and inner switch/radio button can both be valid tap targets.
 - The OpenAI runs selected a clickable ancestor container for `real_display_dark_mode`, so relaxed success is 100.00% while strict success is 80.00%.
-- The local-only baseline exposes no UI to the cloud, but it fails on several real UI traces because the current local policy is intentionally coarse.
+- The Ollama local-only baseline exposes no UI to the cloud and improves over heuristic local-only, but it still fails on some real UI traces.
 - These experiments still operate on static UI dumps. They do not click or modify the physical phone.
