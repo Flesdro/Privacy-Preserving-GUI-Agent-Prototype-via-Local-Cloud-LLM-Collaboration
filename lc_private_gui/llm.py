@@ -6,7 +6,13 @@ import os
 from typing import Any
 from urllib import request
 
-from .models import Decision, UIBlock
+from .models import Decision, ThoughtAction, UIBlock
+from .react import (
+    build_react_prompt,
+    build_react_system_prompt,
+    build_subtask_prompt,
+    parse_react_response,
+)
 
 
 @dataclass(frozen=True)
@@ -294,6 +300,48 @@ class OpenAICompatibleCloudLLM:
             reason = "cloud model decision"
         decision = Decision(action=action, element_id=element_id, text=text, reason=reason)
         return decision if decision.is_valid else None
+
+    def react_decide(
+        self,
+        task: str,
+        thought_history: list[ThoughtAction],
+        uploaded_blocks: list[UIBlock],
+        similar_episodes: list[dict] | None = None,
+    ) -> ThoughtAction:
+        """ReAct variant: returns (thought, decision) instead of just decision."""
+        prompt = build_react_prompt(
+            task,
+            thought_history,
+            uploaded_blocks,
+            similar_episodes,
+            mask_sensitive=True,
+        )
+        data = self._chat_json(
+            build_react_system_prompt("cloud"),
+            json.dumps(prompt, ensure_ascii=False),
+        )
+        ta = parse_react_response(data)
+        if not ta.decision.is_valid:
+            ta = ThoughtAction(
+                thought=ta.thought,
+                decision=Decision("finish", reason="invalid react response"),
+            )
+        return ta
+
+    def react_confirm_subtask(
+        self,
+        task: str,
+        thought_history: list[ThoughtAction],
+        candidates: list[str],
+    ) -> str:
+        """Subtask confirmation that is aware of the current thought history."""
+        prompt = build_subtask_prompt(task, thought_history, candidates)
+        data = self._chat_json(_system_prompt(), json.dumps(prompt, ensure_ascii=False))
+        subtask = data.get("subtask")
+        if isinstance(subtask, str) and subtask.strip():
+            return subtask.strip()
+        useful = [c for c in candidates if "unrelated" not in c.lower()]
+        return useful[0] if useful else f"Make progress on: {task}"
 
     def _chat_json(self, system_prompt: str, user_prompt: str) -> dict[str, Any]:
         body = {
