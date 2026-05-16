@@ -400,6 +400,33 @@ class OllamaLocalLLM(HeuristicLocalLLM):
         decision = Decision(action=action, element_id=element_id, text=text, reason=reason)
         return decision if decision.is_valid else None
 
+    def react_decide_local(
+        self,
+        task: str,
+        thought_history: list[ThoughtAction],
+        blocks: list[UIBlock],
+        similar_episodes: list[dict] | None = None,
+    ) -> ThoughtAction:
+        """ReAct variant for local-only mode (sees unmasked sensitive elements)."""
+        prompt = build_react_prompt(
+            task,
+            thought_history,
+            blocks,
+            similar_episodes,
+            mask_sensitive=False,
+        )
+        data = self._chat_json(
+            build_react_system_prompt("local"),
+            json.dumps(prompt, ensure_ascii=False),
+        )
+        ta = parse_react_response(data)
+        if not ta.decision.is_valid:
+            ta = ThoughtAction(
+                thought=ta.thought,
+                decision=Decision("finish", reason="invalid react response from local model"),
+            )
+        return ta
+
     def _chat_json(self, system_prompt: str, user_prompt: str) -> dict[str, Any]:
         body = {
             "model": self.model,

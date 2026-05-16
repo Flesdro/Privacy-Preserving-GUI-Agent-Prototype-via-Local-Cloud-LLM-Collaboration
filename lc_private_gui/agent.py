@@ -3,7 +3,7 @@ from __future__ import annotations
 from typing import Protocol
 
 from .llm import HeuristicCloudLLM, HeuristicLocalLLM
-from .models import Decision, StepResult, Task, UIBlock
+from .models import Decision, StepResult, Task, ThoughtAction, UIBlock
 from .partitioner import LayoutAwarePartitioner
 
 
@@ -41,20 +41,45 @@ class CollaborativeAgent:
         self.cloud_llm = cloud_llm or HeuristicCloudLLM()
         self.max_rounds = max_rounds
 
-    def run(self, task: Task) -> StepResult:
-        history: list[Decision] = []
+    def run(
+        self,
+        task: Task,
+        thought_history: list[ThoughtAction] | None = None,
+        similar_episodes: list[dict] | None = None,
+    ) -> StepResult:
+        thought_history = thought_history or []
+        history: list[Decision] = [ta.decision for ta in thought_history]
+
         blocks = self.partitioner.partition(task.ui_state)
         candidates = [
             self.local_llm.generate_subtask(task.instruction, history, block) for block in blocks
         ]
-        subtask = self.cloud_llm.confirm_subtask(task.instruction, history, candidates)
+
+        # Use ReAct-aware subtask confirmation if available
+        if thought_history and hasattr(self.cloud_llm, "react_confirm_subtask"):
+            subtask = self.cloud_llm.react_confirm_subtask(
+                task.instruction, thought_history, candidates
+            )
+        else:
+            subtask = self.cloud_llm.confirm_subtask(task.instruction, history, candidates)
+
         ranked = self.local_llm.rank_blocks(task.instruction, subtask, blocks)
 
         uploaded: list[UIBlock] = []
+        thought = ""
         decision: Decision | None = None
+
         for round_index, ranked_block in enumerate(ranked[: self.max_rounds], start=1):
             uploaded.append(ranked_block.block)
-            decision = self.cloud_llm.decide(task.instruction, history, uploaded)
+            # Use ReAct decide if available (returns ThoughtAction)
+            if hasattr(self.cloud_llm, "react_decide"):
+                ta = self.cloud_llm.react_decide(
+                    task.instruction, thought_history, uploaded, similar_episodes
+                )
+                thought = ta.thought
+                decision = ta.decision
+            else:
+                decision = self.cloud_llm.decide(task.instruction, history, uploaded)
             if decision and decision.is_valid:
                 break
         else:
@@ -63,18 +88,31 @@ class CollaborativeAgent:
         if decision is None:
             decision = Decision("finish", reason="no valid action found")
 
-        return _result(task, "collaborative", decision, uploaded, round_index, subtask)
+        return _result(task, "collaborative", decision, uploaded, round_index, subtask, thought)
 
 
 class CloudOnlyAgent:
     def __init__(self, cloud_llm: CloudLLM | None = None) -> None:
         self.cloud_llm = cloud_llm or HeuristicCloudLLM()
 
-    def run(self, task: Task) -> StepResult:
+    def run(
+        self,
+        task: Task,
+        thought_history: list[ThoughtAction] | None = None,
+        similar_episodes: list[dict] | None = None,
+    ) -> StepResult:
+        thought_history = thought_history or []
         full_block = UIBlock("full_ui", task.ui_state.root_id, task.ui_state.elements)
         subtask = f"Use full UI to complete: {task.instruction}"
-        decision = self.cloud_llm.decide(task.instruction, [], [full_block]) or Decision("finish")
-        return _result(task, "cloud_only", decision, [full_block], 1, subtask)
+        thought = ""
+        if hasattr(self.cloud_llm, "react_decide"):
+            ta = self.cloud_llm.react_decide(
+                task.instruction, thought_history, [full_block], similar_episodes
+            )
+            thought, decision = ta.thought, ta.decision
+        else:
+            decision = self.cloud_llm.decide(task.instruction, [], [full_block]) or Decision("finish")
+        return _result(task, "cloud_only", decision, [full_block], 1, subtask, thought)
 
 
 class LocalOnlyAgent:
@@ -86,16 +124,33 @@ class LocalOnlyAgent:
         self.partitioner = partitioner or LayoutAwarePartitioner()
         self.local_llm = local_llm or HeuristicLocalLLM()
 
-    def run(self, task: Task) -> StepResult:
+    def run(
+        self,
+        task: Task,
+        thought_history: list[ThoughtAction] | None = None,
+        similar_episodes: list[dict] | None = None,
+    ) -> StepResult:
+        thought_history = thought_history or []
+        history: list[Decision] = [ta.decision for ta in thought_history]
+
         blocks = self.partitioner.partition(task.ui_state)
         candidates = [
-            self.local_llm.generate_subtask(task.instruction, [], block) for block in blocks
+            self.local_llm.generate_subtask(task.instruction, history, block) for block in blocks
         ]
-        subtask = next((candidate for candidate in candidates if "unrelated" not in candidate), candidates[0])
+        subtask = next((c for c in candidates if "unrelated" not in c), candidates[0])
         ranked = self.local_llm.rank_blocks(task.instruction, subtask, blocks)
-        if hasattr(self.local_llm, "decide_local"):
+        thought = ""
+
+        # ReAct local decide (OllamaLocalLLM)
+        if hasattr(self.local_llm, "react_decide_local"):
             ordered_blocks = [item.block for item in ranked]
-            decision = self.local_llm.decide_local(task.instruction, [], ordered_blocks) or Decision(
+            ta = self.local_llm.react_decide_local(
+                task.instruction, thought_history, ordered_blocks, similar_episodes
+            )
+            thought, decision = ta.thought, ta.decision
+        elif hasattr(self.local_llm, "decide_local"):
+            ordered_blocks = [item.block for item in ranked]
+            decision = self.local_llm.decide_local(task.instruction, history, ordered_blocks) or Decision(
                 "finish",
                 reason="local-only model did not return a valid action",
             )
@@ -107,7 +162,7 @@ class LocalOnlyAgent:
                 element.id if element else None,
                 reason="local-only coarse action",
             )
-        return _result(task, "local_only", decision, [], 1, subtask)
+        return _result(task, "local_only", decision, [], 1, subtask, thought)
 
 
 def _result(
@@ -117,6 +172,7 @@ def _result(
     uploaded_blocks: list[UIBlock],
     rounds: int,
     subtask: str,
+    thought: str = "",
 ) -> StepResult:
     uploaded_ids = [element.id for block in uploaded_blocks for element in block.elements]
     uploaded_sensitive = [
@@ -140,6 +196,7 @@ def _result(
         total_sensitive=len(all_sensitive),
         rounds=rounds,
         confirmed_subtask=subtask,
+        thought=thought,
     )
 
 
