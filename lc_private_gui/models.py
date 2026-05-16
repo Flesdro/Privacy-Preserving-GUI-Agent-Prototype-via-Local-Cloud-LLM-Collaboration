@@ -125,6 +125,7 @@ class StepResult:
     total_sensitive: int
     rounds: int
     confirmed_subtask: str
+    thought: str = ""
 
     @property
     def exposure_rate(self) -> float:
@@ -137,3 +138,68 @@ class StepResult:
         if self.total_sensitive == 0:
             return 0.0
         return len(set(self.uploaded_sensitive_ids)) / self.total_sensitive
+
+
+# ---------------------------------------------------------------------------
+# ReAct + multi-step dataclasses (v0.8)
+# ---------------------------------------------------------------------------
+
+@dataclass
+class ThoughtAction:
+    """One ReAct step: a reasoning trace paired with the chosen action."""
+    thought: str
+    decision: Decision
+
+
+@dataclass
+class ThoughtStep:
+    """Per-step record stored inside a Trajectory."""
+    step: int
+    thought: str
+    decision: Decision
+    observation: str
+    exposure_rate: float
+    sensitive_exposure_rate: float
+
+
+@dataclass
+class Trajectory:
+    """Full multi-step run record returned by MultiStepRunner."""
+    task_id: str
+    instruction: str
+    mode: str
+    steps: list[ThoughtStep]
+    outcome: str
+    total_steps: int
+    avg_exposure_rate: float
+    avg_sensitive_exposure_rate: float
+    similar_episodes_used: int
+
+
+@dataclass
+class EpisodeStep:
+    """One step serialised into an Episode for episodic memory storage."""
+    step: int
+    thought: str
+    action: str
+    element_id: str | None
+    text: str | None
+    reason: str
+    observation: str
+    exposure_rate: float
+    sensitive_exposure_rate: float
+
+
+@dataclass
+class Episode:
+    """A completed trajectory stored in the episodic memory bank."""
+    episode_id: str
+    task_description: str
+    app: str
+    mode: str
+    steps: list[EpisodeStep]
+    outcome: str
+    total_steps: int
+    avg_exposure_rate: float
+    avg_sensitive_exposure_rate: float
+    timestamp: str = field(default_factory=lambda: datetime.now().isoformat())
