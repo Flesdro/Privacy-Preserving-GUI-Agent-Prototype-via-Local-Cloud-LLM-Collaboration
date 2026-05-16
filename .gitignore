@@ -31,6 +31,7 @@ logs/
 # Real device UI dumps and converted local traces
 data/*window.xml
 data/android_*_task.json
+experiments/live_android_runs/
 
 # OS/editor files
 .DS_Store

@@ -108,6 +108,39 @@ python3 -m lc_private_gui \
   --log experiments/real_android_traces/results/local_only_ollama_audit.json
 ```
 
+### v0.7.0 - Safe single-step Android live runner
+
+- Added `lc_private_gui.android_live` for one live Android observe-decide-act step.
+- Added ADB UIAutomator dumping, normalized task conversion, decision recording, and before/after evidence capture.
+- Added a Calculator-only safe click executor using `adb shell input tap X Y`.
+- Kept live execution dry-run by default; real device input requires `--execute`.
+- Added an Android package allowlist, defaulting to `com.coloros.calculator`.
+
+Dry-run example:
+
+```bash
+python3 -m lc_private_gui.android_live \
+  --instruction "Tap number 7" \
+  --expected-text "7" \
+  --mode collaborative
+```
+
+Real execution example:
+
+```bash
+python3 -m lc_private_gui.android_live \
+  --instruction "Tap number 7" \
+  --expected-text "7" \
+  --mode collaborative \
+  --execute
+```
+
+Each run writes evidence under:
+
+```text
+experiments/live_android_runs/
+```
+
 ## Files
 
 - `lc_private_gui/models.py`: core dataclasses for UI elements, blocks, tasks, decisions, and results
@@ -116,6 +149,7 @@ python3 -m lc_private_gui \
 - `lc_private_gui/agent.py`: collaborative, cloud-only, and local-only agents
 - `lc_private_gui/cli.py`: command-line runner and summary output
 - `lc_private_gui/android_xml.py`: Android UIAutomator XML to task JSON converter
+- `lc_private_gui/android_live.py`: safe single-step Android live runner and ADB click executor
 - `data/sample_tasks.json`: 12 synthetic GUI traces with sensitive elements
 - `experiments/real_android_traces/`: converted real Android UI traces and audit results
 
