@@ -36,8 +36,9 @@ AUTHORISE_PHRASES = (
 # Resource-ids / roles that identify the amount entry field.
 AMOUNT_FIELD_HINTS = ("amount", "transfer_amount", "payment_amount")
 
-# Resource-ids that carry the selected recipient on a confirm screen.
-PAYEE_HINTS = ("selected_payee", "payee", "recipient")
+# Resource-ids that carry the *selected* recipient on a confirm screen. Matched
+# exactly so payee-list distractors (e.g. resource_id "payee_row") are ignored.
+PAYEE_IDS = ("selected_payee", "recipient", "transfer_payee", "payee")
 
 
 @dataclass
@@ -151,8 +152,7 @@ class SafetyPolicy:
 
     def _selected_payee(self, task: Task) -> str | None:
         for element in task.ui_state.elements:
-            rid = element.resource_id.lower()
-            if any(hint in rid for hint in PAYEE_HINTS):
+            if element.resource_id.lower() in PAYEE_IDS:
                 return _clean_payee(element.text or element.description)
         return None
 

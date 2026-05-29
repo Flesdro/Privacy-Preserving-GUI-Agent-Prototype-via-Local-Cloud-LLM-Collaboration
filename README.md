@@ -248,6 +248,26 @@ python3 scripts/cumulative_demo.py
 python3 -m lc_private_gui --tasks data/finance_tasks.json --mode all --auto-pii
 ```
 
+### v0.10.0 - PrivacyPay web demo
+
+- Added a zero-dependency web demo under `demo/`: a mock phone banking UI with a
+  live "privacy X-ray" (what the cloud receives each step, sensitive fields
+  masked), per-step and cumulative exposure meters, a SafetyPolicy verdict
+  badge, and a "what the cloud knows about you" panel.
+- Decisions, exposure metrics, and safety verdicts come from the real engine
+  (`CollaborativeAgent` / `CloudOnlyAgent` + `SafetyPolicy`); only screen
+  transitions are scripted. The server uses only the Python standard library.
+- Three scenarios: pay a bill (ends at a human-in-the-loop confirmation),
+  transfer to an unknown payee (blocked by allowlist), and transfer over the cap
+  (blocked by amount limit). A mode toggle contrasts PrivacyPay vs cloud-only.
+- While building the demo, tightened `SafetyPolicy` payee detection to match the
+  selected-recipient field by exact resource id, so payee-list distractors are
+  no longer mistaken for the recipient.
+
+```bash
+python3 demo/server.py      # then open http://localhost:8000
+```
+
 ## Files
 
 - `lc_private_gui/models.py`: core dataclasses for UI elements, blocks, tasks, decisions, and results
@@ -268,6 +288,7 @@ python3 -m lc_private_gui --tasks data/finance_tasks.json --mode all --auto-pii
 - `scripts/safety_demo.py`: demonstrates the SafetyPolicy gate without a device
 - `scripts/pii_audit.py`: audits auto-PII detection against hand labels
 - `scripts/cumulative_demo.py`: demonstrates cumulative multi-step exposure
+- `demo/`: zero-dependency web demo (mock phone UI + privacy X-ray); see `demo/README.md`
 - `data/episodes/`: on-device episodic memory store (auto-generated, git-ignored)
 - `experiments/real_android_traces/`: converted real Android UI traces and audit results
 - `experiments/multistep_runs/`: per-run trajectory records (auto-generated, git-ignored)
