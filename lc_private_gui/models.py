@@ -174,6 +174,11 @@ class Trajectory:
     avg_exposure_rate: float
     avg_sensitive_exposure_rate: float
     similar_episodes_used: int
+    # Cumulative *unique* exposure across the whole trajectory: the union of
+    # elements ever uploaded over the union of elements ever seen. Captures
+    # privacy leakage that accumulates across steps, beyond per-step averages.
+    cumulative_exposure_rate: float = 0.0
+    cumulative_sensitive_exposure_rate: float = 0.0
 
 
 @dataclass

@@ -201,8 +201,8 @@ suite + safety gate + input execution). Design recorded in `PRIVACYPAY_PLAN.md`.
   `android_live`. Money-moving actions are held as `needs_confirmation` unless
   `--auto-confirm` is given; `MultiStepRunner` stops on a `blocked` or
   `needs_confirmation` verdict instead of looping.
-- Deferred to v1.0: automatic PII detection (B), cumulative multi-step exposure
-  metric (E), and OpenAI-backed finance evaluation (F).
+- Deferred to v0.9.1: automatic PII detection (B), cumulative multi-step
+  exposure metric (E), and finance evaluation (F).
 
 Run the finance evaluation and safety demo:
 
@@ -210,6 +210,42 @@ Run the finance evaluation and safety demo:
 python3 scripts/build_finance_tasks.py
 python3 -m lc_private_gui --tasks data/finance_tasks.json --mode all
 python3 scripts/safety_demo.py
+```
+
+### v0.9.1 - PrivacyPay privacy depth (auto-PII, cumulative exposure)
+
+Completed the deferred PrivacyPay items: automatic PII detection (B),
+cumulative multi-step exposure (E), and evaluation (F).
+
+- Added `lc_private_gui/pii.py`: dependency-free regex + topic-lexicon detector
+  for email, phone, account/card/IBAN, monetary amount, address, labelled name,
+  and sensitive topics (medical, tax, passport, etc.). The topic lexicon
+  deliberately excludes finance-control words (bank, statement, account,
+  payment, transfer) so legitimate buttons are not flagged.
+- Sensitivity can now be derived instead of hand-labelled: `load_tasks(...,
+  auto_pii=True)` and the `--auto-pii` CLI flag annotate elements automatically
+  (OR-ed with any existing labels).
+- Audited auto-detection against the hand labels across both task suites
+  (`scripts/pii_audit.py`): 100.00% precision, 78.79% recall, 88.14% F1 over
+  447 elements. The 21 misses are bare names and contextual phrases with no hard
+  pattern, motivating an LLM-based detector as future work.
+- Added a cumulative multi-step exposure metric to `Trajectory` and
+  `MultiStepRunner`: the union of elements ever uploaded over the union ever
+  seen (ids namespaced by screen). Recorded in `trajectory.json` as
+  `cumulative_exposure_rate` / `cumulative_sensitive_exposure_rate`.
+- Added `scripts/cumulative_demo.py`: over a 3-screen bill-pay flow, cloud-only
+  accumulates 100.00% element and 100.00% sensitive exposure, while
+  collaborative accumulates 12.50% element and 0.00% sensitive exposure.
+- Finance suite audit (heuristic backend) holds with `--auto-pii`: collaborative
+  100.00% success at 4.55% average sensitive exposure vs 100.00% for cloud-only.
+- The finance suite is also runnable against a real cloud model with
+  `--cloud-backend openai-compatible` (needs `CLOUD_LLM_*`); recorded numbers
+  here use the deterministic heuristic backend for reproducibility.
+
+```bash
+python3 scripts/pii_audit.py
+python3 scripts/cumulative_demo.py
+python3 -m lc_private_gui --tasks data/finance_tasks.json --mode all --auto-pii
 ```
 
 ## Files
@@ -225,10 +261,13 @@ python3 scripts/safety_demo.py
 - `lc_private_gui/memory.py`: episodic memory store with TF-IDF RAG retrieval
 - `lc_private_gui/runner.py`: bounded multi-step observe-think-act loop
 - `lc_private_gui/safety.py`: SafetyPolicy gate for money-moving actions (PrivacyPay)
+- `lc_private_gui/pii.py`: automatic PII / sensitive-field detector
 - `data/sample_tasks.json`: 36 synthetic GUI traces with sensitive elements
 - `data/finance_tasks.json`: 11 PrivacyPay banking tasks with financial PII
 - `scripts/build_finance_tasks.py`: generates the finance task suite
 - `scripts/safety_demo.py`: demonstrates the SafetyPolicy gate without a device
+- `scripts/pii_audit.py`: audits auto-PII detection against hand labels
+- `scripts/cumulative_demo.py`: demonstrates cumulative multi-step exposure
 - `data/episodes/`: on-device episodic memory store (auto-generated, git-ignored)
 - `experiments/real_android_traces/`: converted real Android UI traces and audit results
 - `experiments/multistep_runs/`: per-run trajectory records (auto-generated, git-ignored)

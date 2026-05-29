@@ -82,6 +82,14 @@ class MultiStepRunner:
         current_task = task
         outcome = "max_steps"
 
+        # Cumulative unique exposure across the trajectory. Element ids are
+        # namespaced by screen id so structural ids (root, nav_bar) shared
+        # across screens are not collapsed in a multi-screen flow.
+        seen_ids: set[str] = set()
+        seen_sensitive_ids: set[str] = set()
+        uploaded_ids: set[str] = set()
+        uploaded_sensitive_ids: set[str] = set()
+
         for step_num in range(1, self.max_steps + 1):
             # --- Reason + decide -------------------------------------------
             result = self.agent.run(
@@ -93,6 +101,13 @@ class MultiStepRunner:
             thought: str = result.thought
 
             thought_history.append(ThoughtAction(thought=thought, decision=decision))
+
+            # --- Accumulate cumulative exposure ----------------------------
+            screen = current_task.ui_state
+            seen_ids.update(f"{screen.id}:{e.id}" for e in screen.elements)
+            seen_sensitive_ids.update(f"{screen.id}:{e.id}" for e in screen.elements if e.sensitive)
+            uploaded_ids.update(f"{screen.id}:{eid}" for eid in result.uploaded_element_ids)
+            uploaded_sensitive_ids.update(f"{screen.id}:{eid}" for eid in result.uploaded_sensitive_ids)
 
             # --- Build step record -----------------------------------------
             observation = _observation_text(step_num, decision)
@@ -156,6 +171,12 @@ class MultiStepRunner:
             if total
             else 0.0
         )
+        cum_exp = len(uploaded_ids) / len(seen_ids) if seen_ids else 0.0
+        cum_sens = (
+            len(uploaded_sensitive_ids) / len(seen_sensitive_ids)
+            if seen_sensitive_ids
+            else 0.0
+        )
         trajectory = Trajectory(
             task_id=task.id,
             instruction=task.instruction,
@@ -166,6 +187,8 @@ class MultiStepRunner:
             avg_exposure_rate=avg_exp,
             avg_sensitive_exposure_rate=avg_sens,
             similar_episodes_used=len(similar_episodes),
+            cumulative_exposure_rate=cum_exp,
+            cumulative_sensitive_exposure_rate=cum_sens,
         )
 
         # --- Save trajectory summary ---------------------------------------
@@ -180,6 +203,8 @@ class MultiStepRunner:
             "dry_run": dry_run,
             "avg_exposure_rate": round(avg_exp, 4),
             "avg_sensitive_exposure_rate": round(avg_sens, 4),
+            "cumulative_exposure_rate": round(cum_exp, 4),
+            "cumulative_sensitive_exposure_rate": round(cum_sens, 4),
             "similar_episodes_used": len(similar_episodes),
             "steps": step_records,
         }
@@ -198,6 +223,7 @@ class MultiStepRunner:
 
         print(f"[runner] run_id={run_dir.name} outcome={outcome} steps={total}/{self.max_steps}")
         print(f"[runner] avg_exposure={avg_exp:.2%}  avg_sensitive={avg_sens:.2%}")
+        print(f"[runner] cumulative_exposure={cum_exp:.2%}  cumulative_sensitive={cum_sens:.2%}")
         print(f"[runner] trajectory → {run_dir / 'trajectory.json'}")
 
         return trajectory

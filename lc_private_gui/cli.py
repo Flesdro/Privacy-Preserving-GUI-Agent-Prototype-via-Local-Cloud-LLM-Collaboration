@@ -66,9 +66,14 @@ def main() -> None:
         default="heuristic",
         help="Local-only decision backend. The ollama backend uses OLLAMA_* env vars.",
     )
+    parser.add_argument(
+        "--auto-pii",
+        action="store_true",
+        help="Auto-detect sensitive elements from text instead of relying on hand labels.",
+    )
     args = parser.parse_args()
 
-    tasks = load_tasks(args.tasks)
+    tasks = load_tasks(args.tasks, auto_pii=args.auto_pii)
     modes = list(AGENTS) if args.mode == "all" else [args.mode]
     audit: dict[str, list[dict]] = {}
     cloud_llm = OpenAICompatibleCloudLLM() if args.cloud_backend == "openai-compatible" else None
