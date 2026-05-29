@@ -33,6 +33,10 @@ data/*window.xml
 data/android_*_task.json
 experiments/live_android_runs/
 
+# Runtime agent outputs (episodic memory + per-run trajectories)
+data/episodes/
+experiments/multistep_runs/
+
 # OS/editor files
 .DS_Store
 .idea/

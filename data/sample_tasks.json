@@ -19,7 +19,12 @@
             "text": "",
             "description": "",
             "resource_id": "root",
-            "bounds": [0, 0, 1080, 2400],
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -31,7 +36,12 @@
             "text": "",
             "description": "",
             "resource_id": "chrome.top",
-            "bounds": [0, 0, 1080, 260],
+            "bounds": [
+              0,
+              0,
+              1080,
+              260
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -43,7 +53,12 @@
             "text": "",
             "description": "Home",
             "resource_id": "chrome.home",
-            "bounds": [20, 60, 120, 160],
+            "bounds": [
+              20,
+              60,
+              120,
+              160
+            ],
             "clickable": true,
             "editable": false,
             "sensitive": false
@@ -55,7 +70,12 @@
             "text": "",
             "description": "",
             "resource_id": "chrome.search_area",
-            "bounds": [80, 310, 1000, 450],
+            "bounds": [
+              80,
+              310,
+              1000,
+              450
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -67,7 +87,12 @@
             "text": "Search or type URL",
             "description": "Search or type URL",
             "resource_id": "chrome.search_box",
-            "bounds": [110, 330, 970, 430],
+            "bounds": [
+              110,
+              330,
+              970,
+              430
+            ],
             "clickable": true,
             "editable": true,
             "sensitive": false
@@ -79,7 +104,12 @@
             "text": "",
             "description": "",
             "resource_id": "chrome.account",
-            "bounds": [70, 500, 1010, 680],
+            "bounds": [
+              70,
+              500,
+              1010,
+              680
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -91,7 +121,12 @@
             "text": "alice.student@example.com",
             "description": "Google Account",
             "resource_id": "chrome.account.email",
-            "bounds": [100, 530, 940, 610],
+            "bounds": [
+              100,
+              530,
+              940,
+              610
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": true
@@ -103,7 +138,12 @@
             "text": "",
             "description": "",
             "resource_id": "chrome.history",
-            "bounds": [70, 720, 1010, 1400],
+            "bounds": [
+              70,
+              720,
+              1010,
+              1400
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -115,7 +155,12 @@
             "text": "GitHub Build Logs",
             "description": "Recent browsing history",
             "resource_id": "chrome.history.card",
-            "bounds": [90, 750, 980, 880],
+            "bounds": [
+              90,
+              750,
+              980,
+              880
+            ],
             "clickable": true,
             "editable": false,
             "sensitive": true
@@ -127,7 +172,12 @@
             "text": "University portal grades",
             "description": "Recent browsing history",
             "resource_id": "chrome.history.card",
-            "bounds": [90, 900, 980, 1030],
+            "bounds": [
+              90,
+              900,
+              980,
+              1030
+            ],
             "clickable": true,
             "editable": false,
             "sensitive": true
@@ -139,7 +189,12 @@
             "text": "Discover",
             "description": "",
             "resource_id": "chrome.discover",
-            "bounds": [70, 1450, 1010, 2300],
+            "bounds": [
+              70,
+              1450,
+              1010,
+              2300
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -151,7 +206,12 @@
             "text": "How to raise chickens in Auckland",
             "description": "Discover recommendation",
             "resource_id": "chrome.discover.card",
-            "bounds": [90, 1500, 980, 1680],
+            "bounds": [
+              90,
+              1500,
+              980,
+              1680
+            ],
             "clickable": true,
             "editable": false,
             "sensitive": false
@@ -178,7 +238,12 @@
             "text": "",
             "description": "",
             "resource_id": "root",
-            "bounds": [0, 0, 1080, 2400],
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -190,7 +255,12 @@
             "text": "May 2026",
             "description": "",
             "resource_id": "calendar.toolbar",
-            "bounds": [0, 0, 1080, 220],
+            "bounds": [
+              0,
+              0,
+              1080,
+              220
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -202,7 +272,12 @@
             "text": "",
             "description": "",
             "resource_id": "calendar.grid",
-            "bounds": [0, 230, 1080, 1650],
+            "bounds": [
+              0,
+              230,
+              1080,
+              1650
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -214,7 +289,12 @@
             "text": "Doctor appointment 3 PM",
             "description": "Calendar event",
             "resource_id": "calendar.event",
-            "bounds": [80, 500, 500, 580],
+            "bounds": [
+              80,
+              500,
+              500,
+              580
+            ],
             "clickable": true,
             "editable": false,
             "sensitive": true
@@ -226,7 +306,12 @@
             "text": "Visa document deadline",
             "description": "Calendar event",
             "resource_id": "calendar.event",
-            "bounds": [520, 780, 1000, 860],
+            "bounds": [
+              520,
+              780,
+              1000,
+              860
+            ],
             "clickable": true,
             "editable": false,
             "sensitive": true
@@ -238,7 +323,12 @@
             "text": "",
             "description": "",
             "resource_id": "calendar.fab_area",
-            "bounds": [820, 1750, 1060, 2320],
+            "bounds": [
+              820,
+              1750,
+              1060,
+              2320
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -250,7 +340,12 @@
             "text": "",
             "description": "Add new event",
             "resource_id": "calendar.add_event",
-            "bounds": [870, 2020, 1010, 2160],
+            "bounds": [
+              870,
+              2020,
+              1010,
+              2160
+            ],
             "clickable": true,
             "editable": false,
             "sensitive": false
@@ -277,7 +372,12 @@
             "text": "",
             "description": "",
             "resource_id": "root",
-            "bounds": [0, 0, 1080, 2400],
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -289,7 +389,12 @@
             "text": "Edit contact",
             "description": "",
             "resource_id": "contacts.toolbar",
-            "bounds": [0, 0, 1080, 220],
+            "bounds": [
+              0,
+              0,
+              1080,
+              220
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -301,7 +406,12 @@
             "text": "",
             "description": "",
             "resource_id": "contacts.identity",
-            "bounds": [60, 260, 1020, 780],
+            "bounds": [
+              60,
+              260,
+              1020,
+              780
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -313,7 +423,12 @@
             "text": "Alice Wang",
             "description": "Name",
             "resource_id": "contacts.name",
-            "bounds": [90, 300, 990, 420],
+            "bounds": [
+              90,
+              300,
+              990,
+              420
+            ],
             "clickable": true,
             "editable": true,
             "sensitive": true
@@ -325,7 +440,12 @@
             "text": "alice.private@example.com",
             "description": "Email",
             "resource_id": "contacts.email",
-            "bounds": [90, 470, 990, 590],
+            "bounds": [
+              90,
+              470,
+              990,
+              590
+            ],
             "clickable": true,
             "editable": true,
             "sensitive": true
@@ -337,7 +457,12 @@
             "text": "",
             "description": "",
             "resource_id": "contacts.phone_section",
-            "bounds": [60, 820, 1020, 1100],
+            "bounds": [
+              60,
+              820,
+              1020,
+              1100
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -349,7 +474,12 @@
             "text": "021 111 222",
             "description": "Phone number",
             "resource_id": "contacts.phone",
-            "bounds": [90, 850, 990, 970],
+            "bounds": [
+              90,
+              850,
+              990,
+              970
+            ],
             "clickable": true,
             "editable": true,
             "sensitive": true
@@ -361,7 +491,12 @@
             "text": "",
             "description": "",
             "resource_id": "contacts.notes_section",
-            "bounds": [60, 1140, 1020, 1500],
+            "bounds": [
+              60,
+              1140,
+              1020,
+              1500
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -373,7 +508,12 @@
             "text": "Met at health clinic",
             "description": "Notes",
             "resource_id": "contacts.notes",
-            "bounds": [90, 1180, 990, 1380],
+            "bounds": [
+              90,
+              1180,
+              990,
+              1380
+            ],
             "clickable": true,
             "editable": true,
             "sensitive": true
@@ -400,7 +540,12 @@
             "text": "",
             "description": "",
             "resource_id": "root",
-            "bounds": [0, 0, 1080, 2400],
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -412,7 +557,12 @@
             "text": "Inbox",
             "description": "",
             "resource_id": "email.toolbar",
-            "bounds": [0, 0, 1080, 220],
+            "bounds": [
+              0,
+              0,
+              1080,
+              220
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -424,7 +574,12 @@
             "text": "",
             "description": "",
             "resource_id": "email.inbox",
-            "bounds": [40, 260, 1040, 1800],
+            "bounds": [
+              40,
+              260,
+              1040,
+              1800
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -436,7 +591,12 @@
             "text": "Scholarship result notice",
             "description": "Email from university",
             "resource_id": "email.message",
-            "bounds": [70, 300, 1010, 430],
+            "bounds": [
+              70,
+              300,
+              1010,
+              430
+            ],
             "clickable": true,
             "editable": false,
             "sensitive": true
@@ -448,7 +608,12 @@
             "text": "Bank statement available",
             "description": "Email from bank",
             "resource_id": "email.message",
-            "bounds": [70, 460, 1010, 590],
+            "bounds": [
+              70,
+              460,
+              1010,
+              590
+            ],
             "clickable": true,
             "editable": false,
             "sensitive": true
@@ -460,7 +625,12 @@
             "text": "",
             "description": "",
             "resource_id": "email.compose_area",
-            "bounds": [800, 1850, 1060, 2320],
+            "bounds": [
+              800,
+              1850,
+              1060,
+              2320
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -472,7 +642,12 @@
             "text": "Compose",
             "description": "New email",
             "resource_id": "email.compose",
-            "bounds": [850, 2050, 1020, 2220],
+            "bounds": [
+              850,
+              2050,
+              1020,
+              2220
+            ],
             "clickable": true,
             "editable": false,
             "sensitive": false
@@ -499,7 +674,12 @@
             "text": "",
             "description": "",
             "resource_id": "root",
-            "bounds": [0, 0, 1080, 2400],
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -511,7 +691,12 @@
             "text": "Sam",
             "description": "Chat header",
             "resource_id": "messages.header",
-            "bounds": [0, 0, 1080, 220],
+            "bounds": [
+              0,
+              0,
+              1080,
+              220
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": true
@@ -523,7 +708,12 @@
             "text": "",
             "description": "",
             "resource_id": "messages.history",
-            "bounds": [40, 250, 1040, 1880],
+            "bounds": [
+              40,
+              250,
+              1040,
+              1880
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -535,7 +725,12 @@
             "text": "My passport number is ready",
             "description": "Incoming message",
             "resource_id": "messages.bubble",
-            "bounds": [80, 320, 900, 450],
+            "bounds": [
+              80,
+              320,
+              900,
+              450
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": true
@@ -547,7 +742,12 @@
             "text": "Meet at the clinic entrance",
             "description": "Outgoing message",
             "resource_id": "messages.bubble",
-            "bounds": [180, 500, 1000, 630],
+            "bounds": [
+              180,
+              500,
+              1000,
+              630
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": true
@@ -559,7 +759,12 @@
             "text": "",
             "description": "",
             "resource_id": "messages.composer",
-            "bounds": [40, 1940, 1040, 2260],
+            "bounds": [
+              40,
+              1940,
+              1040,
+              2260
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -571,7 +776,12 @@
             "text": "",
             "description": "Message",
             "resource_id": "messages.message_box",
-            "bounds": [80, 1990, 850, 2160],
+            "bounds": [
+              80,
+              1990,
+              850,
+              2160
+            ],
             "clickable": true,
             "editable": true,
             "sensitive": false
@@ -583,7 +793,12 @@
             "text": "Send",
             "description": "",
             "resource_id": "messages.send",
-            "bounds": [880, 1990, 1010, 2160],
+            "bounds": [
+              880,
+              1990,
+              1010,
+              2160
+            ],
             "clickable": true,
             "editable": false,
             "sensitive": false
@@ -610,7 +825,12 @@
             "text": "",
             "description": "",
             "resource_id": "root",
-            "bounds": [0, 0, 1080, 2400],
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -622,7 +842,12 @@
             "text": "",
             "description": "",
             "resource_id": "maps.search_panel",
-            "bounds": [50, 80, 1030, 420],
+            "bounds": [
+              50,
+              80,
+              1030,
+              420
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -634,7 +859,12 @@
             "text": "Search here",
             "description": "Destination",
             "resource_id": "maps.destination",
-            "bounds": [90, 130, 990, 260],
+            "bounds": [
+              90,
+              130,
+              990,
+              260
+            ],
             "clickable": true,
             "editable": true,
             "sensitive": false
@@ -646,7 +876,12 @@
             "text": "",
             "description": "",
             "resource_id": "maps.saved",
-            "bounds": [50, 480, 1030, 950],
+            "bounds": [
+              50,
+              480,
+              1030,
+              950
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -658,7 +893,12 @@
             "text": "Home - 12 Queen Street",
             "description": "Saved place",
             "resource_id": "maps.saved.home",
-            "bounds": [80, 520, 1000, 650],
+            "bounds": [
+              80,
+              520,
+              1000,
+              650
+            ],
             "clickable": true,
             "editable": false,
             "sensitive": true
@@ -670,7 +910,12 @@
             "text": "Work - University lab",
             "description": "Saved place",
             "resource_id": "maps.saved.work",
-            "bounds": [80, 680, 1000, 810],
+            "bounds": [
+              80,
+              680,
+              1000,
+              810
+            ],
             "clickable": true,
             "editable": false,
             "sensitive": true
@@ -697,7 +942,12 @@
             "text": "",
             "description": "",
             "resource_id": "root",
-            "bounds": [0, 0, 1080, 2400],
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -709,7 +959,12 @@
             "text": "Cart",
             "description": "",
             "resource_id": "shop.cart",
-            "bounds": [40, 220, 1040, 1480],
+            "bounds": [
+              40,
+              220,
+              1040,
+              1480
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -721,7 +976,12 @@
             "text": "Noise cancelling headphones",
             "description": "Cart item",
             "resource_id": "shop.cart.item",
-            "bounds": [80, 280, 1000, 430],
+            "bounds": [
+              80,
+              280,
+              1000,
+              430
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -733,7 +993,12 @@
             "text": "Ship to 12 Queen Street",
             "description": "Shipping address",
             "resource_id": "shop.shipping",
-            "bounds": [80, 1520, 1000, 1640],
+            "bounds": [
+              80,
+              1520,
+              1000,
+              1640
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": true
@@ -745,7 +1010,12 @@
             "text": "Visa ending 4242",
             "description": "Payment method",
             "resource_id": "shop.payment",
-            "bounds": [80, 1660, 1000, 1780],
+            "bounds": [
+              80,
+              1660,
+              1000,
+              1780
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": true
@@ -757,7 +1027,12 @@
             "text": "",
             "description": "",
             "resource_id": "shop.checkout_area",
-            "bounds": [40, 1860, 1040, 2280],
+            "bounds": [
+              40,
+              1860,
+              1040,
+              2280
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -769,7 +1044,12 @@
             "text": "Checkout",
             "description": "Checkout cart",
             "resource_id": "shop.checkout",
-            "bounds": [120, 1980, 960, 2160],
+            "bounds": [
+              120,
+              1980,
+              960,
+              2160
+            ],
             "clickable": true,
             "editable": false,
             "sensitive": false
@@ -796,7 +1076,12 @@
             "text": "",
             "description": "",
             "resource_id": "root",
-            "bounds": [0, 0, 1080, 2400],
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -808,7 +1093,12 @@
             "text": "",
             "description": "",
             "resource_id": "bank.summary",
-            "bounds": [50, 240, 1030, 650],
+            "bounds": [
+              50,
+              240,
+              1030,
+              650
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -820,7 +1110,12 @@
             "text": "Available balance $4,820.50",
             "description": "Account balance",
             "resource_id": "bank.balance",
-            "bounds": [90, 300, 990, 420],
+            "bounds": [
+              90,
+              300,
+              990,
+              420
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": true
@@ -832,7 +1127,12 @@
             "text": "Alex 12-3456-7890123-00",
             "description": "Recipient account",
             "resource_id": "bank.recipient",
-            "bounds": [90, 460, 990, 580],
+            "bounds": [
+              90,
+              460,
+              990,
+              580
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": true
@@ -844,7 +1144,12 @@
             "text": "",
             "description": "",
             "resource_id": "bank.transfer_form",
-            "bounds": [50, 740, 1030, 1300],
+            "bounds": [
+              50,
+              740,
+              1030,
+              1300
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -856,7 +1161,12 @@
             "text": "",
             "description": "Amount",
             "resource_id": "bank.amount",
-            "bounds": [90, 820, 990, 980],
+            "bounds": [
+              90,
+              820,
+              990,
+              980
+            ],
             "clickable": true,
             "editable": true,
             "sensitive": true
@@ -868,7 +1178,12 @@
             "text": "Transfer",
             "description": "Send money",
             "resource_id": "bank.transfer",
-            "bounds": [90, 1040, 990, 1200],
+            "bounds": [
+              90,
+              1040,
+              990,
+              1200
+            ],
             "clickable": true,
             "editable": false,
             "sensitive": false
@@ -895,7 +1210,12 @@
             "text": "",
             "description": "",
             "resource_id": "root",
-            "bounds": [0, 0, 1080, 2400],
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -907,7 +1227,12 @@
             "text": "Network settings",
             "description": "",
             "resource_id": "settings.network",
-            "bounds": [40, 220, 1040, 760],
+            "bounds": [
+              40,
+              220,
+              1040,
+              760
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -919,7 +1244,12 @@
             "text": "WiFi Off",
             "description": "WiFi toggle",
             "resource_id": "settings.wifi.toggle",
-            "bounds": [80, 300, 1000, 440],
+            "bounds": [
+              80,
+              300,
+              1000,
+              440
+            ],
             "clickable": true,
             "editable": false,
             "sensitive": false
@@ -931,7 +1261,12 @@
             "text": "Bluetooth On",
             "description": "Bluetooth toggle",
             "resource_id": "settings.bluetooth.toggle",
-            "bounds": [80, 470, 1000, 610],
+            "bounds": [
+              80,
+              470,
+              1000,
+              610
+            ],
             "clickable": true,
             "editable": false,
             "sensitive": false
@@ -943,7 +1278,12 @@
             "text": "",
             "description": "",
             "resource_id": "settings.known_networks",
-            "bounds": [40, 820, 1040, 1420],
+            "bounds": [
+              40,
+              820,
+              1040,
+              1420
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -955,7 +1295,12 @@
             "text": "Home_12_Queen_Street",
             "description": "Saved WiFi network",
             "resource_id": "settings.wifi.saved",
-            "bounds": [80, 870, 1000, 1000],
+            "bounds": [
+              80,
+              870,
+              1000,
+              1000
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": true
@@ -982,7 +1327,12 @@
             "text": "",
             "description": "",
             "resource_id": "root",
-            "bounds": [0, 0, 1080, 2400],
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -994,7 +1344,12 @@
             "text": "",
             "description": "",
             "resource_id": "notes.list",
-            "bounds": [40, 220, 1040, 1500],
+            "bounds": [
+              40,
+              220,
+              1040,
+              1500
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -1006,7 +1361,12 @@
             "text": "Medical prescription renewal",
             "description": "Note",
             "resource_id": "notes.item",
-            "bounds": [80, 280, 1000, 420],
+            "bounds": [
+              80,
+              280,
+              1000,
+              420
+            ],
             "clickable": true,
             "editable": false,
             "sensitive": true
@@ -1018,7 +1378,12 @@
             "text": "Tax login recovery code",
             "description": "Note",
             "resource_id": "notes.item",
-            "bounds": [80, 450, 1000, 590],
+            "bounds": [
+              80,
+              450,
+              1000,
+              590
+            ],
             "clickable": true,
             "editable": false,
             "sensitive": true
@@ -1030,7 +1395,12 @@
             "text": "Folders",
             "description": "",
             "resource_id": "notes.folders",
-            "bounds": [40, 1500, 1040, 1560],
+            "bounds": [
+              40,
+              1500,
+              1040,
+              1560
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -1042,7 +1412,12 @@
             "text": "All notes",
             "description": "Notes filter",
             "resource_id": "notes.filter.all",
-            "bounds": [80, 1510, 300, 1550],
+            "bounds": [
+              80,
+              1510,
+              300,
+              1550
+            ],
             "clickable": true,
             "editable": false,
             "sensitive": false
@@ -1054,7 +1429,12 @@
             "text": "",
             "description": "",
             "resource_id": "notes.editor",
-            "bounds": [40, 1580, 1040, 2240],
+            "bounds": [
+              40,
+              1580,
+              1040,
+              2240
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -1066,7 +1446,12 @@
             "text": "",
             "description": "Note title",
             "resource_id": "notes.title",
-            "bounds": [80, 1640, 1000, 1800],
+            "bounds": [
+              80,
+              1640,
+              1000,
+              1800
+            ],
             "clickable": true,
             "editable": true,
             "sensitive": false
@@ -1078,7 +1463,12 @@
             "text": "Add",
             "description": "Add note",
             "resource_id": "notes.add",
-            "bounds": [80, 1870, 1000, 2020],
+            "bounds": [
+              80,
+              1870,
+              1000,
+              2020
+            ],
             "clickable": true,
             "editable": false,
             "sensitive": false
@@ -1105,7 +1495,12 @@
             "text": "",
             "description": "",
             "resource_id": "root",
-            "bounds": [0, 0, 1080, 2400],
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -1117,7 +1512,12 @@
             "text": "Alarms",
             "description": "",
             "resource_id": "clock.alarm_list",
-            "bounds": [40, 220, 1040, 1650],
+            "bounds": [
+              40,
+              220,
+              1040,
+              1650
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -1129,7 +1529,12 @@
             "text": "6:15 AM Work commute",
             "description": "Existing alarm",
             "resource_id": "clock.alarm",
-            "bounds": [80, 300, 1000, 460],
+            "bounds": [
+              80,
+              300,
+              1000,
+              460
+            ],
             "clickable": true,
             "editable": false,
             "sensitive": true
@@ -1141,7 +1546,12 @@
             "text": "Medication reminder",
             "description": "Existing alarm",
             "resource_id": "clock.alarm",
-            "bounds": [80, 500, 1000, 660],
+            "bounds": [
+              80,
+              500,
+              1000,
+              660
+            ],
             "clickable": true,
             "editable": false,
             "sensitive": true
@@ -1153,7 +1563,12 @@
             "text": "",
             "description": "",
             "resource_id": "clock.controls",
-            "bounds": [800, 1800, 1060, 2320],
+            "bounds": [
+              800,
+              1800,
+              1060,
+              2320
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -1165,7 +1580,12 @@
             "text": "Add alarm",
             "description": "Add alarm",
             "resource_id": "clock.add_alarm",
-            "bounds": [850, 2020, 1020, 2190],
+            "bounds": [
+              850,
+              2020,
+              1020,
+              2190
+            ],
             "clickable": true,
             "editable": false,
             "sensitive": false
@@ -1192,7 +1612,12 @@
             "text": "",
             "description": "",
             "resource_id": "root",
-            "bounds": [0, 0, 1080, 2400],
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -1204,7 +1629,12 @@
             "text": "Today",
             "description": "",
             "resource_id": "calendar.schedule",
-            "bounds": [40, 220, 1040, 1740],
+            "bounds": [
+              40,
+              220,
+              1040,
+              1740
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -1216,7 +1646,12 @@
             "text": "Therapy appointment",
             "description": "Calendar event",
             "resource_id": "calendar.event",
-            "bounds": [80, 360, 1000, 480],
+            "bounds": [
+              80,
+              360,
+              1000,
+              480
+            ],
             "clickable": true,
             "editable": false,
             "sensitive": true
@@ -1228,7 +1663,12 @@
             "text": "Rent payment call",
             "description": "Calendar event",
             "resource_id": "calendar.event",
-            "bounds": [80, 520, 1000, 640],
+            "bounds": [
+              80,
+              520,
+              1000,
+              640
+            ],
             "clickable": true,
             "editable": false,
             "sensitive": true
@@ -1240,7 +1680,12 @@
             "text": "",
             "description": "",
             "resource_id": "calendar.new_event_area",
-            "bounds": [800, 1820, 1060, 2320],
+            "bounds": [
+              800,
+              1820,
+              1060,
+              2320
+            ],
             "clickable": false,
             "editable": false,
             "sensitive": false
@@ -1252,8 +1697,4147 @@
             "text": "New event",
             "description": "Add calendar event",
             "resource_id": "calendar.new_event",
-            "bounds": [850, 2020, 1020, 2190],
+            "bounds": [
+              850,
+              2020,
+              1020,
+              2190
+            ],
             "clickable": true,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "browser_search",
+      "instruction": "Search 'climate news' in the browser",
+      "expected_action": {
+        "action": "input",
+        "element_id": "search_box"
+      },
+      "ui_state": {
+        "id": "browser_search_screen",
+        "app": "Browser",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "top_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "top_bar",
+            "bounds": [
+              0,
+              0,
+              1080,
+              300
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "content_panel",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "content",
+            "bounds": [
+              0,
+              300,
+              1080,
+              1400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "action_area",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "action_area",
+            "bounds": [
+              0,
+              1400,
+              1080,
+              1900
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "nav_bar",
+            "bounds": [
+              0,
+              2100,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "title",
+            "parent": "top_bar",
+            "role": "text",
+            "text": "Browser",
+            "description": "",
+            "resource_id": "title",
+            "bounds": [
+              20,
+              20,
+              1060,
+              130
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "sensitive_0",
+            "parent": "content_panel",
+            "role": "text",
+            "text": "oliver.kim@gmail.com",
+            "description": "signed-in account",
+            "resource_id": "sensitive_0",
+            "bounds": [
+              20,
+              320,
+              1060,
+              830
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "sensitive_1",
+            "parent": "content_panel",
+            "role": "text",
+            "text": "Visited: private-banking.example.com",
+            "description": "browsing history",
+            "resource_id": "sensitive_1",
+            "bounds": [
+              20,
+              870,
+              1060,
+              1380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "search_box",
+            "parent": "action_area",
+            "role": "input",
+            "text": "Search or type URL",
+            "description": "Search or type URL",
+            "resource_id": "search_box",
+            "bounds": [
+              20,
+              1420,
+              1060,
+              1880
+            ],
+            "clickable": true,
+            "editable": true,
+            "sensitive": false
+          },
+          {
+            "id": "nav_home",
+            "parent": "nav_bar",
+            "role": "button",
+            "text": "",
+            "description": "Home",
+            "resource_id": "nav_home",
+            "bounds": [
+              20,
+              2120,
+              1060,
+              2380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "browser_open_bookmark",
+      "instruction": "Open 'GitHub' bookmark",
+      "expected_action": {
+        "action": "click",
+        "element_id": "bm_github"
+      },
+      "ui_state": {
+        "id": "browser_open_bookmark_screen",
+        "app": "Browser",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "top_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "top_bar",
+            "bounds": [
+              0,
+              0,
+              1080,
+              300
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "content_panel",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "content",
+            "bounds": [
+              0,
+              300,
+              1080,
+              1400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "action_area",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "action_area",
+            "bounds": [
+              0,
+              1400,
+              1080,
+              1900
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "nav_bar",
+            "bounds": [
+              0,
+              2100,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "title",
+            "parent": "top_bar",
+            "role": "text",
+            "text": "Browser",
+            "description": "",
+            "resource_id": "title",
+            "bounds": [
+              20,
+              20,
+              1060,
+              130
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "sensitive_0",
+            "parent": "content_panel",
+            "role": "text",
+            "text": "Bookmark: health-records.example.com",
+            "description": "saved bookmark",
+            "resource_id": "sensitive_0",
+            "bounds": [
+              20,
+              320,
+              1060,
+              830
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "sensitive_1",
+            "parent": "content_panel",
+            "role": "text",
+            "text": "oliver.kim@gmail.com",
+            "description": "signed-in account",
+            "resource_id": "sensitive_1",
+            "bounds": [
+              20,
+              870,
+              1060,
+              1380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "bm_github",
+            "parent": "action_area",
+            "role": "button",
+            "text": "GitHub",
+            "description": "GitHub",
+            "resource_id": "bm_github",
+            "bounds": [
+              20,
+              1420,
+              1060,
+              1880
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_home",
+            "parent": "nav_bar",
+            "role": "button",
+            "text": "",
+            "description": "Home",
+            "resource_id": "nav_home",
+            "bounds": [
+              20,
+              2120,
+              1060,
+              2380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "browser_new_tab",
+      "instruction": "Tap 'New tab'",
+      "expected_action": {
+        "action": "click",
+        "element_id": "new_tab_btn"
+      },
+      "ui_state": {
+        "id": "browser_new_tab_screen",
+        "app": "Browser",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "top_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "top_bar",
+            "bounds": [
+              0,
+              0,
+              1080,
+              300
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "content_panel",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "content",
+            "bounds": [
+              0,
+              300,
+              1080,
+              1400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "action_area",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "action_area",
+            "bounds": [
+              0,
+              1400,
+              1080,
+              1900
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "nav_bar",
+            "bounds": [
+              0,
+              2100,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "title",
+            "parent": "top_bar",
+            "role": "text",
+            "text": "Browser",
+            "description": "",
+            "resource_id": "title",
+            "bounds": [
+              20,
+              20,
+              1060,
+              130
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "sensitive_0",
+            "parent": "content_panel",
+            "role": "text",
+            "text": "Open tab: my-tax-return.example.com",
+            "description": "open tab title",
+            "resource_id": "sensitive_0",
+            "bounds": [
+              20,
+              320,
+              1060,
+              1380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "new_tab_btn",
+            "parent": "action_area",
+            "role": "button",
+            "text": "New tab",
+            "description": "New tab",
+            "resource_id": "new_tab_btn",
+            "bounds": [
+              20,
+              1420,
+              1060,
+              1880
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_home",
+            "parent": "nav_bar",
+            "role": "button",
+            "text": "",
+            "description": "Home",
+            "resource_id": "nav_home",
+            "bounds": [
+              20,
+              2120,
+              1060,
+              2380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "music_play_song",
+      "instruction": "Tap 'Play'",
+      "expected_action": {
+        "action": "click",
+        "element_id": "play_btn"
+      },
+      "ui_state": {
+        "id": "music_play_song_screen",
+        "app": "Music",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "top_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "top_bar",
+            "bounds": [
+              0,
+              0,
+              1080,
+              300
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "content_panel",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "content",
+            "bounds": [
+              0,
+              300,
+              1080,
+              1400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "action_area",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "action_area",
+            "bounds": [
+              0,
+              1400,
+              1080,
+              1900
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "nav_bar",
+            "bounds": [
+              0,
+              2100,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "title",
+            "parent": "top_bar",
+            "role": "text",
+            "text": "Music",
+            "description": "",
+            "resource_id": "title",
+            "bounds": [
+              20,
+              20,
+              1060,
+              130
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "sensitive_0",
+            "parent": "content_panel",
+            "role": "text",
+            "text": "Recently played by Oliver",
+            "description": "listening history",
+            "resource_id": "sensitive_0",
+            "bounds": [
+              20,
+              320,
+              1060,
+              1380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "play_btn",
+            "parent": "action_area",
+            "role": "button",
+            "text": "Play",
+            "description": "Play",
+            "resource_id": "play_btn",
+            "bounds": [
+              20,
+              1420,
+              1060,
+              1880
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_home",
+            "parent": "nav_bar",
+            "role": "button",
+            "text": "",
+            "description": "Home",
+            "resource_id": "nav_home",
+            "bounds": [
+              20,
+              2120,
+              1060,
+              2380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "music_skip_track",
+      "instruction": "Tap 'Next'",
+      "expected_action": {
+        "action": "click",
+        "element_id": "next_btn"
+      },
+      "ui_state": {
+        "id": "music_skip_track_screen",
+        "app": "Music",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "top_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "top_bar",
+            "bounds": [
+              0,
+              0,
+              1080,
+              300
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "content_panel",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "content",
+            "bounds": [
+              0,
+              300,
+              1080,
+              1400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "action_area",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "action_area",
+            "bounds": [
+              0,
+              1400,
+              1080,
+              1900
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "nav_bar",
+            "bounds": [
+              0,
+              2100,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "title",
+            "parent": "top_bar",
+            "role": "text",
+            "text": "Music",
+            "description": "",
+            "resource_id": "title",
+            "bounds": [
+              20,
+              20,
+              1060,
+              130
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "sensitive_0",
+            "parent": "content_panel",
+            "role": "text",
+            "text": "Your liked songs",
+            "description": "personal library",
+            "resource_id": "sensitive_0",
+            "bounds": [
+              20,
+              320,
+              1060,
+              1380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "next_btn",
+            "parent": "action_area",
+            "role": "button",
+            "text": "Next",
+            "description": "Next",
+            "resource_id": "next_btn",
+            "bounds": [
+              20,
+              1420,
+              1060,
+              1880
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_home",
+            "parent": "nav_bar",
+            "role": "button",
+            "text": "",
+            "description": "Home",
+            "resource_id": "nav_home",
+            "bounds": [
+              20,
+              2120,
+              1060,
+              2380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "music_toggle_shuffle",
+      "instruction": "Tap 'Shuffle'",
+      "expected_action": {
+        "action": "click",
+        "element_id": "shuffle_btn"
+      },
+      "ui_state": {
+        "id": "music_toggle_shuffle_screen",
+        "app": "Music",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "top_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "top_bar",
+            "bounds": [
+              0,
+              0,
+              1080,
+              300
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "content_panel",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "content",
+            "bounds": [
+              0,
+              300,
+              1080,
+              1400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "action_area",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "action_area",
+            "bounds": [
+              0,
+              1400,
+              1080,
+              1900
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "nav_bar",
+            "bounds": [
+              0,
+              2100,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "title",
+            "parent": "top_bar",
+            "role": "text",
+            "text": "Music",
+            "description": "",
+            "resource_id": "title",
+            "bounds": [
+              20,
+              20,
+              1060,
+              130
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "sensitive_0",
+            "parent": "content_panel",
+            "role": "text",
+            "text": "Daily mix for Oliver Kim",
+            "description": "personalized playlist",
+            "resource_id": "sensitive_0",
+            "bounds": [
+              20,
+              320,
+              1060,
+              1380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "shuffle_btn",
+            "parent": "action_area",
+            "role": "button",
+            "text": "Shuffle",
+            "description": "Shuffle",
+            "resource_id": "shuffle_btn",
+            "bounds": [
+              20,
+              1420,
+              1060,
+              1880
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_home",
+            "parent": "nav_bar",
+            "role": "button",
+            "text": "",
+            "description": "Home",
+            "resource_id": "nav_home",
+            "bounds": [
+              20,
+              2120,
+              1060,
+              2380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "files_create_folder",
+      "instruction": "Tap 'New folder'",
+      "expected_action": {
+        "action": "click",
+        "element_id": "new_folder_btn"
+      },
+      "ui_state": {
+        "id": "files_create_folder_screen",
+        "app": "Files",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "top_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "top_bar",
+            "bounds": [
+              0,
+              0,
+              1080,
+              300
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "content_panel",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "content",
+            "bounds": [
+              0,
+              300,
+              1080,
+              1400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "action_area",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "action_area",
+            "bounds": [
+              0,
+              1400,
+              1080,
+              1900
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "nav_bar",
+            "bounds": [
+              0,
+              2100,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "title",
+            "parent": "top_bar",
+            "role": "text",
+            "text": "Files",
+            "description": "",
+            "resource_id": "title",
+            "bounds": [
+              20,
+              20,
+              1060,
+              130
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "sensitive_0",
+            "parent": "content_panel",
+            "role": "text",
+            "text": "Passport_scan.pdf",
+            "description": "private file",
+            "resource_id": "sensitive_0",
+            "bounds": [
+              20,
+              320,
+              1060,
+              830
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "sensitive_1",
+            "parent": "content_panel",
+            "role": "text",
+            "text": "Salary_2025.xlsx",
+            "description": "private file",
+            "resource_id": "sensitive_1",
+            "bounds": [
+              20,
+              870,
+              1060,
+              1380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "new_folder_btn",
+            "parent": "action_area",
+            "role": "button",
+            "text": "New folder",
+            "description": "New folder",
+            "resource_id": "new_folder_btn",
+            "bounds": [
+              20,
+              1420,
+              1060,
+              1880
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_home",
+            "parent": "nav_bar",
+            "role": "button",
+            "text": "",
+            "description": "Home",
+            "resource_id": "nav_home",
+            "bounds": [
+              20,
+              2120,
+              1060,
+              2380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "files_rename_file",
+      "instruction": "Tap 'Rename'",
+      "expected_action": {
+        "action": "click",
+        "element_id": "rename_btn"
+      },
+      "ui_state": {
+        "id": "files_rename_file_screen",
+        "app": "Files",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "top_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "top_bar",
+            "bounds": [
+              0,
+              0,
+              1080,
+              300
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "content_panel",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "content",
+            "bounds": [
+              0,
+              300,
+              1080,
+              1400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "action_area",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "action_area",
+            "bounds": [
+              0,
+              1400,
+              1080,
+              1900
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "nav_bar",
+            "bounds": [
+              0,
+              2100,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "title",
+            "parent": "top_bar",
+            "role": "text",
+            "text": "Files",
+            "description": "",
+            "resource_id": "title",
+            "bounds": [
+              20,
+              20,
+              1060,
+              130
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "sensitive_0",
+            "parent": "content_panel",
+            "role": "text",
+            "text": "Medical_report.pdf",
+            "description": "selected private file",
+            "resource_id": "sensitive_0",
+            "bounds": [
+              20,
+              320,
+              1060,
+              1380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "rename_btn",
+            "parent": "action_area",
+            "role": "button",
+            "text": "Rename",
+            "description": "Rename",
+            "resource_id": "rename_btn",
+            "bounds": [
+              20,
+              1420,
+              1060,
+              1880
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_home",
+            "parent": "nav_bar",
+            "role": "button",
+            "text": "",
+            "description": "Home",
+            "resource_id": "nav_home",
+            "bounds": [
+              20,
+              2120,
+              1060,
+              2380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "files_delete_item",
+      "instruction": "Tap 'Delete'",
+      "expected_action": {
+        "action": "click",
+        "element_id": "delete_btn"
+      },
+      "ui_state": {
+        "id": "files_delete_item_screen",
+        "app": "Files",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "top_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "top_bar",
+            "bounds": [
+              0,
+              0,
+              1080,
+              300
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "content_panel",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "content",
+            "bounds": [
+              0,
+              300,
+              1080,
+              1400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "action_area",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "action_area",
+            "bounds": [
+              0,
+              1400,
+              1080,
+              1900
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "nav_bar",
+            "bounds": [
+              0,
+              2100,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "title",
+            "parent": "top_bar",
+            "role": "text",
+            "text": "Files",
+            "description": "",
+            "resource_id": "title",
+            "bounds": [
+              20,
+              20,
+              1060,
+              130
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "sensitive_0",
+            "parent": "content_panel",
+            "role": "text",
+            "text": "Bank_statement_March.pdf",
+            "description": "selected private file",
+            "resource_id": "sensitive_0",
+            "bounds": [
+              20,
+              320,
+              1060,
+              1380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "delete_btn",
+            "parent": "action_area",
+            "role": "button",
+            "text": "Delete",
+            "description": "Delete",
+            "resource_id": "delete_btn",
+            "bounds": [
+              20,
+              1420,
+              1060,
+              1880
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_home",
+            "parent": "nav_bar",
+            "role": "button",
+            "text": "",
+            "description": "Home",
+            "resource_id": "nav_home",
+            "bounds": [
+              20,
+              2120,
+              1060,
+              2380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "weather_search_city",
+      "instruction": "Search 'London' in weather",
+      "expected_action": {
+        "action": "input",
+        "element_id": "search_box"
+      },
+      "ui_state": {
+        "id": "weather_search_city_screen",
+        "app": "Weather",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "top_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "top_bar",
+            "bounds": [
+              0,
+              0,
+              1080,
+              300
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "content_panel",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "content",
+            "bounds": [
+              0,
+              300,
+              1080,
+              1400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "action_area",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "action_area",
+            "bounds": [
+              0,
+              1400,
+              1080,
+              1900
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "nav_bar",
+            "bounds": [
+              0,
+              2100,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "title",
+            "parent": "top_bar",
+            "role": "text",
+            "text": "Weather",
+            "description": "",
+            "resource_id": "title",
+            "bounds": [
+              20,
+              20,
+              1060,
+              130
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "sensitive_0",
+            "parent": "content_panel",
+            "role": "text",
+            "text": "Home: 14 Maple Street",
+            "description": "saved location",
+            "resource_id": "sensitive_0",
+            "bounds": [
+              20,
+              320,
+              1060,
+              830
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "sensitive_1",
+            "parent": "content_panel",
+            "role": "text",
+            "text": "Work: 88 King Road",
+            "description": "saved location",
+            "resource_id": "sensitive_1",
+            "bounds": [
+              20,
+              870,
+              1060,
+              1380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "search_box",
+            "parent": "action_area",
+            "role": "input",
+            "text": "Search city",
+            "description": "Search city",
+            "resource_id": "search_box",
+            "bounds": [
+              20,
+              1420,
+              1060,
+              1880
+            ],
+            "clickable": true,
+            "editable": true,
+            "sensitive": false
+          },
+          {
+            "id": "nav_home",
+            "parent": "nav_bar",
+            "role": "button",
+            "text": "",
+            "description": "Home",
+            "resource_id": "nav_home",
+            "bounds": [
+              20,
+              2120,
+              1060,
+              2380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "weather_switch_unit",
+      "instruction": "Tap 'Fahrenheit'",
+      "expected_action": {
+        "action": "click",
+        "element_id": "unit_f_btn"
+      },
+      "ui_state": {
+        "id": "weather_switch_unit_screen",
+        "app": "Weather",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "top_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "top_bar",
+            "bounds": [
+              0,
+              0,
+              1080,
+              300
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "content_panel",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "content",
+            "bounds": [
+              0,
+              300,
+              1080,
+              1400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "action_area",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "action_area",
+            "bounds": [
+              0,
+              1400,
+              1080,
+              1900
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "nav_bar",
+            "bounds": [
+              0,
+              2100,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "title",
+            "parent": "top_bar",
+            "role": "text",
+            "text": "Weather",
+            "description": "",
+            "resource_id": "title",
+            "bounds": [
+              20,
+              20,
+              1060,
+              130
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "sensitive_0",
+            "parent": "content_panel",
+            "role": "text",
+            "text": "Home: 14 Maple Street",
+            "description": "saved location",
+            "resource_id": "sensitive_0",
+            "bounds": [
+              20,
+              320,
+              1060,
+              1380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "unit_f_btn",
+            "parent": "action_area",
+            "role": "button",
+            "text": "Fahrenheit",
+            "description": "Fahrenheit",
+            "resource_id": "unit_f_btn",
+            "bounds": [
+              20,
+              1420,
+              1060,
+              1880
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_home",
+            "parent": "nav_bar",
+            "role": "button",
+            "text": "",
+            "description": "Home",
+            "resource_id": "nav_home",
+            "bounds": [
+              20,
+              2120,
+              1060,
+              2380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "weather_check_forecast",
+      "instruction": "Tap 'Hourly forecast'",
+      "expected_action": {
+        "action": "click",
+        "element_id": "hourly_btn"
+      },
+      "ui_state": {
+        "id": "weather_check_forecast_screen",
+        "app": "Weather",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "top_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "top_bar",
+            "bounds": [
+              0,
+              0,
+              1080,
+              300
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "content_panel",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "content",
+            "bounds": [
+              0,
+              300,
+              1080,
+              1400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "action_area",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "action_area",
+            "bounds": [
+              0,
+              1400,
+              1080,
+              1900
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "nav_bar",
+            "bounds": [
+              0,
+              2100,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "title",
+            "parent": "top_bar",
+            "role": "text",
+            "text": "Weather",
+            "description": "",
+            "resource_id": "title",
+            "bounds": [
+              20,
+              20,
+              1060,
+              130
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "sensitive_0",
+            "parent": "content_panel",
+            "role": "text",
+            "text": "Current location: 14 Maple Street",
+            "description": "GPS location",
+            "resource_id": "sensitive_0",
+            "bounds": [
+              20,
+              320,
+              1060,
+              1380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "hourly_btn",
+            "parent": "action_area",
+            "role": "button",
+            "text": "Hourly forecast",
+            "description": "Hourly forecast",
+            "resource_id": "hourly_btn",
+            "bounds": [
+              20,
+              1420,
+              1060,
+              1880
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_home",
+            "parent": "nav_bar",
+            "role": "button",
+            "text": "",
+            "description": "Home",
+            "resource_id": "nav_home",
+            "bounds": [
+              20,
+              2120,
+              1060,
+              2380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "camera_take_photo",
+      "instruction": "Tap 'Shutter'",
+      "expected_action": {
+        "action": "click",
+        "element_id": "shutter_btn"
+      },
+      "ui_state": {
+        "id": "camera_take_photo_screen",
+        "app": "Camera",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "top_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "top_bar",
+            "bounds": [
+              0,
+              0,
+              1080,
+              300
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "content_panel",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "content",
+            "bounds": [
+              0,
+              300,
+              1080,
+              1400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "action_area",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "action_area",
+            "bounds": [
+              0,
+              1400,
+              1080,
+              1900
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "nav_bar",
+            "bounds": [
+              0,
+              2100,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "title",
+            "parent": "top_bar",
+            "role": "text",
+            "text": "Camera",
+            "description": "",
+            "resource_id": "title",
+            "bounds": [
+              20,
+              20,
+              1060,
+              130
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "sensitive_0",
+            "parent": "content_panel",
+            "role": "text",
+            "text": "Last photo: IMG_home_kitchen.jpg",
+            "description": "gallery thumbnail",
+            "resource_id": "sensitive_0",
+            "bounds": [
+              20,
+              320,
+              1060,
+              1380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "shutter_btn",
+            "parent": "action_area",
+            "role": "button",
+            "text": "Shutter",
+            "description": "Shutter",
+            "resource_id": "shutter_btn",
+            "bounds": [
+              20,
+              1420,
+              1060,
+              1880
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_home",
+            "parent": "nav_bar",
+            "role": "button",
+            "text": "",
+            "description": "Home",
+            "resource_id": "nav_home",
+            "bounds": [
+              20,
+              2120,
+              1060,
+              2380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "camera_switch_video",
+      "instruction": "Tap 'Video'",
+      "expected_action": {
+        "action": "click",
+        "element_id": "video_mode_btn"
+      },
+      "ui_state": {
+        "id": "camera_switch_video_screen",
+        "app": "Camera",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "top_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "top_bar",
+            "bounds": [
+              0,
+              0,
+              1080,
+              300
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "content_panel",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "content",
+            "bounds": [
+              0,
+              300,
+              1080,
+              1400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "action_area",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "action_area",
+            "bounds": [
+              0,
+              1400,
+              1080,
+              1900
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "nav_bar",
+            "bounds": [
+              0,
+              2100,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "title",
+            "parent": "top_bar",
+            "role": "text",
+            "text": "Camera",
+            "description": "",
+            "resource_id": "title",
+            "bounds": [
+              20,
+              20,
+              1060,
+              130
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "sensitive_0",
+            "parent": "content_panel",
+            "role": "text",
+            "text": "Geotag: 37.42, -122.08",
+            "description": "embedded photo location",
+            "resource_id": "sensitive_0",
+            "bounds": [
+              20,
+              320,
+              1060,
+              1380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "video_mode_btn",
+            "parent": "action_area",
+            "role": "button",
+            "text": "Video",
+            "description": "Video",
+            "resource_id": "video_mode_btn",
+            "bounds": [
+              20,
+              1420,
+              1060,
+              1880
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_home",
+            "parent": "nav_bar",
+            "role": "button",
+            "text": "",
+            "description": "Home",
+            "resource_id": "nav_home",
+            "bounds": [
+              20,
+              2120,
+              1060,
+              2380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "social_compose_post",
+      "instruction": "Tap 'New post'",
+      "expected_action": {
+        "action": "click",
+        "element_id": "new_post_btn"
+      },
+      "ui_state": {
+        "id": "social_compose_post_screen",
+        "app": "Social",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "top_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "top_bar",
+            "bounds": [
+              0,
+              0,
+              1080,
+              300
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "content_panel",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "content",
+            "bounds": [
+              0,
+              300,
+              1080,
+              1400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "action_area",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "action_area",
+            "bounds": [
+              0,
+              1400,
+              1080,
+              1900
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "nav_bar",
+            "bounds": [
+              0,
+              2100,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "title",
+            "parent": "top_bar",
+            "role": "text",
+            "text": "Social",
+            "description": "",
+            "resource_id": "title",
+            "bounds": [
+              20,
+              20,
+              1060,
+              130
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "sensitive_0",
+            "parent": "content_panel",
+            "role": "text",
+            "text": "DM from Sarah: see you at 14 Maple St",
+            "description": "private message preview",
+            "resource_id": "sensitive_0",
+            "bounds": [
+              20,
+              320,
+              1060,
+              830
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "sensitive_1",
+            "parent": "content_panel",
+            "role": "text",
+            "text": "oliver.kim@gmail.com",
+            "description": "signed-in account",
+            "resource_id": "sensitive_1",
+            "bounds": [
+              20,
+              870,
+              1060,
+              1380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "new_post_btn",
+            "parent": "action_area",
+            "role": "button",
+            "text": "New post",
+            "description": "New post",
+            "resource_id": "new_post_btn",
+            "bounds": [
+              20,
+              1420,
+              1060,
+              1880
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_home",
+            "parent": "nav_bar",
+            "role": "button",
+            "text": "",
+            "description": "Home",
+            "resource_id": "nav_home",
+            "bounds": [
+              20,
+              2120,
+              1060,
+              2380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "social_like_post",
+      "instruction": "Tap 'Like'",
+      "expected_action": {
+        "action": "click",
+        "element_id": "like_btn"
+      },
+      "ui_state": {
+        "id": "social_like_post_screen",
+        "app": "Social",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "top_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "top_bar",
+            "bounds": [
+              0,
+              0,
+              1080,
+              300
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "content_panel",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "content",
+            "bounds": [
+              0,
+              300,
+              1080,
+              1400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "action_area",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "action_area",
+            "bounds": [
+              0,
+              1400,
+              1080,
+              1900
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "nav_bar",
+            "bounds": [
+              0,
+              2100,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "title",
+            "parent": "top_bar",
+            "role": "text",
+            "text": "Social",
+            "description": "",
+            "resource_id": "title",
+            "bounds": [
+              20,
+              20,
+              1060,
+              130
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "sensitive_0",
+            "parent": "content_panel",
+            "role": "text",
+            "text": "Sarah Chen tagged you in a photo",
+            "description": "friend activity",
+            "resource_id": "sensitive_0",
+            "bounds": [
+              20,
+              320,
+              1060,
+              1380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "like_btn",
+            "parent": "action_area",
+            "role": "button",
+            "text": "Like",
+            "description": "Like",
+            "resource_id": "like_btn",
+            "bounds": [
+              20,
+              1420,
+              1060,
+              1880
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_home",
+            "parent": "nav_bar",
+            "role": "button",
+            "text": "",
+            "description": "Home",
+            "resource_id": "nav_home",
+            "bounds": [
+              20,
+              2120,
+              1060,
+              2380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "social_follow_user",
+      "instruction": "Tap 'Follow'",
+      "expected_action": {
+        "action": "click",
+        "element_id": "follow_btn"
+      },
+      "ui_state": {
+        "id": "social_follow_user_screen",
+        "app": "Social",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "top_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "top_bar",
+            "bounds": [
+              0,
+              0,
+              1080,
+              300
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "content_panel",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "content",
+            "bounds": [
+              0,
+              300,
+              1080,
+              1400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "action_area",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "action_area",
+            "bounds": [
+              0,
+              1400,
+              1080,
+              1900
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "nav_bar",
+            "bounds": [
+              0,
+              2100,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "title",
+            "parent": "top_bar",
+            "role": "text",
+            "text": "Social",
+            "description": "",
+            "resource_id": "title",
+            "bounds": [
+              20,
+              20,
+              1060,
+              130
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "sensitive_0",
+            "parent": "content_panel",
+            "role": "text",
+            "text": "Suggested from your contacts: Mom",
+            "description": "contact-based suggestion",
+            "resource_id": "sensitive_0",
+            "bounds": [
+              20,
+              320,
+              1060,
+              1380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "follow_btn",
+            "parent": "action_area",
+            "role": "button",
+            "text": "Follow",
+            "description": "Follow",
+            "resource_id": "follow_btn",
+            "bounds": [
+              20,
+              1420,
+              1060,
+              1880
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_home",
+            "parent": "nav_bar",
+            "role": "button",
+            "text": "",
+            "description": "Home",
+            "resource_id": "nav_home",
+            "bounds": [
+              20,
+              2120,
+              1060,
+              2380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "social_open_dm",
+      "instruction": "Tap 'Messages'",
+      "expected_action": {
+        "action": "click",
+        "element_id": "dm_btn"
+      },
+      "ui_state": {
+        "id": "social_open_dm_screen",
+        "app": "Social",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "top_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "top_bar",
+            "bounds": [
+              0,
+              0,
+              1080,
+              300
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "content_panel",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "content",
+            "bounds": [
+              0,
+              300,
+              1080,
+              1400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "action_area",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "action_area",
+            "bounds": [
+              0,
+              1400,
+              1080,
+              1900
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "nav_bar",
+            "bounds": [
+              0,
+              2100,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "title",
+            "parent": "top_bar",
+            "role": "text",
+            "text": "Social",
+            "description": "",
+            "resource_id": "title",
+            "bounds": [
+              20,
+              20,
+              1060,
+              130
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "sensitive_0",
+            "parent": "content_panel",
+            "role": "text",
+            "text": "Unread from Mom: call me tonight",
+            "description": "private message preview",
+            "resource_id": "sensitive_0",
+            "bounds": [
+              20,
+              320,
+              1060,
+              1380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "dm_btn",
+            "parent": "action_area",
+            "role": "button",
+            "text": "Messages",
+            "description": "Messages",
+            "resource_id": "dm_btn",
+            "bounds": [
+              20,
+              1420,
+              1060,
+              1880
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_home",
+            "parent": "nav_bar",
+            "role": "button",
+            "text": "",
+            "description": "Home",
+            "resource_id": "nav_home",
+            "bounds": [
+              20,
+              2120,
+              1060,
+              2380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone_dial_number",
+      "instruction": "Tap 'Call'",
+      "expected_action": {
+        "action": "click",
+        "element_id": "call_btn"
+      },
+      "ui_state": {
+        "id": "phone_dial_number_screen",
+        "app": "Phone",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "top_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "top_bar",
+            "bounds": [
+              0,
+              0,
+              1080,
+              300
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "content_panel",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "content",
+            "bounds": [
+              0,
+              300,
+              1080,
+              1400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "action_area",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "action_area",
+            "bounds": [
+              0,
+              1400,
+              1080,
+              1900
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "nav_bar",
+            "bounds": [
+              0,
+              2100,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "title",
+            "parent": "top_bar",
+            "role": "text",
+            "text": "Phone",
+            "description": "",
+            "resource_id": "title",
+            "bounds": [
+              20,
+              20,
+              1060,
+              130
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "sensitive_0",
+            "parent": "content_panel",
+            "role": "text",
+            "text": "Recent: Mom +1 555 0142",
+            "description": "call log entry",
+            "resource_id": "sensitive_0",
+            "bounds": [
+              20,
+              320,
+              1060,
+              830
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "sensitive_1",
+            "parent": "content_panel",
+            "role": "text",
+            "text": "Recent: Dr. Lee +1 555 0199",
+            "description": "call log entry",
+            "resource_id": "sensitive_1",
+            "bounds": [
+              20,
+              870,
+              1060,
+              1380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "call_btn",
+            "parent": "action_area",
+            "role": "button",
+            "text": "Call",
+            "description": "Call",
+            "resource_id": "call_btn",
+            "bounds": [
+              20,
+              1420,
+              1060,
+              1880
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_home",
+            "parent": "nav_bar",
+            "role": "button",
+            "text": "",
+            "description": "Home",
+            "resource_id": "nav_home",
+            "bounds": [
+              20,
+              2120,
+              1060,
+              2380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone_save_contact",
+      "instruction": "Tap 'Save contact'",
+      "expected_action": {
+        "action": "click",
+        "element_id": "save_contact_btn"
+      },
+      "ui_state": {
+        "id": "phone_save_contact_screen",
+        "app": "Phone",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "top_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "top_bar",
+            "bounds": [
+              0,
+              0,
+              1080,
+              300
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "content_panel",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "content",
+            "bounds": [
+              0,
+              300,
+              1080,
+              1400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "action_area",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "action_area",
+            "bounds": [
+              0,
+              1400,
+              1080,
+              1900
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "nav_bar",
+            "bounds": [
+              0,
+              2100,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "title",
+            "parent": "top_bar",
+            "role": "text",
+            "text": "Phone",
+            "description": "",
+            "resource_id": "title",
+            "bounds": [
+              20,
+              20,
+              1060,
+              130
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "sensitive_0",
+            "parent": "content_panel",
+            "role": "text",
+            "text": "Number to save: +1 555 0142",
+            "description": "contact phone number",
+            "resource_id": "sensitive_0",
+            "bounds": [
+              20,
+              320,
+              1060,
+              1380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "save_contact_btn",
+            "parent": "action_area",
+            "role": "button",
+            "text": "Save contact",
+            "description": "Save contact",
+            "resource_id": "save_contact_btn",
+            "bounds": [
+              20,
+              1420,
+              1060,
+              1880
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_home",
+            "parent": "nav_bar",
+            "role": "button",
+            "text": "",
+            "description": "Home",
+            "resource_id": "nav_home",
+            "bounds": [
+              20,
+              2120,
+              1060,
+              2380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone_open_recents",
+      "instruction": "Tap 'Recents'",
+      "expected_action": {
+        "action": "click",
+        "element_id": "recents_btn"
+      },
+      "ui_state": {
+        "id": "phone_open_recents_screen",
+        "app": "Phone",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "top_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "top_bar",
+            "bounds": [
+              0,
+              0,
+              1080,
+              300
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "content_panel",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "content",
+            "bounds": [
+              0,
+              300,
+              1080,
+              1400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "action_area",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "action_area",
+            "bounds": [
+              0,
+              1400,
+              1080,
+              1900
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "nav_bar",
+            "bounds": [
+              0,
+              2100,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "title",
+            "parent": "top_bar",
+            "role": "text",
+            "text": "Phone",
+            "description": "",
+            "resource_id": "title",
+            "bounds": [
+              20,
+              20,
+              1060,
+              130
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "sensitive_0",
+            "parent": "content_panel",
+            "role": "text",
+            "text": "Missed call: Sarah +1 555 0177",
+            "description": "call log entry",
+            "resource_id": "sensitive_0",
+            "bounds": [
+              20,
+              320,
+              1060,
+              1380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "recents_btn",
+            "parent": "action_area",
+            "role": "button",
+            "text": "Recents",
+            "description": "Recents",
+            "resource_id": "recents_btn",
+            "bounds": [
+              20,
+              1420,
+              1060,
+              1880
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_home",
+            "parent": "nav_bar",
+            "role": "button",
+            "text": "",
+            "description": "Home",
+            "resource_id": "nav_home",
+            "bounds": [
+              20,
+              2120,
+              1060,
+              2380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "settings_brightness",
+      "instruction": "Tap 'Brightness'",
+      "expected_action": {
+        "action": "click",
+        "element_id": "brightness_btn"
+      },
+      "ui_state": {
+        "id": "settings_brightness_screen",
+        "app": "Settings",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "top_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "top_bar",
+            "bounds": [
+              0,
+              0,
+              1080,
+              300
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "content_panel",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "content",
+            "bounds": [
+              0,
+              300,
+              1080,
+              1400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "action_area",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "action_area",
+            "bounds": [
+              0,
+              1400,
+              1080,
+              1900
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "nav_bar",
+            "bounds": [
+              0,
+              2100,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "title",
+            "parent": "top_bar",
+            "role": "text",
+            "text": "Settings",
+            "description": "",
+            "resource_id": "title",
+            "bounds": [
+              20,
+              20,
+              1060,
+              130
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "sensitive_0",
+            "parent": "content_panel",
+            "role": "text",
+            "text": "Signed in as oliver.kim@gmail.com",
+            "description": "account row",
+            "resource_id": "sensitive_0",
+            "bounds": [
+              20,
+              320,
+              1060,
+              1380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "brightness_btn",
+            "parent": "action_area",
+            "role": "button",
+            "text": "Brightness",
+            "description": "Brightness",
+            "resource_id": "brightness_btn",
+            "bounds": [
+              20,
+              1420,
+              1060,
+              1880
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_home",
+            "parent": "nav_bar",
+            "role": "button",
+            "text": "",
+            "description": "Home",
+            "resource_id": "nav_home",
+            "bounds": [
+              20,
+              2120,
+              1060,
+              2380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "settings_font_size",
+      "instruction": "Tap 'Font size'",
+      "expected_action": {
+        "action": "click",
+        "element_id": "font_size_btn"
+      },
+      "ui_state": {
+        "id": "settings_font_size_screen",
+        "app": "Settings",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "top_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "top_bar",
+            "bounds": [
+              0,
+              0,
+              1080,
+              300
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "content_panel",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "content",
+            "bounds": [
+              0,
+              300,
+              1080,
+              1400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "action_area",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "action_area",
+            "bounds": [
+              0,
+              1400,
+              1080,
+              1900
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "nav_bar",
+            "bounds": [
+              0,
+              2100,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "title",
+            "parent": "top_bar",
+            "role": "text",
+            "text": "Settings",
+            "description": "",
+            "resource_id": "title",
+            "bounds": [
+              20,
+              20,
+              1060,
+              130
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "sensitive_0",
+            "parent": "content_panel",
+            "role": "text",
+            "text": "Device owner: Oliver Kim",
+            "description": "owner row",
+            "resource_id": "sensitive_0",
+            "bounds": [
+              20,
+              320,
+              1060,
+              1380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "font_size_btn",
+            "parent": "action_area",
+            "role": "button",
+            "text": "Font size",
+            "description": "Font size",
+            "resource_id": "font_size_btn",
+            "bounds": [
+              20,
+              1420,
+              1060,
+              1880
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_home",
+            "parent": "nav_bar",
+            "role": "button",
+            "text": "",
+            "description": "Home",
+            "resource_id": "nav_home",
+            "bounds": [
+              20,
+              2120,
+              1060,
+              2380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "settings_language",
+      "instruction": "Tap 'Language'",
+      "expected_action": {
+        "action": "click",
+        "element_id": "language_btn"
+      },
+      "ui_state": {
+        "id": "settings_language_screen",
+        "app": "Settings",
+        "root_id": "root",
+        "elements": [
+          {
+            "id": "root",
+            "parent": null,
+            "role": "FrameLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "root",
+            "bounds": [
+              0,
+              0,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "top_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "top_bar",
+            "bounds": [
+              0,
+              0,
+              1080,
+              300
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "content_panel",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "content",
+            "bounds": [
+              0,
+              300,
+              1080,
+              1400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "action_area",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "action_area",
+            "bounds": [
+              0,
+              1400,
+              1080,
+              1900
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_bar",
+            "parent": "root",
+            "role": "LinearLayout",
+            "text": "",
+            "description": "",
+            "resource_id": "nav_bar",
+            "bounds": [
+              0,
+              2100,
+              1080,
+              2400
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "title",
+            "parent": "top_bar",
+            "role": "text",
+            "text": "Settings",
+            "description": "",
+            "resource_id": "title",
+            "bounds": [
+              20,
+              20,
+              1060,
+              130
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "sensitive_0",
+            "parent": "content_panel",
+            "role": "text",
+            "text": "Backup account: oliver.kim@gmail.com",
+            "description": "account row",
+            "resource_id": "sensitive_0",
+            "bounds": [
+              20,
+              320,
+              1060,
+              1380
+            ],
+            "clickable": false,
+            "editable": false,
+            "sensitive": true
+          },
+          {
+            "id": "language_btn",
+            "parent": "action_area",
+            "role": "button",
+            "text": "Language",
+            "description": "Language",
+            "resource_id": "language_btn",
+            "bounds": [
+              20,
+              1420,
+              1060,
+              1880
+            ],
+            "clickable": true,
+            "editable": false,
+            "sensitive": false
+          },
+          {
+            "id": "nav_home",
+            "parent": "nav_bar",
+            "role": "button",
+            "text": "",
+            "description": "Home",
+            "resource_id": "nav_home",
+            "bounds": [
+              20,
+              2120,
+              1060,
+              2380
+            ],
+            "clickable": false,
             "editable": false,
             "sensitive": false
           }
