@@ -133,8 +133,10 @@ class MultiStepRunner:
                 exec_result = executor(decision, current_task)
                 step_dict["execution"] = exec_result
                 _write_json(run_dir / f"step_{step_num:02d}.json", step_dict)
-                if exec_result.get("status") == "blocked":
-                    outcome = "blocked"
+                # The action was not performed (safety block or a pending
+                # confirmation): stop rather than loop on an unchanged screen.
+                if exec_result.get("status") in {"blocked", "needs_confirmation"}:
+                    outcome = exec_result["status"]
                     break
 
             # --- Observe next UI state (optional) --------------------------

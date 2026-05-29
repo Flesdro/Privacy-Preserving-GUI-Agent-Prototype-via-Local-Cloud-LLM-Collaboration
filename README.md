@@ -141,6 +141,77 @@ Each run writes evidence under:
 experiments/live_android_runs/
 ```
 
+### v0.8.0 - ReAct multi-step agent with episodic memory
+
+- Added ReAct reasoning pattern: the cloud and local LLM backends now output an
+  explicit `thought` before every action through `lc_private_gui/react.py`,
+  making multi-step reasoning visible in each step record.
+- Added `MultiStepRunner` (`lc_private_gui/runner.py`): a bounded
+  observe-think-act loop (default `max_steps=5`) that replaces the single-step
+  `android_live` runner and writes per-step records plus a trajectory summary.
+- Added `EpisodicMemory` (`lc_private_gui/memory.py`): completed trajectories are
+  stored locally as JSON episodes under `data/episodes/` and retrieved via
+  dependency-free TF-IDF cosine similarity over task descriptions.
+- Retrieved similar episodes are injected into the ReAct prompt as few-shot
+  examples, forming a lightweight RAG pipeline over past agent experiences.
+- The episodic store stays on-device and is never uploaded; retrieved episodes
+  still have sensitive element text masked in the cloud prompt payload.
+- Added `--max-steps` CLI flag to `android_live`, with live re-observation of the
+  UI between steps when `--execute` is set.
+- Expanded the synthetic task set from 12 to 36 tasks, adding Browser, Music,
+  File manager, Weather, Camera, Social media, Phone/Dialer, and extra Settings
+  scenarios, each with private distractors (emails, addresses, call logs, files,
+  DMs) placed in separate layout blocks. Reproduce with `scripts/expand_tasks.py`.
+- Heuristic-backend audit on the 36-task set: collaborative mode reaches 100.00%
+  strict success with 15.09% average UI exposure and 6.25% average sensitive
+  exposure, versus 100.00% UI exposure for cloud-only and 0.00% for local-only.
+- Per-step thought chains, decisions, and exposure metrics are recorded under
+  `experiments/multistep_runs/<run_id>/step_NN.json`.
+
+### v0.9.0 - PrivacyPay: privacy-preserving banking agent (core slice)
+
+Reframed the general GUI agent into a concrete vertical — **PrivacyPay**, a
+banking / personal-finance agent — and implemented the core slice (finance task
+suite + safety gate + input execution). Design recorded in `PRIVACYPAY_PLAN.md`.
+
+- Added a finance task suite (`data/finance_tasks.json`, generator
+  `scripts/build_finance_tasks.py`): 11 banking tasks across pay-bill,
+  transfer-to-payee, and check-balance flows, each with PII distractors
+  (account numbers, balances, transaction history, payee lists) in separate
+  layout blocks.
+- Heuristic-backend audit on the finance suite: collaborative mode reaches
+  100.00% strict success with 9.60% average UI exposure and 4.55% average
+  sensitive exposure, versus 100.00%/100.00% for cloud-only and 0.00%/0.00%
+  (90.91% success) for the weaker local-only baseline.
+- Added the safety mechanism `lc_private_gui/safety.py` (`SafetyPolicy`): a
+  rule-based gate that reviews each decision on-device and returns
+  `allow` / `require_confirmation` / `block`. Money-moving actions (entering an
+  amount, or clicking authorise controls such as "Transfer now"/"Confirm
+  payment") require confirmation; transfers to payees outside the allowlist or
+  above the amount cap are blocked.
+- The policy runs on the full on-device UI state (like the local model), so it
+  reads the selected payee and amount even though those fields are never
+  uploaded to the cloud.
+- Added `scripts/safety_demo.py` to exercise the gate on the finance suite
+  without a device (verdicts: 5 allow, 4 require_confirmation, 2 block).
+- Extended the `android_live` executor to support the `input` action
+  (`adb shell input text`) in addition to `click`, and routed all execution
+  through the `SafetyPolicy`.
+- Added `--payee`, `--amount-cap`, `--auto-confirm`, and `--no-safety` flags to
+  `android_live`. Money-moving actions are held as `needs_confirmation` unless
+  `--auto-confirm` is given; `MultiStepRunner` stops on a `blocked` or
+  `needs_confirmation` verdict instead of looping.
+- Deferred to v1.0: automatic PII detection (B), cumulative multi-step exposure
+  metric (E), and OpenAI-backed finance evaluation (F).
+
+Run the finance evaluation and safety demo:
+
+```bash
+python3 scripts/build_finance_tasks.py
+python3 -m lc_private_gui --tasks data/finance_tasks.json --mode all
+python3 scripts/safety_demo.py
+```
+
 ## Files
 
 - `lc_private_gui/models.py`: core dataclasses for UI elements, blocks, tasks, decisions, and results
@@ -149,9 +220,19 @@ experiments/live_android_runs/
 - `lc_private_gui/agent.py`: collaborative, cloud-only, and local-only agents
 - `lc_private_gui/cli.py`: command-line runner and summary output
 - `lc_private_gui/android_xml.py`: Android UIAutomator XML to task JSON converter
-- `lc_private_gui/android_live.py`: safe single-step Android live runner and ADB click executor
-- `data/sample_tasks.json`: 12 synthetic GUI traces with sensitive elements
+- `lc_private_gui/android_live.py`: safe multi-step Android live runner and ADB click executor
+- `lc_private_gui/react.py`: ReAct prompt builder and response parser (thought + action)
+- `lc_private_gui/memory.py`: episodic memory store with TF-IDF RAG retrieval
+- `lc_private_gui/runner.py`: bounded multi-step observe-think-act loop
+- `lc_private_gui/safety.py`: SafetyPolicy gate for money-moving actions (PrivacyPay)
+- `data/sample_tasks.json`: 36 synthetic GUI traces with sensitive elements
+- `data/finance_tasks.json`: 11 PrivacyPay banking tasks with financial PII
+- `scripts/build_finance_tasks.py`: generates the finance task suite
+- `scripts/safety_demo.py`: demonstrates the SafetyPolicy gate without a device
+- `data/episodes/`: on-device episodic memory store (auto-generated, git-ignored)
 - `experiments/real_android_traces/`: converted real Android UI traces and audit results
+- `experiments/multistep_runs/`: per-run trajectory records (auto-generated, git-ignored)
+- `scripts/expand_tasks.py`: regenerates the v0.8 synthetic task expansion
 
 ## What This Demonstrates
 

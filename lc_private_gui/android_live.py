@@ -14,9 +14,11 @@ from .memory import EpisodicMemory
 from .models import Decision, Task, UIElement
 from .parser import load_tasks
 from .runner import MultiStepRunner
+from .safety import SafetyPolicy
 
 
 DEFAULT_ALLOWED_PACKAGES = {"com.coloros.calculator"}
+SUPPORTED_ACTIONS = {"click", "input"}
 DEFAULT_RUN_ROOT = Path(__file__).resolve().parents[1] / "experiments" / "live_android_runs"
 REMOTE_DUMP_PATH = "/sdcard/window.xml"
 
@@ -63,6 +65,30 @@ def main() -> None:
         default=[],
         help="Allowed Android package name. May be passed multiple times.",
     )
+    parser.add_argument(
+        "--payee",
+        action="append",
+        default=[],
+        help="Allowed money-transfer recipient. May be passed multiple times. "
+        "If omitted, the SafetyPolicy default allowlist is used.",
+    )
+    parser.add_argument(
+        "--amount-cap",
+        type=float,
+        default=2000.0,
+        help="Maximum amount a money-moving action may carry before being blocked.",
+    )
+    parser.add_argument(
+        "--auto-confirm",
+        action="store_true",
+        help="Authorise money-moving actions that the SafetyPolicy flags for confirmation. "
+        "Without this flag such actions are held as needs_confirmation.",
+    )
+    parser.add_argument(
+        "--no-safety",
+        action="store_true",
+        help="Disable the SafetyPolicy gate (not recommended for financial apps).",
+    )
     parser.add_argument("--device", help="ADB device serial passed to adb -s.")
     parser.add_argument("--out-dir", type=Path, default=DEFAULT_RUN_ROOT)
     execution_group = parser.add_mutually_exclusive_group()
@@ -80,6 +106,13 @@ def main() -> None:
 
     allowed_packages = set(args.allowed_package) or DEFAULT_ALLOWED_PACKAGES
     dry_run = not args.execute
+
+    if args.no_safety:
+        safety_policy = None
+    elif args.payee:
+        safety_policy = SafetyPolicy(payee_allowlist=set(args.payee), amount_cap=args.amount_cap)
+    else:
+        safety_policy = SafetyPolicy(amount_cap=args.amount_cap)
 
     # --- Dump initial UI and build the first Task --------------------------
     initial_xml_path = args.out_dir / "_initial_window.xml"
@@ -111,6 +144,8 @@ def main() -> None:
             allowed_packages=allowed_packages,
             dry_run=dry_run,
             device=args.device,
+            safety_policy=safety_policy,
+            auto_confirm=args.auto_confirm,
         )
 
     # --- Observe closure (re-dumps UI after each action) ------------------
@@ -155,19 +190,21 @@ def execute_decision(
     allowed_packages: set[str],
     dry_run: bool,
     device: str | None = None,
+    safety_policy: SafetyPolicy | None = None,
+    auto_confirm: bool = False,
 ) -> dict[str, Any]:
     if task.ui_state.app not in allowed_packages:
         return {
             "status": "blocked",
             "reason": f"package {task.ui_state.app!r} is not in the allowlist",
         }
-    if decision.action != "click":
+    if decision.action not in SUPPORTED_ACTIONS:
         return {
             "status": "blocked",
-            "reason": f"only click is supported, got {decision.action!r}",
+            "reason": f"only {sorted(SUPPORTED_ACTIONS)} are supported, got {decision.action!r}",
         }
     if decision.element_id is None:
-        return {"status": "blocked", "reason": "click decision did not include an element_id"}
+        return {"status": "blocked", "reason": f"{decision.action} decision did not include an element_id"}
 
     elements = task.ui_state.by_id()
     element = elements.get(decision.element_id)
@@ -177,6 +214,19 @@ def execute_decision(
             "reason": f"element_id {decision.element_id!r} was not found in the UI state",
         }
 
+    # --- Safety gate: review before any money-moving action ----------------
+    if safety_policy is not None:
+        verdict = safety_policy.review(decision, task)
+        if verdict.verdict == "block":
+            return {"status": "blocked", "reason": verdict.reason, "safety": verdict.to_dict()}
+        if verdict.needs_confirmation and not auto_confirm:
+            return {
+                "status": "needs_confirmation",
+                "reason": verdict.reason,
+                "safety": verdict.to_dict(),
+                "hint": "re-run with --auto-confirm to authorise this money-moving action",
+            }
+
     tap = tap_point(element)
     if tap is None:
         return {
@@ -185,8 +235,33 @@ def execute_decision(
             "bounds": element.bounds,
         }
     tap_x, tap_y = tap
-    payload: dict[str, Any] = {
+
+    if decision.action == "input":
+        text = decision.text or ""
+        adb_text = _escape_adb_text(text)
+        payload: dict[str, Any] = {
+            "status": "dry_run" if dry_run else "executed",
+            "action": "input",
+            "element_id": decision.element_id,
+            "bounds": element.bounds,
+            "tap_x": tap_x,
+            "tap_y": tap_y,
+            "text": text,
+            "adb_command": [
+                ["adb", "shell", "input", "tap", str(tap_x), str(tap_y)],
+                ["adb", "shell", "input", "text", adb_text],
+            ],
+        }
+        if dry_run:
+            return payload
+        _run_adb(["shell", "input", "tap", str(tap_x), str(tap_y)], device=device)
+        completed = _run_adb(["shell", "input", "text", adb_text], device=device)
+        payload["returncode"] = completed.returncode
+        return payload
+
+    payload = {
         "status": "dry_run" if dry_run else "executed",
+        "action": "click",
         "element_id": decision.element_id,
         "bounds": element.bounds,
         "tap_x": tap_x,
@@ -199,6 +274,11 @@ def execute_decision(
     completed = _run_adb(["shell", "input", "tap", str(tap_x), str(tap_y)], device=device)
     payload["returncode"] = completed.returncode
     return payload
+
+
+def _escape_adb_text(text: str) -> str:
+    """Escape text for `adb shell input text` (spaces -> %s)."""
+    return text.replace(" ", "%s")
 
 
 def tap_point(element: UIElement) -> tuple[int, int] | None:
