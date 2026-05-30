@@ -382,6 +382,52 @@ class OllamaLocalLLM(HeuristicLocalLLM):
         self.base_url = (base_url or os.environ.get("OLLAMA_BASE_URL") or "http://localhost:11434").rstrip("/")
         self.timeout = timeout
 
+    def rank_blocks(self, task: str, subtask: str, blocks: list[UIBlock]) -> list[RankedBlock]:
+        """Rank blocks with the local model so it decides which block is uploaded.
+
+        The local model runs on-device and sees every block unmasked; only the
+        top-ranked block is later uploaded to the cloud. Falls back to the
+        heuristic ranking if the model is unreachable or returns nothing usable.
+        """
+        if not blocks:
+            return []
+        payload = {
+            "task": task,
+            "subtask": subtask,
+            "blocks": [
+                {"block_id": block.id, "elements": [e.semantic_text for e in block.elements][:12]}
+                for block in blocks
+            ],
+            "instruction": (
+                "You are the on-device privacy module. Rank the blocks by how relevant "
+                "each is to completing the task, because only the top block is uploaded "
+                "to the cloud. Rank ALL block_ids from most to least relevant. "
+                'Return strict JSON: {"ranking": ["block_id", ...]}.'
+            ),
+        }
+        try:
+            data = self._chat_json(_local_rank_system_prompt(), json.dumps(payload, ensure_ascii=False))
+            order = data.get("ranking")
+            if not isinstance(order, list) or not order:
+                raise ValueError("missing ranking list")
+            index = {block.id: block for block in blocks}
+            ordered: list[UIBlock] = []
+            seen: set[str] = set()
+            for block_id in order:
+                block = index.get(block_id) if isinstance(block_id, str) else None
+                if block is not None and block.id not in seen:
+                    ordered.append(block)
+                    seen.add(block.id)
+            for block in blocks:  # append any the model omitted, original order
+                if block.id not in seen:
+                    ordered.append(block)
+                    seen.add(block.id)
+            n = len(ordered)
+            denom = n * (n + 1) / 2
+            return [RankedBlock(block=block, score=(n - i) / denom) for i, block in enumerate(ordered)]
+        except Exception:
+            return super().rank_blocks(task, subtask, blocks)
+
     def decide_local(self, task: str, history: list[Decision], blocks: list[UIBlock]) -> Decision | None:
         payload = decision_prompt_payload(task, history, blocks, mask_sensitive=False)
         data = self._chat_json(_local_system_prompt(), json.dumps(payload, ensure_ascii=False))
@@ -490,6 +536,15 @@ def _local_system_prompt() -> str:
         "You are the local-only GUI decision module running on the user's device. "
         "You can inspect the provided UI blocks and choose the next action. "
         "Never invent element ids. Return strict JSON only."
+    )
+
+
+def _local_rank_system_prompt() -> str:
+    return (
+        "You are the on-device block-ranking module in a privacy-preserving mobile agent. "
+        "Only the highest-ranked block is uploaded to the cloud, so prefer the single "
+        "block that contains the control needed for the task and avoid blocks that only "
+        "contain unrelated or sensitive information. Return strict JSON only."
     )
 
 

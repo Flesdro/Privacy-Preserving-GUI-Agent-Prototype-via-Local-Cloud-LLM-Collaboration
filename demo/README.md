@@ -41,6 +41,23 @@ money action — the genuine privacy–utility trade-off. For a guaranteed clean
 walk-through of the confirmation gate, use the Heuristic engine or the Cloud-only
 mode; the blocked-transfer scenarios stop the action under both engines.
 
+### Local model genuinely ranks the blocks (Ollama)
+
+When `DEMO_LOCAL_BACKEND=ollama`, the on-device block ranking that decides *which
+block is uploaded* runs through the local model (`OllamaLocalLLM.rank_blocks`,
+default `qwen2.5`), not the heuristic. This makes "local: ollama" real rather than
+cosmetic. It falls back to the heuristic ranking automatically if Ollama is
+unreachable.
+
+Finding: a general-purpose local model ranks blocks by *semantic relevance*, while
+the heuristic ranking adds an explicit *sensitivity penalty*. On the bill-pay
+confirm screen the heuristic uploads only the confirm button (0 sensitive
+elements), whereas `qwen2.5` ranks the payee/amount summary block first and uploads
+2 sensitive elements. In other words, naively delegating ranking to a local LLM is
+not automatically privacy-preserving — the ranking policy itself must be
+privacy-aware. The default demo therefore keeps the privacy-aware heuristic
+ranking; Ollama ranking is opt-in for this comparison.
+
 ## What it shows
 
 - **Phone (left):** the banking screen the agent perceives. The chosen target
