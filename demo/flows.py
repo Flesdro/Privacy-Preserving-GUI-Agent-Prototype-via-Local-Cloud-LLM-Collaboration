@@ -12,9 +12,16 @@ safety verdict, plus cumulative exposure and a "what the cloud knows" summary.
 """
 from __future__ import annotations
 
+import os
 from typing import Any
 
 from lc_private_gui.agent import CloudOnlyAgent, CollaborativeAgent
+from lc_private_gui.llm import (
+    HeuristicCloudLLM,
+    HeuristicLocalLLM,
+    OllamaLocalLLM,
+    OpenAICompatibleCloudLLM,
+)
 from lc_private_gui.models import GUIState, Task, UIElement
 from lc_private_gui.safety import SafetyPolicy
 
@@ -142,14 +149,65 @@ def _element_dict(e: UIElement) -> dict[str, Any]:
     }
 
 
-def _agent_for(mode: str):
-    return CloudOnlyAgent() if mode == "cloud_only" else CollaborativeAgent()
+# ---------------------------------------------------------------------------
+# Backend selection (real LLMs when configured, heuristic otherwise)
+# ---------------------------------------------------------------------------
+
+def cloud_backend_name() -> str:
+    """Use the real OpenAI-compatible cloud iff CLOUD_LLM_* are all set."""
+    if all(os.environ.get(k) for k in ("CLOUD_LLM_API_KEY", "CLOUD_LLM_BASE_URL", "CLOUD_LLM_MODEL")):
+        return "openai-compatible"
+    return "heuristic"
 
 
-def run_trace(scenario: str, mode: str) -> dict[str, Any]:
+def local_backend_name() -> str:
+    return "ollama" if os.environ.get("DEMO_LOCAL_BACKEND", "").lower() == "ollama" else "heuristic"
+
+
+def _effective_cloud(requested: str) -> str:
+    """Resolve the cloud backend actually used for a request.
+
+    requested: "auto" (env-based), "real" (use real LLM if configured), or
+    "heuristic" (force the deterministic stand-in).
+    """
+    if requested == "heuristic":
+        return "heuristic"
+    return cloud_backend_name()  # "auto"/"real" -> real iff configured, else heuristic
+
+
+def _make_cloud(requested: str):
+    if _effective_cloud(requested) == "openai-compatible":
+        return OpenAICompatibleCloudLLM()
+    return HeuristicCloudLLM()
+
+
+def _make_local(requested: str):
+    if requested != "heuristic" and local_backend_name() == "ollama":
+        return OllamaLocalLLM()
+    return HeuristicLocalLLM()
+
+
+def backend_info(requested: str = "auto") -> dict[str, str | None]:
+    cloud = _effective_cloud(requested)
+    local = "ollama" if (requested != "heuristic" and local_backend_name() == "ollama") else "heuristic"
+    return {
+        "cloud": cloud,
+        "local": local,
+        "cloud_model": os.environ.get("CLOUD_LLM_MODEL") if cloud == "openai-compatible" else None,
+        "real_available": cloud_backend_name() == "openai-compatible",
+    }
+
+
+def _agent_for(mode: str, requested: str = "auto"):
+    if mode == "cloud_only":
+        return CloudOnlyAgent(cloud_llm=_make_cloud(requested))
+    return CollaborativeAgent(cloud_llm=_make_cloud(requested), local_llm=_make_local(requested))
+
+
+def run_trace(scenario: str, mode: str, backend: str = "auto") -> dict[str, Any]:
     spec = SCENARIOS[scenario]
     instruction = spec["instruction"]
-    agent = _agent_for(mode)
+    agent = _agent_for(mode, backend)
     policy = SafetyPolicy()
 
     steps: list[dict[str, Any]] = []
@@ -198,7 +256,7 @@ def run_trace(scenario: str, mode: str) -> dict[str, Any]:
                 "text": decision.text,
                 "reason": decision.reason,
             },
-            "thought": f"{result.confirmed_subtask} — {decision.reason}",
+            "thought": result.thought or f"{result.confirmed_subtask} — {decision.reason}",
             "uploaded": {
                 "count": len(uploaded_set),
                 "total": result.total_elements,
@@ -236,6 +294,7 @@ def run_trace(scenario: str, mode: str) -> dict[str, Any]:
         "title": spec["title"],
         "instruction": instruction,
         "expected": spec["expected"],
+        "backend": backend_info(backend),
         "steps": steps,
         "cumulative": {
             "exposure_rate": cum_exp,

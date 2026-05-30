@@ -5,6 +5,7 @@ const SCREEN_W = 292, SCREEN_H = 612; // inner screen px (phone padding accounte
 
 const el = (id) => document.getElementById(id);
 let mode = "collaborative";
+let engine = "real";       // "real" | "heuristic"
 let trace = null;
 let cursor = 0;          // how many steps revealed
 let awaitingAuth = false;
@@ -29,6 +30,12 @@ async function init() {
     document.querySelectorAll("#mode-toggle button").forEach((b) =>
       b.classList.toggle("active", b.dataset.mode === mode));
   });
+  el("engine-toggle").addEventListener("click", (e) => {
+    if (e.target.tagName !== "BUTTON") return;
+    engine = e.target.dataset.backend;
+    document.querySelectorAll("#engine-toggle button").forEach((b) =>
+      b.classList.toggle("active", b.dataset.backend === engine));
+  });
   el("run").addEventListener("click", loadFlow);
   el("next").addEventListener("click", stepForward);
   el("authorize").addEventListener("click", authorize);
@@ -47,8 +54,25 @@ function updateNote() {
 // ---- load + reset ---------------------------------------------------------
 async function loadFlow() {
   const scenario = el("scenario").value;
-  const res = await fetch(`/api/run?scenario=${scenario}&mode=${mode}`);
-  trace = await res.json();
+  let res, data;
+  el("run").textContent = "Running…";
+  el("run").disabled = true;
+  try {
+    res = await fetch(`/api/run?scenario=${scenario}&mode=${mode}&backend=${engine}`);
+    data = await res.json();
+  } catch (e) {
+    alert("Request failed: " + e);
+    return;
+  } finally {
+    el("run").textContent = "Load flow ▸";
+    el("run").disabled = false;
+  }
+  if (data.error) {
+    alert("Backend error (" + (data.backend ? data.backend.cloud : "?") + "):\n" + data.error);
+    return;
+  }
+  trace = data;
+  renderBackend(trace.backend);
   cursor = 0;
   awaitingAuth = false;
 
@@ -211,8 +235,22 @@ function updateKnowledge() {
   el("knows-summary").textContent = trace.cloud_knowledge.summary;
 }
 
+function renderBackend(b) {
+  const badge = el("backend-badge");
+  if (!b) return;
+  const real = b.cloud === "openai-compatible";
+  const cloud = real ? `OpenAI: ${b.cloud_model || "model"}` : "heuristic (deterministic)";
+  badge.textContent = `cloud: ${cloud} · local: ${b.local}`;
+  badge.classList.toggle("real", real);
+}
+
 function escapeHtml(s) {
   return s.replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
 }
+
+// show the active backend on first load (lightweight, no agent call)
+fetch("/api/backend")
+  .then((r) => r.json()).then((d) => renderBackend(d.backend))
+  .catch(() => {});
 
 init();

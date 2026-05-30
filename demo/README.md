@@ -21,6 +21,26 @@ Then open http://localhost:8000 in a browser. (Pass a port to override, e.g.
 
 No `pip install` is required — the server uses only the Python standard library.
 
+## Backends (Engine toggle)
+
+The page has an **Engine** toggle:
+
+- **Real LLM** — the cloud decision runs against a real OpenAI-compatible model.
+  The server reads `CLOUD_LLM_API_KEY`, `CLOUD_LLM_BASE_URL`, and
+  `CLOUD_LLM_MODEL` from the prototype's `.env` (set `DEMO_LOCAL_BACKEND=ollama`
+  to also route the local model through Ollama). The header badge shows the
+  active model and the X-ray displays the model's real ReAct reasoning. If no
+  credentials are configured it falls back to heuristic automatically.
+- **Heuristic** — deterministic offline stand-in. Same privacy/safety mechanism,
+  but reproducible and instant. Recommended when you need every demo beat (e.g.
+  the confirmation gate on the bill-pay flow) to land identically every time.
+
+Note: with the real model in PrivacyPay (collaborative) mode, the cloud sees only
+a minimal block, so it occasionally scrolls or finishes instead of completing a
+money action — the genuine privacy–utility trade-off. For a guaranteed clean
+walk-through of the confirmation gate, use the Heuristic engine or the Cloud-only
+mode; the blocked-transfer scenarios stop the action under both engines.
+
 ## What it shows
 
 - **Phone (left):** the banking screen the agent perceives. The chosen target

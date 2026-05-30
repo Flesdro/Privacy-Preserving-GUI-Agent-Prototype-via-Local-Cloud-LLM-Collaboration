@@ -18,7 +18,26 @@ DEMO_DIR = Path(__file__).resolve().parent
 ROOT = DEMO_DIR.parent
 sys.path.insert(0, str(ROOT))
 
-from demo.flows import run_trace, scenario_list, SCENARIOS  # noqa: E402
+
+def _load_dotenv(path: Path) -> None:
+    """Load KEY=VALUE pairs from a .env file into os.environ (no overwrite)."""
+    if not path.exists():
+        return
+    import os
+    for line in path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        key = key.strip()
+        value = value.strip().strip('"').strip("'")
+        if key and key not in os.environ:
+            os.environ[key] = value
+
+
+_load_dotenv(ROOT / ".env")
+
+from demo.flows import run_trace, scenario_list, SCENARIOS, backend_info  # noqa: E402
 
 STATIC = {
     "/": ("index.html", "text/html; charset=utf-8"),
@@ -59,17 +78,31 @@ class Handler(BaseHTTPRequestHandler):
             self._send_json({"scenarios": scenario_list()})
             return
 
+        if path == "/api/backend":
+            self._send_json({"backend": backend_info()})
+            return
+
         if path == "/api/run":
             qs = parse_qs(parsed.query)
             scenario = (qs.get("scenario") or ["pay_bill"])[0]
             mode = (qs.get("mode") or ["collaborative"])[0]
+            backend = (qs.get("backend") or ["auto"])[0]
             if scenario not in SCENARIOS:
                 self._send_json({"error": f"unknown scenario {scenario!r}"}, code=400)
                 return
             if mode not in {"collaborative", "cloud_only"}:
                 self._send_json({"error": f"unknown mode {mode!r}"}, code=400)
                 return
-            self._send_json(run_trace(scenario, mode))
+            if backend not in {"auto", "real", "heuristic"}:
+                backend = "auto"
+            try:
+                self._send_json(run_trace(scenario, mode, backend))
+            except Exception as exc:  # real backend may fail (network/key/Ollama)
+                self._send_json(
+                    {"error": f"{type(exc).__name__}: {exc}",
+                     "backend": backend_info()},
+                    code=500,
+                )
             return
 
         self._send(404, b"not found", "text/plain")
@@ -78,7 +111,13 @@ class Handler(BaseHTTPRequestHandler):
 def main():
     port = int(sys.argv[1]) if len(sys.argv) > 1 else 8000
     server = ThreadingHTTPServer(("127.0.0.1", port), Handler)
+    bi = backend_info()
+    cloud = bi["cloud"] + (f" ({bi['cloud_model']})" if bi["cloud_model"] else "")
     print(f"PrivacyPay demo running at http://localhost:{port}")
+    print(f"  cloud backend: {cloud}")
+    print(f"  local backend: {bi['local']}")
+    if bi["cloud"] == "heuristic":
+        print("  (set CLOUD_LLM_API_KEY / CLOUD_LLM_BASE_URL / CLOUD_LLM_MODEL in .env for a real cloud LLM)")
     print("Press Ctrl+C to stop.")
     try:
         server.serve_forever()
