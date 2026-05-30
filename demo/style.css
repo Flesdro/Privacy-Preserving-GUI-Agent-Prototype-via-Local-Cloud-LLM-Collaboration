@@ -125,6 +125,20 @@ main {
 .badge.require_confirmation { background: rgba(251,191,36,0.15); color: var(--warn); }
 .badge.block { background: rgba(248,113,113,0.18); color: var(--danger); }
 .safety .reason { color: var(--muted); font-size: 12px; margin-top: 5px; }
+.ranking-head { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+.ranking-title { color: var(--muted); font-size: 12px; }
+.ranking { list-style: none; padding: 0; margin: 0 0 14px; display: flex; flex-direction: column; gap: 4px; }
+.ranking .muted-row { color: var(--muted); font-size: 12px; font-style: italic; }
+.rank-row { display: flex; align-items: center; gap: 8px; font-size: 11px; font-family: monospace; }
+.rank-row .rid { width: 70px; color: #9fb3c8; flex-shrink: 0; }
+.rank-bar { flex: 1; height: 9px; background: var(--panel2); border-radius: 5px; overflow: hidden; }
+.rank-bar > div { height: 100%; background: var(--accent2); border-radius: 5px; transition: width 0.4s ease; }
+.rank-row.up .rid { color: var(--accent); font-weight: 700; }
+.rank-row.up .rank-bar > div { background: var(--accent); }
+.rank-tag { font-size: 9px; padding: 1px 6px; border-radius: 8px; white-space: nowrap; }
+.rank-tag.sens { background: rgba(248,113,113,0.18); color: var(--danger); }
+.rank-tag.up { background: rgba(74,222,128,0.18); color: var(--accent); }
+
 .payload-head { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
 .payload-title { color: var(--muted); font-size: 12px; }
 .pill {

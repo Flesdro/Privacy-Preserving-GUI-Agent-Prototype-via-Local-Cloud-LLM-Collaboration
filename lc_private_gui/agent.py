@@ -88,7 +88,19 @@ class CollaborativeAgent:
         if decision is None:
             decision = Decision("finish", reason="no valid action found")
 
-        return _result(task, "collaborative", decision, uploaded, round_index, subtask, thought)
+        uploaded_ids = {block.id for block in uploaded}
+        ranking = [
+            {
+                "block_id": rb.block.id,
+                "score": round(rb.score, 4),
+                "element_ids": [e.id for e in rb.block.elements],
+                "sensitive": any(e.sensitive for e in rb.block.elements),
+                "uploaded": rb.block.id in uploaded_ids,
+            }
+            for rb in ranked
+        ]
+
+        return _result(task, "collaborative", decision, uploaded, round_index, subtask, thought, ranking)
 
 
 class CloudOnlyAgent:
@@ -173,6 +185,7 @@ def _result(
     rounds: int,
     subtask: str,
     thought: str = "",
+    ranking: list[dict] | None = None,
 ) -> StepResult:
     uploaded_ids = [element.id for block in uploaded_blocks for element in block.elements]
     uploaded_sensitive = [
@@ -197,6 +210,7 @@ def _result(
         rounds=rounds,
         confirmed_subtask=subtask,
         thought=thought,
+        block_ranking=ranking or [],
     )
 
 

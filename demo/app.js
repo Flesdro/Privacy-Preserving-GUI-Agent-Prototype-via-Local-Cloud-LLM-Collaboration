@@ -79,6 +79,9 @@ async function loadFlow() {
   el("payload").textContent = "// press Step ▸ to run the agent on screen 1";
   el("thought").textContent = "";
   el("safety").innerHTML = "";
+  el("ranking").innerHTML = '<li class="muted-row">step through to see ranking</li>';
+  el("ranking-backend").textContent = trace.backend.local === "ollama"
+    ? (trace.backend.local_model || "Ollama") : "heuristic";
   el("payload-count").textContent = "—";
   el("payload-count").classList.remove("hot");
   el("knows").innerHTML = '<li class="muted">Nothing yet.</li>';
@@ -100,6 +103,7 @@ function stepForward() {
   renderScreen(step.screen, step);
   el("thought").textContent = "💭 " + step.thought;
   renderSafety(step.safety);
+  renderRanking(step);
   renderPayload(step);
   updateMeters();
   updateKnowledge();
@@ -168,6 +172,28 @@ function renderScreen(screen, step) {
     node.textContent = e.text || e.description || "";
     root.appendChild(node);
   });
+}
+
+function renderRanking(step) {
+  const list = el("ranking");
+  const b = trace.backend || {};
+  el("ranking-backend").textContent =
+    b.local === "ollama" ? (b.local_model || "Ollama") : "heuristic";
+  const rows = step.ranking || [];
+  if (rows.length === 0) {
+    list.innerHTML = '<li class="muted-row">n/a — cloud-only uploads the whole screen</li>';
+    return;
+  }
+  const max = Math.max(...rows.map((r) => r.score), 0.0001);
+  list.innerHTML = rows.map((r) => {
+    const w = Math.round((r.score / max) * 100);
+    const tags =
+      (r.sensitive ? '<span class="rank-tag sens">sensitive</span>' : "") +
+      (r.uploaded ? '<span class="rank-tag up">▲ uploaded</span>' : "");
+    return `<li class="rank-row ${r.uploaded ? "up" : ""}">
+      <span class="rid">${r.block_id}</span>
+      <span class="rank-bar"><div style="width:${w}%"></div></span>${tags}</li>`;
+  }).join("");
 }
 
 function renderSafety(safety) {

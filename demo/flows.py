@@ -194,6 +194,7 @@ def backend_info(requested: str = "auto") -> dict[str, str | None]:
         "cloud": cloud,
         "local": local,
         "cloud_model": os.environ.get("CLOUD_LLM_MODEL") if cloud == "openai-compatible" else None,
+        "local_model": (os.environ.get("OLLAMA_MODEL") or "qwen2.5:latest") if local == "ollama" else None,
         "real_available": cloud_backend_name() == "openai-compatible",
     }
 
@@ -268,6 +269,7 @@ def run_trace(scenario: str, mode: str, backend: str = "auto") -> dict[str, Any]
             "sensitive_exposure_rate": result.sensitive_exposure_rate,
             "safety": verdict.to_dict(),
             "cloud_sees_sensitive": step_sensitive,
+            "ranking": result.block_ranking,
             "stop": verdict.verdict == "block",
         })
         if verdict.verdict == "block":

@@ -126,6 +126,8 @@ class StepResult:
     rounds: int
     confirmed_subtask: str
     thought: str = ""
+    # On-device block ranking that decided which block(s) to upload.
+    block_ranking: list[dict[str, Any]] = field(default_factory=list)
 
     @property
     def exposure_rate(self) -> float:
