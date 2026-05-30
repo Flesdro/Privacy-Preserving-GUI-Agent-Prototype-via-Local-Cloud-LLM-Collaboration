@@ -1,7 +1,7 @@
 # LC-PrivateGUI Prototype
 
-> **▶ 2-minute demo video:** https://YOUR-2-MINUTE-DEMO-VIDEO-LINK
-> *(PrivacyPay banking agent — replace this placeholder with your uploaded video link.)*
+> **▶ 2-minute demo video:** https://youtu.be/kPgnijuDaRc
+> *(PrivacyPay — privacy-preserving banking GUI agent demo.)*
 
 This is a runnable prototype for a privacy-preserving GUI agent based on local--cloud LLM collaboration, inspired by the CORE paper.
 
